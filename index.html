@@ -1828,10 +1828,7 @@ function genericTabLayout(){
 
   const displayCourses=ACTIVE_GENERIC.courses
     .slice()
-    .sort((a,b)=>
-      b.referenceMidi-a.referenceMidi ||
-      a.index-b.index
-    );
+    .reverse();
 
   const rows=displayCourses.map((course,displayIndex)=>{
     const tuning=genericCourseOpenLabel(course);
@@ -2309,7 +2306,7 @@ function refreshInstrumentState(){
 
     if(legend){
       legend.textContent=
-        `Top-to-bottom = highest course to lowest course · numbers = fret · tuning: ${tuningLabel}`;
+        `Top-to-bottom = highest-numbered course to course 1 · numbers = fret · tuning: ${tuningLabel}`;
     }
 
     return;
