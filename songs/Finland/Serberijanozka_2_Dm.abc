@@ -1,0 +1,18 @@
+X:233
+% Recovered source file(s): Serberijanozka.abc
+T: Serberijanozka 2 [Dm]
+R: polka
+Z: 2012 John Chambers <jc:trillian.mit.edu>
+S: Unknown recording
+M: 2/4
+L: 1/16
+K: Dm
+"A"\
+|:\
+"Gm"c2B2 c2B2 | "Dm"BA^GA B2A2 | "A7"A2G2 A2G2 | "Dm"GFEF G2F2 |\
+"Gm"F2E2 F2E2 | "Dm"ED^CD E2D2 | "A7"D2^C2 =B,2C2 | "Dm"D2D2 E2F2 ||
+"B"||\
+"Gm"G4 B4 | "Dm"A4 F4  | "A7"A2G2 F2E2  | "Dm"D4 F4 "I"|\
+"Gm"G4 B4 | "Dm"A4 F4 | "A7"A2A2 =B2^c2 | "Dm"d6 z2 :|
+
+%%sep 1 1 500

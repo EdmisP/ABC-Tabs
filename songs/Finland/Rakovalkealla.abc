@@ -1,0 +1,41 @@
+
+X: 1
+T: Rakovalkealla  [Em]
+C: Reino Helismaa 1944 (s\"av. & san.)
+M: C
+L: 1/8
+K: Em
+"Intro"B \
+| "Am7"cc "D7"dd "G"B3 G | "Am6"AA "B7"BB "Em"G3 \
+|: G \
+| "Am6"FF GA "Em"B^c ^de | "F#7"fg "F#7-5"ag  "B7"Hf3 ||
+B \
+| "Em"ee fg "B7"fe^dB | "Am7"ee "D7"ce "Gmaj7"d3 B \
+| "Am"AA "B7"Bc "Em"BG FE | "F#7"F2 "F#7-5"F2 "B7"z3 ||
+B \
+| "Am7"ee "D7"ce "Gmaj7"dB "G6"Gd | "Am6"cA "B7"Fc "Em"B3 G \
+| "Am6"FF GA "Em"BG "B7"B,^D | F2 "Em"E2 z3 ||
+B \
+| "Am7"cc "D7"dd "Gmaj9"B2 "G6"zG | "Am"AA "B7"BB "Em"G2 zG \
+| "Am6"FF GA "Em"BG "B7"B,^D | "B7"F2 "Em"E2 z3 :|
+
+%%sep 2 1 500
+
+X: 2
+T: Rakovalkealla  [Bm]
+C: Reino Helismaa 1944 (s\"av. & san.)
+M: C
+L: 1/8
+K: Bm
+"Intro"F \
+| "Em7"GG "A7"AA "D"F3 D | "Em6"EE "F#7"FF "Bm"D3 D \
+| "Em6"CC DE "Bm"F^G ^AB | "C#7"cd "C#7-5"ed  "F#7"Hc3 ||
+|: F \
+| "Bm"BB cd "F#7"cB^AF | "Em7"BB "A7"GB "Dmaj7"A3 F \
+| "Em"EE "F#7"FG "Bm"FD CB, | "C#7"C2 "C#7-5"C2 "F#7"z3 F |
+| "Em7"BB "A7"GB "Dmaj7"AF "D6"DA | "Em6"GE "F#7"CG "Bm"F3 D \
+| "Em6"CC DE "Bm"FD "F#7"F,^A, | C2 "Bm"B,2 z3 F |
+| "Em7"GG "A7"AA "Dmaj9"F2 "D6"zD | "Em"EE "F#7"FF "Bm"D2 zD \
+| "Em6"CC DE "Bm"FD "F#7"F,^A, |1-3 "F#7"C2 "Bm"B,2 z3 D |
+| "Em6"CC DE "Bm"F^G ^AB | "C#7"cd "C#7-5"ed "F#7"Hc3 \
+:|4 "F#7"C2 "Bm"HB,2 |] y4 y4 y4 y4 y4 y4

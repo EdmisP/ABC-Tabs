@@ -1,0 +1,17 @@
+X:319
+% Recovered source file(s): FinnFest2013.abc; Syrjalan_Kaapoon_polska_variant_1.abc; Syrjalan_Kaapoon_polska_variant_2.abc
+T: Syrj\"al\"an Kaapoon polska  [C]
+O: Matti Haudanmaan (ohjelmistoa)
+R: polska
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/16
+K: C
+g2- |\
+"C"gagf e2f2 g2ab | "F"c'2bd' c'2b2 a2g2 | "Dm"abag f2e2 d2c2 |
+"G"BcdB G4 "C"c3e | gagf e2f2 g2ab | "F"c'2bd' c'2b2 a2g2 |
+"Dm"abag f2e2 d2c2 | "G"BcdB G4 "C"c4 |: "G"d3c Bcde f2d2 |
+"C"c2cB cdef g2e2 | "Dm"d3c Bcde "G"f2d2 | "C"c2cB cdef g2gf |
+"F"a2ag f2e2 "Dm"d2c2 |1 "G"BcdB G4 "C"c4 :|2 "G"BGBd d4 "C"c4 |]
+
+%%sep 1 1 500

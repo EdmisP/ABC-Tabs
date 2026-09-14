@@ -1,0 +1,22 @@
+X:29
+% Recovered source file(s): Hoylakatrilli.abc; Rev20150725.abc; Rev20151206.abc; Rev2015FF.abc; Rev20160116.abc
+T: H\"oyl\"akatrilli   [G]
+O: Finland
+R: march
+Z: 2015 John Chambers <jc:trillian.mit.edu>
+P: Play twice
+M: 2/4
+L: 1/16
+K: G
+|:\
+"G"BAG2 FED2 | "Am"C4- C2B,C | "G"B,2D2 G2D2 | B2G2 B2G2 |\
+"Am"cBA2 GFE2 | "D7"D4- D2B,D | "C"CDE2 "D7"F2B2 | A2F2 "G"G4 :|
+|:\
+"G"G4 D4 | "Am"c2B2 "D7"A4 | "G"B4 G4 | GAGF E2D2 |\
+"D7"d8 | D4 E2F2 | "(G)"G4 B4 | "G"G8 :|
+|:\
+"G"DEDC B,2D2 | G2D2 B2G2 | "Am"c2B2 "D7"A2F2 | "G"GAGF "(D7)"E2D2 |\
+"G"DEDC B,2D2 | G2D2 B2G2 "I"| "Am"c2B2 "D7"ABAF | "G"G8 :|
+
+%%sep 1 1 500
+%%sep 1 1 500

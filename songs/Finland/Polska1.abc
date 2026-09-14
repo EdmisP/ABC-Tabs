@@ -1,0 +1,53 @@
+
+X: 0
+T: Finnish Polska 1
+K: C
+
+
+X: 1
+T: Polska fr\aan Lappfj\"ard
+O: efter Torsten P\"arus
+R: 16th-note polska
+Z: John Chambers <jc@trillian.mit.edu>
+M: 3/4
+L: 1/16
+K: Dm
+|: "Dm"D2FA d2eg ~f2ed | "A7"^c2Ac e2g2 ~g2fe | "Dm"f2gf "A"e2fe "Dm"d2fg \
+|1,3 ~f2"A7"ed ^cAce a4 :|2,4 ~f2"A7"e^c "Dm"d8 :|
+|: "F"{c}a3f f2a2 bagf | "C"e2c2 e2g2 agfe \
+| "F"f3c f2a2 bagf | "C"e2c2 e2g2 "A7"agfe |
+| "Dm"d3^c d2e2 ~f2ed | "A7"^c2Ac e2g2 ~g2fe \
+| "Dm"f2gf "A"e2fe "Dm"d2fg | "A7"fed^c "Dm"d8 :|
+
+
+X: 2
+T: Koiviston polska
+O: Trad Finland
+R: polska
+M: 3/4
+L: 1/16
+K: Gm
+|:"Gm"dedc BcBA G2B2 \
+| "D7"ABAG ^FGF=E D2EF \
+| "Gm"G2^FG A2GA B2AB \
+| "Cm"c2Bc "D7"d4 [d4^F4] \
+:|"Bb"f4 fgfe d2d2 \
+| "F7"e2e2 e2dc "Bb"d2B2 |
+| "Bb"f4 fgfe d2d2 \
+| "F7"e2e2 e2dc "D7"d2c2 \
+||"Gm"BABc d2B2 "(Cm)"A2G2 \
+| "D7"BAG^F F4 "Gm"G2A2 \
+| "Gm"BABc d2B2 "(Cm)"A2G2 \
+| "D7"BAG^F F4 "Gm"G4 |]
+
+
+X: 3
+T: Polska fr\aan \"Overmark
+N: trad, \"Overmark, \"Osterbotten
+Z: John Chambers <jc@trillian.mit.edu>
+M: 3/4
+L: 1/16
+K: D
+|: "D"A3d "(A7)"d2eg "D"f2d2 | "D"fefg "A7"abag "D"a2f2 | "D"a2fa "A7"ageg "D"gfdf |
+|1,3 "A7"fece "D"d2d2 "A7"A2A2 :|2,4 "A7"fece "D"d2z2 d4 |: "D"f2df "A7"feec e2fg |
+| "D"gfdf "A7"feec e2fg |  "D"a2fa "A7"ageg "D"gfdf |1,3 "A7"fece "D"d2d2 "A7"A4 :|2,4 "A7"fece "D"d2z2 d4 |]

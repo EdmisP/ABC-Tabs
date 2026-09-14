@@ -1,0 +1,25 @@
+X:112
+% Recovered source file(s): KoskisenSakarinValssi.abc
+T: Koskisen Sakarin valssi  #1
+T: Zachary Koskinen's Waltz
+O: trad. Finland
+R: waltz
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+S: handwritten MS of my own from the 1970s
+N: Some versions start with D4 rather than A,2D2, or switch between them.
+M: 6/8
+L: 1/16
+K: Dm
+|:\
+"Dm"A,2D2F2 A2d2f2 | "A7"e4^c2 "Dm"d4f2 |\
+[1,3 "A7"e2^c2d2 "C7"f2g2^g2 | "F"a6 "A7"A6 :|\
+[2,4 "Gm"e2g2b2 "A7"a2^c2e2 | "Dm"d6- d4z2 :|
+|: {ab}\
+"Dm"a2f2d2 A2F2D2 | "A7"^C4E2 A4ga | g2e2^c2 A2G2E2 |\
+[1,3 "Dm"D4F2 A6 :|[2,4 "(Dm)"D3EFE "Dm"D4z2 :|
+|:\
+"Dm"A6 "(D7)"d6 | "Gm"B3cBA G4F2 |\
+[1,3 "A7"E6 A6 | "Dm"F3GFE D6 :|\
+[2,4 "A7"E4A,2 F4E2 | "Dm"D6- D4z2 :|
+
+%%sep 1 1 500

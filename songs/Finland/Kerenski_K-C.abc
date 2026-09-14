@@ -1,0 +1,29 @@
+X:90
+% Recovered source file(s): 20140619.abc; Rev20130928.abc; Rev20150725.abc; Rev2015FF.abc
+T: Kerenski
+P: Play 5 times
+K: C
+P: Kerenski  [Am] (Karapyet)
+O: Finland, Russia
+M: 2/4
+L: 1/16
+K: Am
+[|\
+"Am"E2A2 A2A2 | "E7"^G4  E4 | B2B2 B2B2 | "Am"c2B2 A4 |\
+"Am"E2A2 A2A2 | "E7"^G4  E4 | e2d2 c2B2 | "Am"c2B2 A4 ||
+"Am"EAce EAce | "Dm"f4   d4 | "G7"f2f2 f2f2 | "C"e2d2 c4 |\
+"Am"E2e2 e2e2 | "Dm"d2c2 B4 | "E7"e2d2 c2B2 | "Am"A4 A4 |]
+%%sep 2 2 5
+P: Kerenski  [Dm] (Karapyet)
+O: Finland, Russia
+M: 2/4
+L: 1/16
+K: Dm
+[|\
+"Dm"A2d2 d2d2 | "A7"^c4  A4 | e2e2 e2e2 | "Dm"f2e2 d4 |\
+"Dm"A2d2 d2d2 | "A7"^c4  A4 | a2g2 f2e2 | "Dm"f2e2 d4 ||
+"Dm"Adfa Adfa | "Gm"b4   g4 | "C7"b2b2 b2b2 | "F"a2g2 f4 |\
+"Dm"A2a2 a2a2 | "Gm"g2f2 e4 | "A7"a2g2 f2e2 | "Dm"d4 d4 |]
+
+%%sep 1 1 500
+%%sep 1 1 500

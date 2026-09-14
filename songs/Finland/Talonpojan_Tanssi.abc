@@ -1,0 +1,41 @@
+X:328
+% Recovered source file(s): Rev2013FF.abc
+T: Talonpojan Tanssi
+O: Jyskyj\"arvi, Karjala, Russia
+R: polka
+Z: 2012 John Chambers <jc:trillian.mit.edu>
+M: 4/4
+L: 1/8
+K: Bb
+P: Talonpojan Tanssi   [Bb]
+|:\
+"Bb"B,B, F2 FF "Eb"G2 | "F7"FF FE "Bb"D2 B,2 | "Bb"B,B, F2 FF "Eb"G2 | "F7"FF FE "Bb"D2 B,2 ||\
+"Eb"B,B, FF FF "Eb"G2 | "F7"FF2E "Bb"D2 B,2 | "Bb"B,B, FF FF "Eb"G2 | "F7"FF2E "Bb"D2 B,2 :|
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+W: 1.a.|: T\"am\"ah\"an sit\"a on talonpojan tanssi :|
+W:       |: T\"at\"a saapi tanssia nuoret ja vanhat :|
+W: 1.b.|: Muistatkos muinoin kuin marjassa k\"aytiin ja :|
+W:       |: Hakosella istuttiin ja leikki\"a ly\"otiin :|
+W: 2. Repeat 1.a.
+W: 2.b.|: Siell\"a kahvi keitettiin ja sulatettiin voita :|
+W:       |: Silti t\"a\"akin peitettiin se punaposki poika :|
+W: 3. Repeat 1.a.
+W: 3.b.|: Ennen min\"a nostelen nokisie puita :|
+W:       |: Ennen kun t\"am\"an kyl\"an poikien luita :|
+W: 4. Repeat 1.a.
+W: 4.b.|: Ennen min\"a ruohoja rannalta niit\"an :|
+W:       |: Ennen kun t\"am\"an kyl\"an poikia kiit\"an :|
+%
+P: Talonpojan Tanssi   [C]
+K: C
+|:\
+"C"CC G2 GG "F"A2 | "G7"GG GF "C"E2 C2 | "C"CC G2 GG "F"A2 | "G7"GG GF "C"E2 C2 ||\
+"F"CC GG GG "F"A2 | "G7"GG2F "C"E2 C2 | "C"CC GG GG "F"A2 | "G7"GG2F "C"E2 C2 :|%
+P: Talonpojan Tanssi   [D]
+K: D
+|:\
+"D"DD A2 AA "G"B2 | "A7"AA AG "D"F2 D2 | "D"DD A2 AA "G"B2 | "A7"AA AG "D"F2 D2 ||\
+"G"DD AA AA "G"B2 | "A7"AA2G "D"F2 D2 | "D"DD AA AA "G"B2 | "A7"AA2G "D"F2 D2 :|
+
+%%sep 1 1 500
+%%sep 1 1 500

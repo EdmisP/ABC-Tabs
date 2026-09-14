@@ -1,0 +1,14 @@
+X:221
+% Recovered source file(s): shottish_Dm.abc
+T: Semmonen T\"amm\"onen
+O: Finland
+R: shottish
+M: 4/4
+L: 1/8
+K: Dm
+|:"Dm"A2 A[dA] f2 f2 | "A7" ee e^c A2 A2 | "A7"e2 ef g2 g2 | "Dm"ff ag "(A7)"f2 e2 |
+| "Dm"d2 dd f2 f2 | "A7"ee e^c A2 A2 | "A7"a2 aa a2 ^c2 | "Dm"d4 d2 z2 :|
+|: "C"c2 ce g2 g2 | "F"fe fg a2 a2 | "A7"A2 A^c e2 e2 | "Dm"d^c de f2 "D7"^f2 |
+| "Gm"g^f ga b2 b2 | "Dm"fe fg a2 a2 | "A7" ab ab a2 ^c2 | "Dm"d4 d2 z2 :|
+
+%%sep 1 1 500

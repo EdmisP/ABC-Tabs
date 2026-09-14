@@ -1,0 +1,68 @@
+X: 0
+T: Finnish Songs 4
+K:
+
+
+X: 1
+P: Isontalon Antti (G)
+R: shottish
+M: 4/4
+L: 1/8
+K: G
+|: "G"DD GG B2 GG | D2G2 F2 EE | "C"C2 EE E2 G2 | "G"D4 "D 7"D2 z2 :|
+|: "D7"DD cc c2 BA | "G"GG BB B2 AG | "D7"FF AA AA B2 |1 "G"G2 B2 d2 d2 :|2 "G"G4 "(A7)"G2 z2 |]
+
+
+X: 2
+P: Jos sais kerran reissullansa
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: D
+|: "D"D2F2 A2D2 | "A7"D2C2 C2C2 | A,2CC E2G2 | "D"F2D2 D4 :: "D"A2FA "G"d2c2 | "D"B2A2 F2D2 | "Em"F2EF "A7"G2C2 | "D"E2D2 D4 :|
+K: A
+|: "A"A2c2 e2A2 | "E7"A2G2 G2G2 | E2GG B2d2 | "A"c2A2 A4 :: "A"e2ce "D"a2g2 | "A"f2e2 c2A2 | "Bm"c2Bc "E7"d2G2 | "A"B2A2 A4 :|
+
+
+X: 3
+P: Juuret Suomessa  (Roots in Finland)
+C: Jukka Kuoppam\"aki
+Z: John Chambers <jc:trillian.mit.edu>
+N:
+N: Written by Finnish folk singer Jukka Kuoppam\"aki for the 1992 celebration of
+N: Finland's 75 years of independance.  As a ballad, it it sung without repeats;
+N: as a waltz, it's probably better with the traditional repeats as above. Also,
+N: be prepared to play it in other keys, such as Dm, Em and Gm.
+M: 3/4
+L: 1/4
+K: Dm
+   A,/A,/ \
+| "Dm"FED | F2A,/A,/ | FED | "A7"E2A,/A,/ | "Bb"DCB, | "C7"EFG | "F"FG^G | "A7"A2A/A/ |
+| "Gm"BGF | "C7"EFG | "F"AFE | "Dm"D2D/E/ | "Bb"FDF | "Gm"GFG | "A7"A3- | A2 ||
+   A/A/ \
+| "Bb"dcB | "C7"GA>B | "F"A3- | "Dm"A2A/A/ | "Gm"BGF | "A7"EF>G | "Dm"F3- | F2D |
+| "Gm"BGF | "C7"EFG | "F"AcB | "Dm"A2F | "Gm"GAB | "A7"AFE | "Dm"D3- D2 |]
+
+
+
+X: 4
+P: K\"aki
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: Am
+|: "Am"cBAB cBAc |  "C"e2ee e2dc | "E7"B2Bc d2ed | "Am"c2A2 A4 :|
+|:  "C"e2ce g2fe | "G7"d2de f2ed | "E7"B2Bc d2ed | "Am"c2A2 A4 :|
+
+
+X: 5
+P: K\"aki
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: Gm
+|: "Gm"BAGA BAGB | "Bb"d3d  d2cB | "D7"A2AB ccdc | "Gm"B2G2 G4 :|
+|: "Bb"d2Bd ffed | "F7"c2cd e2dc | "D7"A2AB c2dc | "Gm"B2G2 G4 :|

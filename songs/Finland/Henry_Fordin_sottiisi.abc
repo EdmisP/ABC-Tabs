@@ -1,0 +1,17 @@
+X:39
+% Recovered source file(s): FinnFest2013.abc
+T: Henry Fordin sottiisi
+S: doc of Finnish origin
+R: shottish
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: C
+L: 1/16
+K: D
+"A"|:\
+"D"fgfc "A/C#"efec | "E/B"efec "A"A2A2 | "G"Abbf "A7"fgec | "D"d2b2 "A7"a2g2 |
+"D"fgfc "E7"efec | "A"efec A2A2 | "Bm"Abbf "A7/C#"fgec | "D"d2d2 d4 :|
+"B"|:\
+"D"A2FA Add2 | "G"BGGB g2g2 | "D"fgfc "A/C#"efec | "E7/B"efec "A7"A2FG |
+"D"A2FA Add2 | "G"BGGB "Em"g2g2 | "D"fgfc "A7"efec | "D"d2d2 d4 :|
+
+%%sep 1 1 500

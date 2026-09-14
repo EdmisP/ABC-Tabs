@@ -1,0 +1,23 @@
+X:152
+% Recovered source file(s): FinnFest2013.abc
+T: Martin Vappu
+R: polka
+S: Kes\"ajuhlat 2013, Saarij\"arvi; Suomalaisen Kansantanssin Yst\"av\"at r.y.
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/16
+P: 3x
+K: Eb
+P: Martin Vappu  [Eb]
+|: "Bb7"B,2B,2 C2D2 | "Eb"E2E2 D2C2 | "Bb7"B,2B,B, C2D2 | "Eb"E2E2 E4 :|
+w: Mar-tin Vap-pua moi-tit-tiin, vaan ei tuos-sa ol-lut vi-ko-ja.
+w: Mar-tin Vap-pu, hy-v\"a Vap-pu, kyl-l\"a se kel-paa mi-nul-le.
+|: "Bb7"F-FFG A2(Ac) | "Eb"B2(BG) E2EC | "Bb7"D2(DB,) | D2(DF) | "Eb"E2E2 E4 :|
+w: Sill'* o-li val-ke-a | a-lus-*ha me* | niin-ku-in muil-la-in li-koil-la.
+w: It-se mi-n\"a tans-saan,* | min-k\"a m\"a jak-san,* | lo-pun* an-nan* | si-nul-le.
+P: Martin Vappu  [F]
+K: F
+|: "C7"C2C2 D2E2 | "F"F2F2 E2D2 | "C7"C2CC D2E2 | "F"F2F2 F4 :|\
+|: "C7"G-GGA B2(Bd) | "F"c2(cA) F2FD | "C7"E2(EC) | E2(EG) | "F"F2F2 F4 :|
+
+%%sep 1 1 500

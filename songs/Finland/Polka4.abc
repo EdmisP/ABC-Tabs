@@ -1,0 +1,84 @@
+
+X: 0
+T: Finnish Polkka 4
+K: C
+
+
+X: 1
+T: S\"akkij\"arven polkka
+R: polka
+O: trad Finland
+Z: 1998 by John Chambers <jc@trillian.mit.edu>
+N: Probably the best-known traditional Finnish polkka tune.
+N: S\"akkij\"arvi is a small town between Leningrad/(Saint)Petersburg and the Finnish border.
+N: Fourth and fifth parts are often played, which are usually "accordion showoff" parts.
+N: This tune is sometimes attributed to Vili Vesterinen, but he learned it from others,
+N: and was the accordion player who popularized it.
+M: 2/4
+L: 1/16
+K: Am
+"A"\
+|: {Ace}"Am"a2e2 d2c2 | "E7"c2B2 B2cd | e2>d2 c2B2 | "Am"B2A2 A2ce \
+| a2e2 d2c2 | "E7"c2B2 B2cd | e2d2 c2B2 | "Am"A4 "fine"z2 :|
+e2 \
+"B"\
+|: "Am"ABcd e2a2 | "E7"a2^g2 gab2 | e^f^ga b2c'2 | "Am"b2a2 a^ga2 \
+| ABcd e2a2 | "E7"a2^g2 gab2 | e2e2 ^f2^g2 | "Am"a4 z2 :|
+Ac \
+"C"\
+|: "Am"e2ec A2Ac | e2ec A2Ac | e2e2 f2e2 | "E7"dedc B2Bc \
+| d2dc B2Bc | d2dc B2Bc | d2d2 e2d2 | "Am"cdcB A2Ac ||
+|| "Am"e2ec A2Ac | e2ec A2Ac | e2e2 "A7"a2g2 | "Dm"fgfe d2>e2 \
+| f2f2 e2d2 | "Am"cdcB A2Ac | "E7"BcBA ^G2B2 | "Am"A4 z2 :|
+% %text Other parts are often added, and the last part is often in Dm.
+
+
+X: 2
+T: Salonkyl\"an polkka
+R: polka
+O: trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: D
+|: "D"A2df a2b2 | abaf a2f2 | "A7"gagf g2e2 | "D"fgfe f2d2 \
+|  "D"d2ef a2b2 | abaf a2f2 | "A7"gagf gfef | e2d2 "D"d4 :|
+|: "A"eefe eefe | e2c2 A3c | "E7"e2d2 B3c | "A"e2c2 A3c \
+|  "A"eefe eefe | e2c2 A3c | "E7"e2d2 BBcB | "A"A2c2 A4 :| [K:G]
+|: "D7(G7)"d4 d4 | "C"e4 e4 | "D7"f2gf e2f2 | "G"g6 Bc \
+|   d2B2 e3d | "C"d2c2 cBAB | "D7"c2A2 f3e | "G"e2d2 dcBc |
+|  "G7"d4 d4 | "C"e4 e4 | "D7"f2gf e2f2 | "G"g6 Bc \
+|   d2B2 e3d | "C"d2c2 cBAB | "D7"cBAB cdef | "G"g2g2 g4 :|
+
+
+X: 3
+T: Savitaipaleen polkka
+T: Ievan polkka
+R:polka
+D:Kevin Burke: Up Close
+O:South Karelia
+Z:id:hn-polka-41
+M:2/4
+L:1/8
+K:Bm
+|: "Bm"B>B Bc | dB Bd | "A"cA Ac | "Bm"d/c/B/A/ BF \
+|      B>B Bc | dB B2 | "A"ef/e/ "F#7"dc | "Bm"B2 B2 :|
+|: "Bm"f>d df | "A"ec cd | "F#7"ef/e/ dc | "Bm"Bc de \
+|      f>d df | "A"ec cd | "F#7"ef/e/ dc | "Bm"B2 B2 :|
+
+
+X: 4
+T: Sukkula polkka
+C: Konsta Jylh\"a
+R: polka
+O: Finland
+Z: 1998 by John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: F
+|: "F"{AB}c2Ac f2AB | "Gm"c2BA BAG2 |1,3 "C7"{ga}g2eg c'2e2 | "F"g2f2 agf2 \
+                                   :|2,4 "C7"g2eg c'2eg | "(F)"g2f2 "F"f4 :|
+|: "F"AccA "Bb"BddB | "F"ABcf faaf |1,3 "C7"gbbg eceg | "F"gfag "C7"fedc \
+                                  :|2,4 "C7"gbbg eceg | ~g2f2 "F"f4  :| [K:Bb]
+|: "Bb"f2bf d2fd | B2dB F2B2 |1,3 "F7"ABcd efg2 | fecA F2F2 \
+                            :|2,4 "F7"ABce g2Ac | "Bb"B2d2 B4 :|

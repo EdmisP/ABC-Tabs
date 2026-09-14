@@ -1,0 +1,59 @@
+X: 0
+T: Finnish Songs 7
+K:
+
+
+X: 1
+P: Koiviston polska
+O: Trad Finland
+R: polska
+M: 3/4
+L: 1/16
+K: Gm
+|:"Gm"dedc BcBA G2B2 \
+| "D7"ABAG ^FGF=E D2EF \
+| "Gm"G2^FG A2GA B2AB \
+| "Cm"c2Bc "D7"d4 [d4^F4] \
+:|"Bb"f4 fgfe d2d2 \
+| "F7"e2e2 e2dc "Bb"d2B2 |
+| "Bb"f4 fgfe d2d2 \
+| "F7"e2e2 e2dc "D7"d2c2 \
+||"Gm"BABc d2B2 "(Cm)"A2G2 \
+| "D7"BAG^F F4 "Gm"G2A2 \
+| "Gm"BABc d2B2 "(Cm)"A2G2 \
+| "D7"BAG^F F4 "Gm"G4 |]
+
+
+X: 2
+P: Kotimaani ompi Suomi  (My Homeland is Finland)
+O: Trad Finland
+Z: John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: C
+CE \
+| "C"G3 E (3CEG | "Am"c2 "Em"B2 "F"A>A | "G"G3 D FA \
+| "C"G4 c>B | "F"A3 F A>c | "C"G2 E2 "Am"CE |
+| "Dm"G3 F "G7"A,B, | "C"C4 c>B | "F"A3 F "F#dim"A>c \
+| "C/G"G2 E2 "Am"CE | "Dm"G3 F "G7"A,B, | "C"C4 |]
+
+
+X: 3
+P: Kulkurin Kaiho
+O: kansanlaulu
+M: 3/4
+L: 1/8
+K: Dm
+z2 a2 \
+| "A7"(3gag eg eg | [b2g2] [a2f2] [g2e2] | "Dm"(3fgf df df |  [a2f2] [g2e2] [f2d2] \
+| "A7"(3efe ^ce ce | [g2B2] [f2A2] [e2G2] | "Dm"[d6-F6-] | [d2F2] :|
+z2 AA \
+| "Dm"A6 | d4 ^c2 | "A7"e6- | e2 ^c2 B2 \
+| "Dm"A6 | f4 d2 | "A7"e6- | e2 f2 e2 |
+| "Dm"d6 | "D7"a4 a2 | "Gm"b6- | b2 a2 g2 \
+| "Dm"f6 | "A7"e4 ^c2 | "Dm"d6- | d2 |]
+|: a3 f \
+| "Dm"d6- | d2 a2 gf | "A7"e6- | e4 z2 \
+| g4 g2 | g4 ag  | "Dm"f6- | f2 a^g af |
+| "Dm"d6- | "D7"d2 A3 c | "Gm"B6- | B2 g2 b2 \
+| "Dm"a3 g f2 | "A7"e4 ^c2 | "Dm"d6- | d2 :|

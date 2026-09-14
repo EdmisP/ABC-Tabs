@@ -1,0 +1,11 @@
+X:320
+% Recovered source file(s): TaallaPohjantahdenAlla.abc
+T: T\"a\"all\"a Pohjant\"ahden alla #1   [Dm]
+O: Trad Finland
+M: 2/4
+L: 1/8
+K: Dm
+[| "Dm"AA AA | "Gm"A>G "A7"EG | "Dm"G>F DF | "Dm"[F2D2] "A7"[E2^C2] \
+|: "A7"AE "Dm"FD | "A7"EA, "Bb"DF | "Gm"A>G "A7"FE | "Dm"D2 D2 :|
+
+%%sep 1 1 500

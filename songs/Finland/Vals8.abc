@@ -1,0 +1,33 @@
+
+X: 0
+T: Finnish waltz 8
+K: C
+
+
+X: 1
+T: Valssi Karjaalta
+O: Finnish-American
+Z: John Chambers <jc:trillian.mit.edu>
+B: Pelimannisävelmiä v.1, Pelimannikilta ry, (Fazer 1971)
+N: "Yleinen kansansãvelmã Uudeltamaalta. Bragen kokoelma."
+M: 3/4
+L: 1/8
+K: D
+|: "D"D2 DF AF | D2 DF AF | "G"G2 B2 B2 | B4 B2 \
+| "A7"A2 Ac ec | A2 Ac ec | "D"f2 d2 d2 | d4 d2 :|
+|: "D"f2 d2 d2 | d2 e2 f2 | "G"g2 gf ga | g3 fed \
+| "A7"c2 A2 A2 | A2 c2 e2 |1 a2 a^g ab | a4 g2 :|2 e2 d2 c2 | "D"d6 |]
+
+
+X: 1
+T: Villiruusu (The Wild Rose)
+T: Inarin J\"arvi (Lake Inari)
+R: waltz
+Z: 1997 by John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/4
+K: Dm
+"A"|: A \
+| "Dm"d2d | "A7"e2f | "Dm"d3 | A2d | "Gm"e2f | g2f | "A7"e3- | e2 || a | "Dm"a2f | d2f | "Gm"f3 |
+| "Gm"G2B | "A7"A2A | e2^c | "Dm"d3- | d2 "B":: a | "A7"a2g | "Dm"f2f | "Gm"g2f | "A7"e2e | "Dm"f2e |
+| "Dm"d2d | "A7"e2^c | A2 || A | "Dm"d2d | f2d | "Gm"d3 | G2B | "A7"A2A | Ae^c | "Dm"d3- | d2 :|

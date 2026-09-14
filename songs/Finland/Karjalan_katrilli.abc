@@ -1,0 +1,14 @@
+X:74
+% Recovered source file(s): FinnFest2013.abc
+T: Karjalan katrilli
+M: 2/4
+L: 1/8
+%Q: 1/4=116
+K: F
+P: F:
+|: "F"{e}dc c2 | dc c2 | "C7"{f}ed cB | "F"AG F2 :: "Dm"DA AA | "Gm"GF E2 | "A7"EG GG | "Dm"FE D2 :|
+P: C:
+K: C
+|: "C"{b}ag g2 | ag g2 | "G7"{c'}ba gf | "C"ed c2 :: "Am"Ae ee | "Dm"dc B2 | "E7"Bd dd | "Am"cB A2 :|
+
+%%sep 1 1 500

@@ -1,0 +1,16 @@
+X:83
+% Recovered source file(s): FinnFest2013.abc; KaustisenPolkka.abc; Polka2.abc
+T: Kaustisen polkka
+R: polka
+O: Finland
+M: 2/4
+L: 1/16
+K: Am
+|: "Am"ABcd e2a2 | e2c2 cBcd \
+| "E7"c2B2 B2AB |1,3 "Am"cBAc "E7"B2E2 :|2,4 "Am"cBA2 A2Hz2 :|
+|: "Am"ABcd e2a2 | "Dm"c'2b2 a2^ga \
+| "E7"b2e2 e^geg |1,3 "Am"b2{a}a2 a^ga2 :|2,4 "Am"b2{a}a2 a2z2 :|
+|: "C"g2ag eceg | c'2g2 eceg \
+| "G7"g2ag gdBd |1,3 "C"c2c2 cdef :|2,4 "C"c2c2 c2z2 :|
+
+%%sep 1 1 500

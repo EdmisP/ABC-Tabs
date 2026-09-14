@@ -1,0 +1,17 @@
+X:24
+% Recovered source file(s): FinnFest2013.abc
+T: Flypolska
+C: s\"av. Teija Niku
+O: Finland
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/16
+K: Edor
+"A"|:\
+"Em"E4 EFGA B2e2 | "G"d2Bd "A"c2Ac "B7"BAGF | "Em"E4 EFGA B2e2 | "G"d2Bd "A"c2A2 "B7"B4 |
+"Em"E4 EFGA B2e2 | "G"d2Bd "A"c2Ac "B7"BAGF | "Em"E3D EFGA "(G)"B2G2 | "D"F2ED "Em"E4 E4 :|
+"B"|:\
+"D"f4 f2ef "Bm"d2ef | "Em"g3a g2f2 gfeg | "D"f4 f2ef "Bm"d2ef | "Em"g3a g2fg efga |
+"G"b4 b2gb "D"a2fa | "Em"g2eg "(Bm)"f2d2 "Bm"B4 | "Em"E4 EFGA "(G)"B2G2 | "D"F2ED "Em"E4 E4 :|
+
+%%sep 1 1 500

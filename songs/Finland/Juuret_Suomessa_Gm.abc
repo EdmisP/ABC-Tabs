@@ -1,0 +1,21 @@
+X:64
+% Recovered source file(s): JuuretSuomessa.abc
+T: Juuret Suomessa    [Gm]
+T: Roots in Finland
+C: Jukka Kuoppam\"aki
+Z: 1998 John Chambers <jc:trillian.mit.edu>
+N: Written by Finnish folk singer Jukka Kuoppam\"aki for the 1992 celebration of
+N: Finland's 75 years of independance. As a ballad, it it sung without repeats;
+N: as a waltz, it's probably better with the traditional repeats. Also, you should
+N: be prepared to play it in other keys, such as Dm, Em and Gm.
+M: 3/4
+L: 1/4
+K: Gm
+ D/D/ \
+| "Gm"BAG | B2D/D/ | BAG | "D7"A2D/D/ | "Eb"GFE | "F7"ABc | "Bb"Bc^c | "D7"d2d/d/ |
+| "Cm"ecB | "F7"ABc | "Bb"dBA | "Gm"G2G/A/ | "Eb"BGB | "Cm"cBc | "D7"d3- | d2 :|
+|: d/d/ \
+| "Eb"gfe | "F7"cd>e | "Bb"d3- | "Gm"d2d/d/ | "Cm"ecB | "D7"AB>c | "Gm"B3- | B2G |
+| "Cm"ecB | "F7"ABc | "Bb"dfe | "Gm"d2B | "Cm"cde | "D7"dBA | "Gm"G3- G2 :|
+
+%%sep 1 1 500

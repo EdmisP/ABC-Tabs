@@ -1,0 +1,27 @@
+X:215
+% Recovered source file(s): 20140619.abc; FinnFest2013.abc; Rev20130928.abc; Rev2013FF.abc; Rev20150725.abc
+T: Sappu Kirvusta
+P: D2 G2 D2 G2 D2 = 10x
+Z: John Chambers <jc@trillian.mit.edu>
+%Q: 1/4=108
+M: 2/4
+L: 1/8
+K: D
+P: Sappu Kirvusta   [D]
+"A7"A |\
+"D"de fg | a2 d2 | "A7"ce Bc | "D"dc BA "I"|\
+"D"de fg | a2 d2 | "A7"ce fe | "D"d3 |]
+|: f |\
+"D"a3 f | a3 f | "Em"eg b2 | e3 d |\
+"A7"c2 b2 | a2 g2 |1 "(D)"f2 "(A)"e2 | "D"dB A :|2 "D" dd/d/ "G"dd | "D"d3 |]
+P: Sappu Kirvusta   [G]
+K: G
+"D7"D |\
+"G"GA Bc | d2 G2 | "D7"FA EF | "G"GF ED "I"|\
+"G"GA Bc | d2 G2 | "D7"FA BA | "G"G3 ||
+|: B |\
+"G"d3 B | d3 B | "Am"Ac e2 | A3 G | \
+"D7"F2 e2 | d2 c2 |1 "(G)"B2 "(D)"A2 | "G"GE D :|2 "G" GG/G/ "C"GG | "G"G3 |]
+
+%%sep 1 1 500
+%%sep 1 1 500

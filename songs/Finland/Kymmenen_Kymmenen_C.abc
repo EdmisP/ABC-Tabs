@@ -1,0 +1,29 @@
+X:126
+% Recovered source file(s): FinnFest2013.abc; KymmenenKymmenen.abc
+T: Kymmenen Kymmenen   [C]
+O: Kivijat dance version
+M: 2/4
+L: 1/8
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+K: F
+"A"|:\
+"F"AA BA | "C7"G2 c2 | cd ed |  c2 c2 |\
+"F"AA BA | "C7"AG G2 | GG AG | "F"GF F2 :|
+"B"|:\
+"F"cc dc | "C"e2 e2 | cc dc | "F"f2 f2 |\
+fe dc | "C7"ed c2 |1 ed BG | "F"dc A2 :|2 "C7"ed cd/e/| "F"ff f2 |]
+"C"[|\
+"F"A2 A2 | "C7"G2 B2 | "F"AA "C7"GG | "F"FA C2 |\
+"F"A2 A2 | "C7"G2 B2 | "F"AA "C7"GG | "F"F2 z2 |]
+"D"|:\
+"F"cc AF | "Bb"d2 d2 | "C7"BB GE | c2 c2 |\
+"F"cc AF | "Bb"d2 "F"c2 | "C7"B2 AG | "F"F2 z2 :|
+"A"[|\
+"F"AA BA | "C7"G2 c2 | cd ed |  c2 c2 |\
+"F"AA BA | "C7"AG G2 | GG AG | "F"GF F2 |]
+"C"[|\
+"F"A2 A2 | "C7"G2 B2 | "F"AA "C7"GG | "F"FA C2 |\
+"F"A2 A2 | "C7"G2 B2 | "F"AA "C7"GG | "F"F2 [f2c2A2] |]
+
+%%sep 1 1 500
+%%sep 1 1 500

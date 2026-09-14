@@ -1,0 +1,17 @@
+X:142
+% Recovered source file(s): FinnFest2013.abc
+T: Lipan-Matin hahkahousut  (masurkka)
+R: mazurka
+S: Kes\"ajuhlat 2013, Saarij\"arvi; Suomalaisen Kansantanssin Yst\"av\"at r.y.
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: D
+|: "D"Ad f2 e2 | "G"dc B2 B2 | \
+[1,3 "A7"Ac c2 c2 | "D"Ad d2 d2 :|\
+[2,4 "A7"Ac c2 cA | "D"d2 d2 z2 :|
+|: "Gm"gf e2 g2 | "D(Bm)"fe d2 f2 |\
+[1,2 "A7"ed c2 e2 | "D"df a2 a2 :|\
+[2,4 "A7"ed c2 ce | "D"d2 d2 z2 :|
+
+%%sep 1 1 500

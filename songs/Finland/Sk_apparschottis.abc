@@ -1,0 +1,16 @@
+X:237
+% Recovered source file(s): FinnFest2013.abc
+T: Sk\"apparschottis
+C: Thore H\"ardelin
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: D
+"A"|:\
+"D"D2FA d2BA | d2BA d2d2 | D2FA d2BA | d2BA "A"c2cB |
+A2ce g2fe | g2fe a2a2 | abaf gecA | eddc "D"d4 :|
+"G"|:\
+"D"{f}abaf dfA2 | abaf dfA2 | f2ed f2ed | fee^d "A"e3f |
+gage ceA2 | gage ceA2 | g2fe a2fe | eddc "D"d4 :|
+
+%%sep 1 1 500

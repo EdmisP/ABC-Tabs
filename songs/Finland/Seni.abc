@@ -1,0 +1,21 @@
+X:222
+% Recovered source file(s): Rev20130425.abc
+T: Seni
+O: Finland
+K:
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Seni  [C]
+O: Finland
+M: 2/4
+L: 1/8
+K: C
+|: "F"ff ff | "C"ec cc |  "F"ff ff | "C"e2 gg |\
+  "G7"dg gg | "C"eg gg | "G7"gf ed | "C"c2 c2 :|
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Seni  [F]
+O: Finland
+M: 2/4
+L: 1/8
+K: F
+|: "Bb"BB BB | "F"AF FF | "Bb"BB BB | "F"A2 cc |\
+   "C7"Gc cc | "F"Ac cc | "C7"cB AG | "F"F2 F2 :|

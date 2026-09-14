@@ -1,0 +1,92 @@
+
+X: 1
+T: Finnish Song 4
+K: C
+
+
+X: 2
+T: Niin sinulle laulan
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 4/4
+L: 1/8
+K: Am
+|: "Am"A2 ce a2 ee \
+| "G(Dm)"g2 ff "C(Am)"e2 cB \
+| "Dm"d2 cd "E7"e2 e2 \
+| "Am"A4 A2 z2 :|
+|: "G(Dm)"d2 de "Dm"d2 cB \
+| "C(Am)"e2ef "E7"e2 cB \
+| "Am(Dm)"A2 cA "E7"^G2 B2 \
+| "Am"A4 A2 z2 :|
+
+
+X: 3
+T: Polka
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+N: From a transcription by Karen Myers
+M: C|
+L: 1/8
+K: Am
+|: "Am"E2AA A2B2 | c2e2 edc2 | "E7"B2e2 edcB |1,3.A2"Am"c2 edc2 :|2,4.A2"Am"A2 A2z2 :|
+|: "Dm"a3g f2f2 | "Am"efed c4 | "E7"B3c ddcB |1,3.c"Am"Bcd "A7"e2e2 :|2,4.A2"Am"A2 A2z2 :|
+
+
+X: 4
+T: Ralli
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 3/4
+L: 1/4
+K: Am
+| "E7"E2E/E/ | E2B, | "Am"D2C | C2E | "G7"G2A | "Dm"B2A | "G7"G2D | "C"E3 ||
+|: "E7"E2^G | B2c | "Am"A2B | A2E | "D7"C2D | "Dm/B"EDC | "E7"B,2C | "Am"A,2z :|
+
+
+X: 5
+T: Sininen ja valkoinen
+C: Jukka Kuoppam\"aki
+Z: John Chambers <jc@trillian.mit.edu>
+R: tango
+M: C
+L: 1/8
+K: Am
+|: "Am"A,A,A,B, C2"Dm"D2 \
+| "Am"E8 \
+| "Dm"DDDE F2G2 \
+| A8 \
+| "G7"GGGA G2F2 \
+| "C"E8 \
+| "Dm"FFFF E2D2 \
+|1 "E7"E8 \
+:|2 "E7"HB8 ||
+|| "Am"cccc B2A2 \
+|     cccc (3B2A2G2 \
+| "Dm"[F4-D4] [F4-C4] \
+|     [F4-B,4] [F4A,4] \
+| "G7"BBBB A2G2 \
+|     BBBB (3A2G2F2 \
+| "C"[E4-C4] [E4-B,4] \
+|    [E4-A,4] [E4G,4] |
+| "F"AAAA G2F2 \
+|    AAAA (3G2F2E2 \
+| "B7"^D8- \
+| D8 \
+| "C"EEEE "D7"D2C2 \
+| "E7"B,B,2B, EE^F^G \
+| "Am"A8- \
+| A6 z2 |]
+
+
+X: 6
+T: Sinisi\"a, punasia ruusunkukkia
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: Dm
+| "Dm"DDDD DDDD | D2F2 E2DD | "A7"E2A,2 A,2A,2 | "Dm"D4 F4 \
+| "Dm"A2A2 B2A2 | "Gm"A4 G4 | "Dm"F2F2 G2F2 | "A7"F4 E4 |
+| "Dm"DDDD DDDD | D2F2 E2DD | "A7"E2A,2 A,2A,2 | "Dm"D4 F4 \
+| "Gm"A2G2 A2B2 | "A7"A2G2 F2E2 | "Dm"D4- "Gm"D4 - | "Dm"D4 z4 |]

@@ -1,0 +1,28 @@
+X:330
+% Recovered source file(s): FinnFest2013.abc; Rev20130928.abc; TalonpojanTanssi.abc
+T: Talonpojan Tanssi
+O: Jyskyj\"arvi, Karjala, Russia
+R: polka
+Z: 2012 John Chambers <jc:trillian.mit.edu>
+M: 4/4
+L: 1/8
+K: Bb
+P: Talonpojan Tanssi   [Bb]
+|:\
+"Bb"B,B, F2 FF "Eb"G2 | "F7"FF FE "Bb"D2 B,2 | "Bb"B,B, F2 FF "Eb"G2 | "F7"FF FE "Bb"D2 B,2 ||
+"Eb"B,B, FF FF "Eb"G2 | "F7"FF2E "Bb"D2 B,2 | "Bb"B,B, FF FF "Eb"G2 | "F7"FF2E "Bb"D2 B,2 :|
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Talonpojan Tanssi   [C]
+K: C
+|:\
+"C"CC G2 GG "F"A2 | "G7"GG GF "C"E2 C2 | "C"CC G2 GG "F"A2 | "G7"GG GF "C"E2 C2 ||
+"F"CC GG GG "F"A2 | "G7"GG2F "C"E2 C2 | "C"CC GG GG "F"A2 | "G7"GG2F "C"E2 C2 :|
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Talonpojan Tanssi   [D]
+K: D
+|:\
+"D"DD A2 AA "G"B2 | "A7"AA AG "D"F2 D2 | "D"DD A2 AA "G"B2 | "A7"AA AG "D"F2 D2 ||
+"G"DD AA AA "G"B2 | "A7"AA2G "D"F2 D2 | "D"DD AA AA "G"B2 | "A7"AA2G "D"F2 D2 :|
+
+%%sep 1 1 500
+%%sep 1 1 500

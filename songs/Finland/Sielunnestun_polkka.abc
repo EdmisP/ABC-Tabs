@@ -1,0 +1,35 @@
+X:234
+% Recovered source file(s): FinnFest2013.abc
+T: Sielunnestun polkka
+K: G
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Sielunnestun polkka   [G]
+O: trad. Finland
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: G
+|:\
+"G"BGBd c2B2 | "D7"F2dd dddd | dFAc B2A2 |\
+[1,3 "G"G2ee eeee :|[2,4 "G"G2G2 G4 :|
+|:\
+"G"e2d2 B2G2 | "D7"FAcF dcAF |\
+[1,3 d2c2 A2F2 | "G"GBdG edBG :|\
+[2,4 dddd d2FA | "G"G2G2 G4 :|
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Sielunnestun polkka   [D]
+O: trad. Finland
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: D
+|:\
+"D"fdfa g2f2 | "A7"c2aa aaaa | aceg f2e2 |\
+[1,3 "D"d2bb bbbb :|[2,4 "D"d2d2 d4 :|
+|:\
+"D"b2a2 f2d2 | "A7"cegc agec |\
+[1,3 a2g2 e2c2 | "D"dfad bafd :|\
+[2,4 aaaa a2ce | "D"d2d2 d4 :|
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+
+%%sep 1 1 500

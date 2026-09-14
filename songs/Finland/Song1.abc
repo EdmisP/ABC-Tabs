@@ -1,0 +1,79 @@
+
+X: 1
+T: Finnish Song 1
+K: C
+
+
+X: 2
+T: Ai kuinka kauniilta kuuluupi
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: C|
+L: 1/8
+K: Am
+|: "Am"A,2B,B, C2DD | "C"E2E2 "E7"E2E2 | "Am"cc "E7"BB "F"A2^GA | "G7"B2A2 "C"E4 :|
+|: "Dm"G2FF "G7"E2DF | "Cmaj7"E2CB, "F"A,2A,2 | "Dm"C2B,C "E7"D2CC | "Am"B,2A,2 A,4 :|
+
+
+X: 3
+T: Heilani kotiin
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: C
+L: 1/8
+K: G
+[| "G"BB GG GG FG \
+| "C"A2 E2 E2 E2 \
+| "Am"AA GG "D7"FF EF \
+| "G"G2 D2 D2 D2 |
+| "G"D2 DD "D7"EE FF \
+| "G"G2 A2 B2 B2 \
+| "G7/F"B2 AB "E7"c2 B2 \
+| "Am"A4 A4 \
+| "D7"A2 GA B2 A2 \
+| "G"G4 G4 |]
+
+
+X: 4
+T: Hilu hilu
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: D
+|: z2 | "D"AAAA AAAA | "G"B2BB BAGF | "A7"E2EE EGB2 | "D"A4 A2 :|
+|: AA | "D"DDDD "E7"D2DD | "A7"C2E2 G2GG | "D"F2FF "A7"E2E2 | "D"D4 D2 :|
+
+
+X: 5
+T: Hoputas polkka
+T: Tupsun juuren
+T: Zorros m\"arke
+R: polka
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/8
+K: Am
+|: "Am"ea a>b | ag e>f | "G"gg/a/ gf | "E7"e2 e2 :|
+|: "Am".ec BA | .ec BA | .eA .eA | .ec BA | "E7"BB/d/ cB | "Am"A2 A2 :|
+
+
+X: 6
+T: Isontalon Antti (G)
+R: shottish
+M: 4/4
+L: 1/8
+K: G
+|: "G"DD GG B2 GG | D2G2 "C"F2 EE | "C"C2 EE E2 G2 | "G"D4 "D 7"D2 z2 :|
+|: "D7"DD cc c2 BA | "G"GG BB B2 AG | "D7"FF AA AA B2 |1 "G"G2 B2 d2 d2 :|2 "G"G4 G2 z2 |]
+
+
+X: 7
+T: Isontalon Antti (D)
+R: shottish
+M: 4/4
+L: 1/8
+K: D
+|: "D"AA dd f2 dd | A2d2 "G"c2 BB | "G"G2 BB B2 d2 | "D"A4 "A 7"A2 z2 :|
+|: "A7"AA gg g2 fe | "D"dd ff f2 ed | "A7"cc ee ee f2 |1 "D"d2 f2 a2 a2 :|2 "D"d4 d2 z2 |]

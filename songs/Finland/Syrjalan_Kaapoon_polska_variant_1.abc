@@ -1,0 +1,32 @@
+
+X: 1
+T: Syrj\"al\"an Kaapoon polska  (A)
+O: Matti Haudanmaan (ohjelmistoa)
+R: polska
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/16
+K: A
+e2- |\
+"A"efed c2d2 "E/G#"e2fg | "F#m"a2gb a2g2 "E"f2e2 | "D"fgfe d2c2 "Bm"B2A2 | "E"GABG E4 "A"A4 :|
+|:\
+"E"B3A GABc d2B2 | "A"A2AG ABcd e2c2 | "Bm"B3A GABc "E"d2B2 | "A"A2AG ABcd e2ec |
+"D"f2fe d2c2 "Bm"B2A2 |1 "E"GABG E4 "A"A4 :|2 "E"GEGB B4 "A"A4 |]
+
+%%sep 2 1 500
+%%sep 1 1 500
+
+X: 2
+T: Syrj\"al\"an Kaapoon polska  [C]
+O: Matti Haudanmaan (ohjelmistoa)
+R: polska
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/16
+K: C
+g2- |\
+"C"gagf e2f2 g2ab | "F"c'2bd' c'2b2 a2g2 | "Dm"abag f2e2 d2c2 |
+"G"BcdB G4 "C"c3e | gagf e2f2 g2ab | "F"c'2bd' c'2b2 a2g2 |
+"Dm"abag f2e2 d2c2 | "G"BcdB G4 "C"c4 |: "G"d3c Bcde f2d2 |
+"C"c2cB cdef g2e2 | "Dm"d3c Bcde "G"f2d2 | "C"c2cB cdef g2gf |
+"F"a2ag f2e2 "Dm"d2c2 |1 "G"BcdB G4 "C"c4 :|2 "G"BGBd d4 "C"c4 |]

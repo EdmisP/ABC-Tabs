@@ -1,0 +1,87 @@
+X: 0
+T: Finnish Songs 15
+K:
+
+
+X: 1
+P: Sinisi\"a, punasia ruusunkukkia
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: Dm
+| "Dm"DDDD DDDD | D2F2 E2DD | "A7"E2A,2 A,2A,2 | "Dm"D4 F4 \
+| "Dm"A2A2 B2A2 | "Gm"A4 G4 | "Dm"F2F2 G2F2 | "A7"F4 E4 |
+| "Dm"DDDD DDDD | D2F2 E2DD | "A7"E2A,2 A,2A,2 | "Dm"D4 F4 \
+| "Gm"A2G2 A2B2 | "A7"A2G2 F2E2 | "Dm"D4- "Gm"D4 - | "Dm"D4 z4 |]
+
+
+X: 2
+M: C|
+L: 1/8
+P: Soita, Humu-Pekka
+K: Gm
+[|"Gm"G,G,B,D GGGG | "Cm"EEEC "Gm"D2D2 | "D7"C2CA, "Gm"B,B,B,G, | "D7"A,2DE D2z2 |
+| "Gm"G,G,B,D GGGG | "Cm"EEEC "Gm"D2D2 | "Eb"B2BG "D7"AAAF | "Gm"G2G2 G2z2 |]
+|: "Cm"EEcB [A2E2][A2E2] | "Gm"DDBA [G2D2][G2D2] | "Cm"[E2C]EC "Gm"[D2B,]DD | "D7"D2[BD][AC] "Gm"[G2B,]z2 :|
+
+
+X: 3
+P: T\"a\"all\"a Pohjant\"ahden alla
+O: Trad Finland
+M: 2/4
+L: 1/8
+K: Dm
+[| "Dm"AA AA | "Gm"A>G "A7"EG | "Dm"G>F DF | "Dm"[F2D2] "A7"[E2^C2] \
+|: "A7"AE "Dm"FD | "A7"EA, "Bb"DF | "Gm"A>G "A7"FE | "Dm"D2 D2 :|
+
+
+X: 4
+P: T\"a\"all\"a Pohjant\"ahden alla
+C: S\"av: Petri Laaksonen
+C: San: Turkka Mali
+M: 6/8
+L: 1/8
+K: Dm
+DF \
+| "Dm"A2A G2F | E2D ZAA \
+| "Gm"B2B B2A | "C"A2G "C7"zFE \
+| "A"[A2D2]A "A7"[G2^C2]A | "Dm"[G2D2]F zED |
+|1 "G"GG2 F2G | "A"E3 z \
+:|2 "A"[A2D2]A "A7"[A^C]A2 | "Dm"D3 z2 \
+|: A \
+| "Gm"B2B "C"c2B | "Dm"A2D zDA |
+| "Gm"GG2 "A7"zFE | "Dm"E2D "F"z[AC][AC] \
+| "Bb"[d2F2][dF] [c2F2][dF] | "F"[c2A2][AF] zFG \
+| "A"[A2D2]A "A7"[A2^C2]A | "Dm"D3-Dz :|
+
+
+X: 5
+P: T\"a\"all\"a Pohjant\"ahden alla
+C: S\"av: Petri Laaksonen
+C: San: Turkka Mali
+M: 6/8
+L: 1/8
+K: Am
+Ac \
+| "Am"e2e d2c | B2A Zee \
+| "Dm"f2f f2e | "G"e2d "G7"zcB \
+| "E"[e2A2]e "E7"[d2^G2]e | "Am"[d2A2]c zBA |
+|1 "D"dd2 c2d | "E"B3 z \
+:|2 "E"[e2A2]e "E7"[e^G]e2 | "Am"A3 z2 \
+|: e \
+| "Dm"f2f "G"g2f | "Am"e2A zAe |
+| "Dm"dd2 "E7"zcB | "Am"B2A "C"z[eG][eG] \
+| "F"[a2c2][ac] [g2c2][ac] | "C"[g2e2][ec] zcd \
+| "E"[e2A2]e "E7"[e2^G2]e | "Am"A3-Az :|
+
+
+X: 6
+P: Taivas on sininen ja valkoinen
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/8
+K: Am
+|: "Am"A2 Ac | "Dm"ee ed | "E7"cB A^G | "Am"A2 cd |  "Am"e2 e2 | "Dm(G)"f2 ed | "E7(C)"e4 | "E7"e4 \
+:: "Am"e2 e2 | "Dm(F)"b3 a | "G7"gf ed | "C"e2 AB |  "Dm"cd ed | "E7"c2 B2 | "Am"A4 | A4 :|

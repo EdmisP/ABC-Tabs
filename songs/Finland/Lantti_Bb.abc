@@ -1,0 +1,12 @@
+X:134
+% Recovered source file(s): Lantti_Bb.abc
+T: Lantti [Bb]
+O: trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: Bb
+|: "Bb"D2DD D2E2 | F2F2 F3F | F2d2 "F7"c3F | F2c2 "Bb"B3E \
+|| "Bb"D2DD D2E2 | F2F2 F3F | F2d2 "F7"c3A | "Bb"B2B2 B4 :|
+|: "Bb"d4 B4 | F2F2 F4 | "Bb"d4 B4 | F2F2 F4 \
+|| "Eb"e2e2 e4 | "Bb"d2d2 d4 | "F7"c2c2 cecA | "Bb"c2B2 B4 :|

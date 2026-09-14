@@ -1,0 +1,84 @@
+
+X: 0
+T: Finnish Polkka 2
+K: C
+
+
+X: 1
+T: Kaustisen polkka
+R: polka
+O: Finland
+M: 2/4
+L: 1/16
+K: Am
+|: "Am"ABcd e2a2 | e2c2 cBcd \
+| "E7"c2B2 B2AB |1,3 "Am"cBAc "E7"B2E2 :|2,4 "Am"cBA2 A2Hz2 :|
+|: "Am"ABcd e2a2 | "Dm"c'2b2 a2^ga \
+| "E7"b2e2 e^geg |1,3 "Am"b2{a}a2 a^ga2 :|2,4 "Am"b2{a}a2 a2z2 :|
+|: "C"g2ag eceg | c'2g2 eceg \
+| "G7"g2ag gdBd |1,3 "C"c2c2 cdef :|2,4 "C"c2c2 c2z2 :|
+
+
+X: 1
+T: Knapsauspolkka
+R: polka
+O:
+B:
+D:
+Z: John Chambers <jc@trillian.mit.edu>
+N:
+M: 2/4
+L: 1/16
+K: Am
+|: "Am".e2a2 .e2a2 | "Dm"fgfe d2dc | "E7"B2.e2 B2.e2 | "Am"cdcB ABcd \
+|  "Am".e2a2 .e2a2 | "Dm"fgfe d2dc | "E7"B2e2 ^g2eg | "Am"b2a2 a2z2 :|
+|: "C"G2c2 c2Bc | e2c2 c2BA | "G7"G2g2 g2^fg | a2g2 g^fg2 \
+|  "C"G2c2 c2Bc | e2c2 c2BA | "G7"G2g2 gdBd | "C"c2e2 c2z2 :|
+
+
+X: 1
+T: Kuuliaiset Kottilassa
+R: polka, shottish
+O: Trad Finland
+Z: John Chambers <jc:trillian.mit.edu>
+M: C|
+L: 1/8
+K: A
+[| "A"A,2CC C2E2 | E2A2 A4 | ccAA BBA2 | "D"G2F2 F4 \
+| "Bm"FDB,D FDB,D | F2F2 F2FF | "E7"G2EE GFED | "A"C2A,2 A,4 |
+| "A"A,2CC C2E2 | E2A2 AABB | c2AA B2A2 | "D"G2F2 F3F \
+|: "Bm(D)"F2dd ccBB | "A"AAcc BBAA | "E7"G2EE F2GG | "A"A2A2 A2z2 :|
+
+
+X: 1
+T: Kypasj\"arven polkka
+R: polka
+O: efter Albin Hjelm
+B:
+D:
+Z: John Chambers <jc@trillian.mit.edu>
+N:
+M: 2/4
+L: 1/16
+K: D
+|: "G"B3A G2F2 | "A"E2A2 AAA2 | B2A2 f3c |1,3 "D"e2d2 dcd2 :|2,4 "D"e2d2 d4 :|
+|: "Bm"f2B2 b3f | "A"a2c2 cBA2 | c2a2 f3c |1,3 "D"e2d2 dfB2 :|2,4 "D"e2d2 d4 :|
+
+
+X: 1
+T: Lukkari-Heikin polkka
+R: polka
+O: trad Finland
+Z: 1998 by John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: D
+|: "A7"AA \
+| "D"A2D2 ~F2DF | A2D2 ~F2DF | "A7"G2E2 C2E2 | "D"D2d2 "(A7)"cdcB \
+| "D"A2D2 ~F2DF | A2D2 ~F2DF | "A7"G2E2 C2E2 | E2D2 "D fine"D2 :|
+|: z2 \
+| "G"G2B2 G2B2 | G2B2 BdcB | G2B2 G2B2 | G2B2 BdcB \
+| "D"A2D2 ~F2DF | A2D2 ~F2DF | "A7"G2E2 C2E2 | E2D2 "D"D2 :|
+|: dc \
+| "Bm"B2Bd f2f2 | b2f2 "(Em)"gfed | "F#7"c2cd e2e2 | fedc "Bm"d2B2 \
+| B2Bd f2f2 | b2f2 "(Em)"gfed | "F#7"c2cd fedc | "Bm"B2B2 B2 :|

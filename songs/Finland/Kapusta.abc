@@ -1,0 +1,17 @@
+X:73
+% Recovered source file(s): FinnFest2013.abc; Kapusta.abc
+T: Kapusta
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/8
+P: Kapusta   [Gm]
+K: Gm
+|: "Gm"d2 "A7"^c>A | "Gm(D7)"dz d2 | "Gm"dd ^cB | "D7"AG D2 \
+| "Gm"BB d2 | "D7"AA D2 | "Gm"GB "D7"A^F | "Gm"Gz G2 :|
+P: Kapusta   [Dm]
+K: Dm
+|: "Dm"A2 "E7"^G>E | "Dm(A7)"Az A2 | "Dm"AA ^GF | "A7"ED A,2 \
+| "Dm"FF A2 | "A7"EE A,2 | "Dm"DF "A7"E^C | "Dm"Dz D2 :|
+
+%%sep 1 1 500

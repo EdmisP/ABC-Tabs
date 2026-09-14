@@ -1,0 +1,49 @@
+
+X: 0
+T: Finnish waltz 3
+K: C
+
+
+X: 1
+T: Hannun ja Riitan h\"a\"avalssi
+T: Hannu and Riita's Wedding Waltz
+R: waltz
+C: Konsta Jylh\"a
+B:
+D:
+Z: John Chambers <jc:trillian.mit.edu>
+N:
+M: 3/4
+L: 1/4
+K: Am
+|: "Am"[ec]>fe | "E7"[eB]>fe | "Am"[eA]dc | "E7"[B2^G2]B/c/ \
+| "Dm"[dF]>cB | "Am"[cE]BA | "G7"[GD]AF | "C"[E3C3] |
+| "Am"[ec]>fe | "E7"[eB]>fe | "Am"[eA][af][ge] | "Dm"[f3d3] \
+| "Am"[ec]>d[cA] | "E7"[d^G]eB | "Am"A3- | "fine"A2 :|
+|: "Dm"d/e/f/e/d | "G7"g2f | "C"e2-e/c/ | "Am"c3 \
+| "E7"e/^g/b/g/e | dcd | "Am"e3- | e3 |
+| "Dm"def | fed | "Am"c>de | "Dm"AGF \
+| "Am"E2E | "E7"^F2^G |1 "Am"A3- | A3 :|2 "Am"A3- | A2"G7"G ||
+|: "C"Gz/E/G/c/ | e/g/gf/e/ | "Dm"d/a/ a/z/a | a>af/d/ \
+| "G7"B/g/ g/z/g | g>fd/B/ | "C"G/e/ e/z/e | e2E/F/ |
+| "C"Gz/E/G/c/ | e/g/gf/e/ | "Dm"d/a/ a/z/a | a>gf/e/ \
+| "G7"d/g/ g/z/g | BgB |1 "C"c3- | c2E/F/ :|2 "C"c3 | "E7"e3 |]
+
+
+X: 1
+T: H\"okpers vals
+C: Lars H\"okpers
+Z: 1997 by John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/8
+K: Dm
+"^A"|: A2 \
+| "Dm"d3 efa | "Gm"g3 fed | "A7"^c2 A3G | "Dm"F4 D2 \
+| "Dm"F2 EF AG | "C"E4 c2 | "G"=B2 GA Bd | "A7"A4 ^c2 |
+| "Dm"d3 efa | "Gm"g3 fed | "A7"^c2 A3G | "Dm"F4 "A7"E2 \
+| "Dm"D2 ^CD EF | "Gm"AG G3E | "A7"F2 E2 D^C | "Dm"D4 :|
+"^B"|: A2 \
+| "Dm"AF FD FA | AF FD FA | A2 G2 zF | "A7"E4 G2 \
+| GE E^C  EG | GE E^C  EG | G2 A2 zE | "Dm"F4 A2 |
+| "Dm"AF FD FA | AF FD FA | "D7"A2 d3c | "Gm"B4 B2 \
+| B2 c3B | "Dm"A4 F2 | "A7"GF E2 D^C | "Dm"D4 :|

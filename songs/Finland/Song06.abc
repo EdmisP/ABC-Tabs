@@ -1,0 +1,74 @@
+X: 0
+T: Finnish Songs 6
+K:
+
+
+X: 1
+P: Katselin taivaan t\"ahti\"a
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: C|
+L: 1/8
+K: Gm
+z \
+| "Gm"d2gg g2fg \
+| "F"a2a2 f2f2 \
+| "Eb"e2ed e2c2 \
+| "D7"d2 d2z :|
+|: d \
+| "Cm"e2ed "(F)"c2cB \
+| "Gm(Bb)"d2dc y "(Eb)"B2BA \
+| "Cm"c2cB "D7"d2B2 \
+| "Gm"G4 G2z :|
+
+
+X: 2
+P: K\"ayn ahon laitaa
+C: Juha Vainio
+M: C|
+L: 1/4
+K: D
+| "D"F^E FE | FA, DF | "Em"FE E^D | E3 z \
+| "A7"E^D ED | EA, CE | "D"ED DC | D3 z |
+| "D"F^E FE | "B7"FB, ^DF | "Em"FE EF | Gz "E7"^G2 \
+| "A7"AA A=G | "E7"F2 "A7"E2 | "D"D4- DA, DF |
+| "D"A2 A2- | AA GF | "Em"G2 E2- | "A7"EA, CE \
+| "Em"G2 G2- | "A7"GG F^E | "D"F4- | FA, DF |
+| "D"A2 A2- | "F#m"AA "B7"GF | "Em"G2 E2- | "A7"EA, CE \
+| "Em"G2 G2- | "A7"GG FE | "D"D2 "B7"z2 | "Em"z2 z2 \
+|1 "A7"Ta4- | a4 :|2 "A7"zA Bc | "D"dz Kdz |]**
+
+
+X: 3
+P: Kohtalon tango  (Tango of Destiny)
+C: Unto Mononen
+Z: John Chambers <jc:trillian.mit.edu>
+%%staffsep 40
+M: C
+L: 1/8
+K: Am
+"I"\
+[| "Am"A^G Ac BA EC | "F"FE F>A GF CA, \
+| "Dm"D^C DF "E7"ED- DB,/^G,/ | "Am"A,2 "E7".E2 "Am".A2 yCD \
+"A"\
+|: "Am"E2 ^DE "F7"G2 FC | "Dm"E2 D^C "E7"D2 B,=C |
+| "Dm"D2 ^CD "E7"F2 EB, | "Am"D2 C4 A,B, \
+| "F"C2 B,C E2 DA, | "B7"C2 B,^A, "E7"B,2 ^G,=A, \
+|1 "Dm"B,2 ^A,B, D2 CD | "E7"E6 CD \
+:|2 "B7"B,2 ^A,B, "E7"D2 C^G, | "Am"A,2 "(-)"zE E2 ^D2 ||
+"B1"\
+|| "Am"FE EC A,4- | A,2 A2 "A7"A2 ^G2 \
+| "Dm"BA AF D4- | D2 F2 F2 E2 \
+| "Dm"GF FD B,D ^CD | "Am"FE EC A,C B,C |
+| "Dm"ED D^C "E7"D=C CB, | "Am"C2 "(-)"E2 E2 ^D2 \
+"B2"\
+|| "Am"FE EC A,4- | A,2 A2 "A7"A2 ^G2 \
+| "Dm"BA AF D4- | D2 A2 A2 ^G2 |
+| "Dm"BA AF DA A^G | "Am"BA AE CE E^D \
+| "Dm"FE E^D "E7"E=D CB, | "Am"A,2 "E7".E2 "Am"H.A2 z2 \
+"C"\
+|: "Am"ee/e/ e^d eA Bc | "Dm"ed d^c d4 |
+| "E7"dd/d/ d^c d^G AB | "Am"dc cB c4 \
+| "A7"ee/e/ e^d e^c =de | "Dm"gf fe ff ed |
+|1 "B7"cB/B/ B^A B=A A^G | "Dm"Bc d>^d "E7"e4 \
+:|2 "B7"cB/B/ B^A "E7"B=A A^G | "Am"A2 "E7".E2 "Am".A2 "d.C."z2 |]

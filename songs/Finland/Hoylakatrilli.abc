@@ -1,0 +1,83 @@
+
+X: 1
+T: H\"oyl\"akatrilli   [G]
+O: Finland
+R: march
+Z: 2015 John Chambers <jc:trillian.mit.edu>
+P: Play twice
+M: 2/4
+L: 1/16
+K: G
+|:\
+"G"BAG2 FED2 | "Am"C4- C2B,C | "G"B,2D2 G2D2 | B2G2 B2G2 |\
+"Am"cBA2 GFE2 | "D7"D4- D2B,D | "C"CDE2 "D7"F2B2 | A2F2 "G"G4 :|
+|:\
+"G"G4 D4 | "Am"c2B2 "D7"A4 | "G"B4 G4 | GAGF E2D2 |\
+"D7"d8 | D4 E2F2 | "(G)"G4 B4 | "G"G8 :|
+|:\
+"G"DEDC B,2D2 | G2D2 B2G2 | "Am"c2B2 "D7"A2F2 | "G"GAGF "(D7)"E2D2 |\
+"G"DEDC B,2D2 | G2D2 B2G2 "I"| "Am"c2B2 "D7"ABAF | "G"G8 :|
+
+%%sep 1 1 400
+
+
+X: 1
+T: H\"oyl\"akatrilli    (D)
+O: Finland
+R: march
+Z: 2015 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: D
+|:\
+"D"fed2 cBA2 | "Em"G4- G2FG | "D"F2A2 d2A2 | f2d2 f2d2 |\
+"Em"gfe2 dcB2 | "A7"A4- A2FA | "G"GAB2 "A7"c2f2 | e2c2 "D"d4 :|
+|:\
+"D"d4 A4 | "Em"g2f2 "A7"e4 | "D"f4 d4 | dedc B2A2 |\
+"A7"a8 | A4 B2c2 | "(D)"d4 f4 | "D"d8 :|
+|:\
+"D"ABAG F2A2 | d2A2 f2d2 | "Em"g2f2 "A7"e2c2 | "D"dedc "(A7)"B2A2 |\
+"D"ABAG F2A2 | d2A2 f2d2 "I"| "Em"g2f2 "A7"efec | "D"d8 :|
+
+%%sep 1 0 500
+%%sep 1 0 500
+
+
+X: 1
+T: H\"oyl\"akatrilli   [F]
+O: Finland
+R: march
+Z: 2015 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: F
+|:\
+"F"AGF2 EDC2 | "Gm"B,4- B,2A,B, | "F"A,2C2 F2C2 | A2F2 A2F2 |\
+"Gm"BAG2 FED2 | "C7"C4- C2A,C | "Bb"B,CD2 "C7"E2A2 | G2E2 "F"F4 :|
+|:\
+"F"F4 C4 | "Gm"B2A2 "C7"G4 | "F"A4 F4 | FGFE D2C2 |\
+"C7"c8 | C4 D2E2 | "(F)"F4 A4 | "F"F8 :|
+|:\
+"F"CDCB, A,2C2 | F2C2 A2F2 | "Gm"B2A2 "C7"G2E2 | "F"FGFE "(C7)"D2C2 |\
+"F"CDCB, A,2C2 | F2C2 A2F2 "I"| "Gm"B2A2 "C7"GAGE | "F"F8 :|
+
+%%sep 1 1 400
+
+
+X: 1
+T: H\"oyl\"akatrilli   (C)
+O: Finland
+R: march
+Z: 2015 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: C
+|:\
+"C"edc2 BAG2 | "Dm"F4- F2EF | "C"E2G2 c2G2 | e2c2 e2c2 |\
+"Dm"fed2 cBA2 | "G7"G4- G2EG | "F"FGA2 "G7"B2e2 | d2B2 "C"c4 :|
+|:\
+"C"c4 G4 | "Dm"f2e2 "G7"d4 | "C"e4 c4 | cdcB A2G2 |\
+"G7"g8 | G4 A2B2 | "(C)"c4 e4 | "C"c8 :|
+|:\
+"C"GAGF E2G2 | c2G2 e2c2 | "Dm"f2e2 "G7"d2B2 | "C"cdcB "(G7)"A2G2 |\
+"C"GAGF E2G2 | c2G2 e2c2 "I"| "Dm"f2e2 "G7"dedB | "C"c8 :|

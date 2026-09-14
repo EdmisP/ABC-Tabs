@@ -1,0 +1,64 @@
+X: 0
+T: Finnish Songs 3
+K: C
+
+
+X: 1
+P: Hilu hilu
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: D
+|: z2 | "D"AAAA AAAA | "G"B2BB BAGF | "A7"E2EE EGB2 | "D"A4 A2 :|
+|: A2 | "D"DDDD "E7"D2DD | "A7"C2E2 G2GG | "D"F2FF "A7"E2E2 | "D"D4 D2 :|
+
+X: 2
+P: Hoputas polkka (Tupsun juuren) (Zorros m\"arke)
+R: polka
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/8
+K: Am
+|: "Am"ea a>b | ag e>f | "G"gg/a/ gf | "E7"e2 e2 :|
+|: "Am".ec BA | .ec BA | .eA .eA | .ec BA | "E7"BB/d/ cB | "Am"A2 A2 :|
+
+X: 3
+P: Iltalaulu (T\"a\"al yksin\"ani laulelen)
+N: "I'm singing here alone"
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: C
+L: 1/8
+K: C
+C2 \
+| "C"E2 ED "F"C2 FA | "G7"G3 F "C"E2 G2 \
+| "Am"c2 c2 "D7"d2 c2 | "G"B4 z2 |
+|: G2 \
+| "C(F)"c2 c2 "F"B2 A2 | "C"G3 E "Am"C2 E2 \
+| "F"A3 G "G7"F2 D2 |1 "C"E4 z2 :|2 "C"C4 z2 :|
+
+X: 4
+P: Villiruusu (Wild Rose) (Inarin J\"arvi (Lake Inari))
+C: Säv. Trad
+R: waltz
+N: Several sets of words exist for this tune, each with a different title.
+Z: 1997 by John Chambers <jc@trillian.mit.edu>
+M: 3/4
+L: 1/4
+K: Dm
+|: A | "Dm"d2d | "A7"e2f | "Dm"d3 | A2d | "Gm"e2f | g2f | "A7"e3- | e2a \
+| "Dm"a2f | ddf | "Gm"f3 | "Gm"G2B | "A7"A2A | e2^c | "Dm"d3- | d2 a ||
+|| "A7"a2g | "Dm"f2f | "Gm"g2f | "A7"e2e | "Dm"f2e | "Dm"d2d | "A7"e2^c | A2A \
+| "Dm"d2d | f2d | "Gm"d3 | G2B | "A7"A2A | Ae^c | "Dm"d3- | d2 :|
+
+
+X: 5
+P: Isontalon Antti (D)
+R: shottish
+M: 4/4
+L: 1/8
+K: D
+|: "D"AA dd f2 dd | A2d2 c2 BB | "G"G2 BB B2 d2 | "D"A4 "A 7"A2 z2 :|
+|: "A7"AA gg g2 fe | "D"dd ff f2 ed | "A7"cc ee ee f2 |1 "D"d2 f2 a2 a2 :|2 "D"d4 "(D7)"d2 z2 |]

@@ -1,0 +1,28 @@
+X:131
+% Recovered source file(s): FinnFest2013.abc
+T: Lanssi
+O: Finland
+B: Tanhuvakka S\"avelmist\"o p.74
+M: 2/4
+L: 1/8
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Lanssi   [F/d]
+Z: John Chambers <jc@trillian.mit.edu>
+K: Dm
+| "C7"C>C C>C | C>C D>E | "F"F>F F>A | c3 c \
+| "Bb"d>c B>A | "C7"G>G c>B | "F"A>F F>G | "Dm"A3 A |
+| "Gm"B>A G>F | "A7"E>E F>E | "Dm"D>D D>F | A3 A \
+| "Gm"B>A G>F | "A7"E>E A>A | "Dm"Dz Dz | D2 z2 |]
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Lanssi   [G/e]
+O: Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/8
+K: Em
+| "D7"D>D D>D | D>D E>F | "G"G>G G>B | d3 d \
+| "C"e>d c>B | "D7"A>A d>c | "G"B>G G>A | "Em"B3 B |
+| "Am"c>B A>G | "B7"F>F G>F | "Em"E>E E>G | B3 B \
+| "Am"c>B A>G | "B7"F>F B>B | "Em"Ez Ez | E2 z2 |]
+
+%%sep 1 1 500

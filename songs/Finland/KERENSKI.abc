@@ -1,0 +1,42 @@
+X:89
+% Recovered source file(s): Rev20130425.abc
+T: KERENSKI
+K: C
+P: Kerenski   [Am] (Karapyet)
+O: Finland, Russia
+M: 2/4
+L: 1/16
+K: Am
+[|\
+"Am"E2A2 A2A2 | "E7"^G4  E4 | B2B2 B2B2 | "Am"c3B A4 |\
+"Am"E2A2 A2A2 | "E7"^G4  E4 | e2d2 c2B2 | "Am"c3B A4 ||
+"Am"E2{Ac}e2 e2e2 | "Dm"f4 d4 | "G7"d2f2 f2f2 | "C"e3d c4 |\
+"Am"E2e2 e2e2 | "Dm"d3c B4 | "E7"e2d2 c2B2 | "Am"A4 A4 |]
+P: Kerenski   [Dm] (Karapyet)
+O: Finland, Russia
+M: 2/4
+L: 1/16
+K: Dm
+[|\
+"Dm"A2d2 d2d2 | "A7"^c4  A4 | e2e2 e2e2 | "Dm"f3e d4 |\
+"Dm"A2d2 d2d2 | "A7"^c4  A4 | a2g2 f2e2 | "Dm"f3e d4 ||
+"Dm"A2{df}a2 a2a2 | "Gm"b4 g4 | "C7"g2b2 b2b2 | "F"a3g f4 |\
+"Dm"A2a2 a2a2 | "Gm"g3f e4 | "A7"a2g2 f2e2 | "Dm"d4 d4 |]
+P: Karapyet (Kerensky)
+O: Russia
+Z: John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/8
+K: Am
+[| "Am"EA- AA | "E7"^G>F E2 |     EB- BB | "Am"c>B A2 \
+|  "Am"EA- AA | "E7"^G>F E2 |     ed  cB | "Am"A4     |]
+|: "Am"Ae- ee | "Dm"f>e  d2 | "G7"df- ff | "C"e>c  e2 \
+| " Am"ce- ee | "E7"d>c  B2 |     ed  cB | "Am"A4    :|
+K: A
+[| "E7"Bz  dz | "A"c3    A  | "E7"Bc  de | "A"c>B  A2 \
+|  "E7"Bz  dz | "A"c3    A  | "E7"ed  FG | "A"A4     |]
+|: "D"df- fa- | "A"ae-   ec | "E7"ed  Bd | "A"fe  c2 \
+|  "D"df- fa- | "A"ae-   ec | "E7"ed  FG | "A"A4    :|
+
+%%sep 2 1 500
+%%sep 1 1 500

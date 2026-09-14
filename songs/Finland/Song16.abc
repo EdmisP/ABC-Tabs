@@ -1,0 +1,56 @@
+X: 0
+T: Finnish Songs 16
+K: C
+
+
+X: 1
+P: Talikkalan markkinoilla
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: C|
+L: 1/8
+K: Gm
+|: "D7"D | "Gm"B2GG GGDD | B2G2 G2DD | "Cm"E2CC C2E2 | "D7"D2 D \
+:: "G7"D | "Cm"E2CC C2EE | "Gm"D2D2 G2A2 | "A7"BAGB "D7"A2^F2 | "Gm"G2 G :|
+
+X: 2
+P: Tule, tule, kultani
+O: trad Finland
+R: polka
+M: 2/4
+L: 1/16
+K: Cm
+|: z2 | "Cm"GGcc c2GG | "Fm"A2F2 F4 | "G7"G2GA G2D2 | "Cm"E2C2 C2 :|
+|: CD | "Cm"E2E2 E2DE | "Fm"F2F2 F4 | "G7"G2GA G2D2 | "Cm"E2C2 C2 :|
+
+X: 3
+P: Tule, tule, kultani
+O: trad Finland
+R: polka
+M: 2/4
+L: 1/16
+K: Dm
+|: z2 | "Dm"AAdd d2AA | "Gm"B2G2 G4 | "A7"A2AB A2E2 | "Dm"F2D2 D2 :|
+|: DE | "Dm"F2F2 F2EF | "Gm"G2G2 G4 | "A7"A2AB A2E2 | "Dm"F2D2 D2 :|
+
+X: 4
+M: 4/4
+L: 1/4
+P: Tule, tule minun yst\"av\"ani (An emigrant song)
+K: Dm
+"Dm"DF | AA FE | DF AF | "A7"E3 ^C | A,2 AA | "Gm"G2 FE | "A7"A,2 ^C2 | "Dm"D4- | Dz |]
+|: "Dm"F2 FE | D2 GA | "Gm"B2 BG | E2 FG | "Dm"AG FA, | "A7"^C2 E2 | "Dm"D4- | Dz :|
+
+X: 5
+M: C|
+L: 1/4
+P: Tulipunaruusut (Flaming Red Roses)
+K: Cm
+[|"Cm"C3 D | E2G2 | "G7"FE =B,D | "Cm"C2 z2 \
+| "Fm"F3 G | A2 c2 | "Bb7"BA GF | "Eb"G2 "C7"z2 |
+| "Fm"AB/A/ FG | "Fm"Ac "Bb7"BA | "Cm"GA/G/ ^FG | AG EC \
+| "Fm"D2 A2 | "G7"G2 =B,2 | "Cm"DC "G7"C=B, | "Cm"C2 z2 |]
+|:"C7"c c3 | C2 B2 | "Fm"BA "C7"AG | "Fm"A2 z2 \
+| "Bb7"B B3 | B,2 A2 | "Eb"AG "Bb7"G^F | "Eb"G2 "G7"z2 |
+| "Cm"EF/E/ CD | EF GE | "G7"DE/D/ =B,C | DE FD \
+| "Cm"EF/E/ CE | "G7"GF E=B, | "Cm"DC "G7"C=B, | "Cm"C2 z2 :|

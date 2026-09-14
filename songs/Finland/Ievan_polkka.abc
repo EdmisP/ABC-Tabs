@@ -1,0 +1,24 @@
+X:47
+% Recovered source file(s): FinnFest2013.abc
+T: Ievan polkka
+T: Savitaipaleen polkka
+C:Eino Kettunen (ca.1930)
+R:polka
+D:Kevin Burke: Up Close
+O:South Karelia
+Z:id:hn-polka-41	2005-8-8
+M:2/4
+L:1/8
+K:Dm
+"A"
+|: "Dm"A,D DE | FD DF |1,3 "C"EC CE | "Dm"FD D2 :|2,4 "A7"AG FE | "Dm"FD D2 :|\
+"B"\
+|: "Dm"AA GF | "C"EC CE | "C"GG FE |1,3 "Dm"FD DF :|2,4 "Dm"FD D2 :|
+"C"\
+|: "Dm"D>D DE | FD DF | "C"EC CE | "Dm"F/E/D/C/ DA, \
+|      D>D DE | FD D2 | "C"GA/G/ "A7"FE | "Dm"FD D2 :|
+"D"
+|: "F"A>F FA | "C"GE EF | "A7"GA/G/ FE | "Dm"DE FG \
+|  "F"A>F FA | "C"GE EF | "A7"GA/G/ FE | "Dm"FD D2 :|
+
+%%sep 1 1 500

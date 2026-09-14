@@ -1,0 +1,12 @@
+X:135
+% Recovered source file(s): Lantti_F.abc
+T: Lantti [F]
+O: trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: F
+|: "F"A2AA A2B2 | c2c2 c3c | c2a2 "C7"g3c | c2g2 "F"f3B \
+|| "F"A2AA A2B2 | c2c2 c3c | c2a2 "C7"g3e | "F"f2f2 f4 :|
+|: "F"a4 f4 | c2c2 c4 | "F"a4 f4 | c2c2 c4 \
+|| "Bb"b2b2 b4 | "F"a2a2 a4 | "C7"g2g2 gbge | "F"g2f2 f4 :|

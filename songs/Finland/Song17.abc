@@ -1,0 +1,89 @@
+X: 0
+T: Finnish Songs 17
+K:
+
+
+X: 1
+P: Tuonne taakse mets\"amaan    (Cm)
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: Cm
+|: "Cm"E2ED C2C=B, | C2E2 "(G7)"G4 | "Cm"c2c2 "Fm"A2AG | F4 "Eb"G4 :|
+|: "Cm"G2c2 "Bb"B3A | "Eb"G3F "G7"G3F | "Cm"E2E2 "G7"D2D2 | "Cm"C4 C4 :|
+
+
+X: 2
+P: Tuonne taakse mets\"amaan    [Dm]
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: Dm
+|: "Dm"F2FE D2D^C | D2F2 "(A7)"A4 | "Dm"d2d2 "Gm"B2BA | "(C7)"G4 "A7(F)"A4 :: "Dm"A2d2 "C"c3B | "F"A3G "A7"A3G | "Dm"F2F2 "A7"E2E2 | "Dm"D4 D4 :|
+
+
+X: 3
+P: Tuonne taakse mets\"amaan    [Am]
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: Am
+|: "Am"c2cB A2A^G | A2c2 "(E7)"e4 | "Dm"a2a2 f2fe | "G7"d4 "C"e4 :|
+|: "Am"e2a2 "G"g3f | "C"e3d "E7"e3d | "Am"c2c2 "E7"B2B2 | "Am"A4 A4 :|
+
+
+X: 4
+P: Ol kaunis kes\"ailta  (One Summer Evening)
+O: Trad Finland
+Z: 2004 John Chambers <jc@trillian.mit.edu>
+M: C|
+L: 1/4
+K: A
+C \
+| "A"EE "E7"DD | "A"C2 EA | cc/B/ "D"AF | "A"E3 C \
+| "A"EE "E7"DD | "A"C2 EA | "F#m"cc/B/ "B7"AF | "E"E3 E |
+| "E7"E>G BB | "A"A2 CE | "Bm"E>D "E7"B,B, | "A"C3 E \
+| "E7"E>G BB | "F#m"A2 "F#7"CE | "Bm"E>D "E7"B,B, | "A"A,3 |]
+
+
+X: 5
+P: Uralskaya ryabinushka  (Uralin pihlaja)  (Ural Rowan Tree)
+C: E.Rodygin
+M: 6/8
+L: 1/8
+K: Am
+|: "Am"A2A c2A | "Dm"d3 A2B \
+| "Am"c2B "E7"e2d | "Am"A3- A3 \
+| "Am"A2e e2c | "Dm"d3 A2B \
+| "C"cBc "G7"e2d | "C"c3- c3 |
+| "C"g2g "A7"gfe | "Dm"d3 A2A \
+| "G7"B2c dcd | "C"e3- "E7"e3 \
+| "Am"c2c cde | "Dm"g3 f2e \
+| "E7"d2B e2d | "Am"A3- A3 ||
+|: "A7"A2[af] [af]>[ge][af] | "Dm"[g3e3] [f3d3] \
+| "G7"[f2d2][ge] [af]>[ge][fd] | "C"[e3c3]- "E7"[e3B3] \
+| "Am"[c2A2][cA] [cA][dB][ec] | "Dm"[g3e3] [f2d2][ec] \
+| "E7"[d2B2][B^G] [e2c2][dB] | "Am"A3 z3 :|
+
+
+X: 6
+P: Uralskaya ryabinushka  (Uralin pihlaja)  (Ural Rowan Tree)
+C: E.Rodygin
+M: 6/8
+L: 1/8
+K: Dm
+[| "Dm"D2D F2D | "Gm"G3 D2E \
+| "Dm"F2E "A7"A2G | "Dm"D3- D3 \
+| "Dm"D2A A2F | "Gm"G3 D2E \
+| "F"FEF "C7"A2G | "F"F3- F3 |
+| "F"c2c "D7"cBA | "Gm"G3 D2D \
+| "C7"E2F GFG | "F"A3- "A7"A3 \
+| "Dm"F2F FGA | "Gm"c3 B2A \
+| "A7"G2E A2G | "Dm"D3- D3 |]
+|: "D7"D2[dB] [dB]>[cA][dB] | "Gm"[c3A3] [B3G3] \
+| "C7"[B2G2][cA] [dB]>[cA][BG] | "F"[A3F3]- "A7"[A3E3] \
+| "Dm"[F2D2][FD] [FD][GE][AF] | "Gm"[c3A3] [B2G2][AF] \
+| "A7"[G2E2][E^C] [A2F2][GE] | "Dm"D3 z3 :|

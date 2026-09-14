@@ -1,0 +1,20 @@
+X:143
+% Recovered source file(s): LokakuunPolka.abc
+T: Lokakuun polkka   (G)
+T: October polka
+C: Otto Hotakainen
+R: polka
+B: Otto Hotakaisen Nuotikirja
+%%slurgraces  1
+% %continueall yes
+M: 2/4
+L: 1/16
+K: G
+|: "G"G2Bd g2ff    |    ~e2d2 dcBA    |    G2Bd     edcB | "Am"d2c2     cBcB \
+| "D7"cBA2 a3g     |     g2f2 f2e2    |    dd"#"cd  fedc |  "G"c2B2     BABA |
+|  "G"G2Bd g2ff    |    ~e2d2 dcBA    |    G2Bd     g2ff |  "C"gfe2     edee \
+| "D7"A2A2 f3e     | "G"~e2d2 d"#"cd2 | "C"deed "D7"dffd |  "G"dgg2     g4  :|
+|: "G"B2DD DDGG    |     B2DD DDGG    |    BGBG     c2BB | "Am"cBA2     A4   \
+| "D7"c2DD DDFA    |     c2DD DDFA    |    cBAc     d3A  |  "G"B2B2     BAGA |
+|  "G"B2DD DDGG    |     B2DD DDGG    |    BGBd     c2BB | "Am"cBA2     A4   \
+| "D7"f2ff fed"#"c |     f2ff fed"#"c |    fedc     dcBA | "(G)"BAGF "G"G4  :|

@@ -1,0 +1,86 @@
+
+X: 0
+T: Finnish Polkka 1
+K: C
+
+
+X: 1
+T: Hoputas polkka
+T: Tupsun juuren
+T: Zorros m\"arke
+R: polka
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/8
+K: Am
+|: "Am"ea a>b | ag e>f | "G"gg/a/ gf | "E7"e2 e2 :|
+|: "Am".ec BA | .ec BA | .eA .eA | .ec BA | "E7"BB/d/ cB | "Am"A2 A2 :|
+
+
+X: 1
+T: Kalle-enon polkka
+R: polka
+O:
+B:
+D:
+Z: John Chambers <jc@trillian.mit.edu>
+N:
+M: 2/4
+L: 1/16
+K: G
+|: "G"d2B2 G2B2 | d2g2 fefg | "D7"agfe defg | "C"a2gf g2e2 \
+|  "G"d2B2 G2B2 | d2g2 fefg | "D7"agfe d2ef | "G"g2b2 g2z2 :|
+|: "G"d2de "(D)"d2de | "G"dcBA G2B2 | "D7"dcBA F2A2 | "G"dcBA B2GB \
+|  "G"d2de "(D)"d2de | "G"dcBA G2B2 | "D7"d2d2 defg | "G"a2g2 g2z2 :|
+
+
+X: 1
+T: Karjalan poikia (L\"oyly\"a liss\"a\"a)
+%%musicspace 0
+R: polka
+O: trad Finland
+Z: John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: D
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Karjalan poikia   [D]
+|: "D"a2a2 a2a2 | ~a2ga b2a2 | f2f2 f2f2 | ~f2ef g2f2 \
+| "A7"e2[e2A2] c2Ac | e2[e2A2] c2Ac | e2g2 f2e2 |1 d2c2 B2A2 :|2 "D"e2d2 d4 |]
+|: "D"A2BA F2A2 | d6 e2 | f2gf e2f2 | "G"g2z2 "D"f4 \
+| "A7"e2[e2A2] c2Ac | e2[e2A2] c2Ac | e2g2 f2e2 |1 d2c2 B2A2 :|2 "D"e2d2 d4 |]
+w: | | | |~ Hej!
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Karjalan poikia   [G]
+K: G
+|: "G"d2d2 d2d2 | ~d2cd e2d2 | B2B2 B2B2 | ~B2AB c2B2 \
+| "D7"A2[A2D2] F2DF | A2[A2D2] F2DF | A2c2 B2A2 |1 G2F2 E2D2 :|2 "D"A2G2 G4 |]
+|: "G"D2ED B,2D2 | G6 A2 | B2cB A2B2 | "C"c2z2 "G"B4 \
+| "D7"A2[A2D2] F2DF | A2[A2D2] F2DF | A2c2 B2A2 |1 G2F2 E2D2 :|2 "D"A2G2 G4 |]
+w: | | | |~ Hej!
+
+
+X: 1
+T: Katariina's polkka
+R: polka
+O: Richard Koski
+B:
+D: "Saturday Night Sauna" with the Crumtown Ramblers
+Z: 1998 by John Chambers <jc@trillian.mit.edu>
+N:
+M: 2/4
+L: 1/16
+K: Am
+   "Am"e4 \
+| "Dm"fedc BcBA | "E7"c2B2 B3E  |     c2B2 Bcdc | "Am"B2A2 A4 \
+|     A2AB cBcd | "Dm"e2d2 d4   |     d3e  fefg | "Am"f2e2 e4 |
+y8\
+| "Dm"fedc BcBA | "E7"c2B2 B3E  |     c2B2 Bcdc | "Am"B2A2 A4 \
+| "Dm"d2de fga2 | "Am"A2AB cde2 | "E7"E2E2 c2B2 | "Am"A2z2 :|
+|:  "G7"G4 \
+| "C"C2EG c2B2 |     A2G2 G4   |     C2EG c2B2 | "Dm"B2A2 F4 \
+|  "G7"D2D2 G2G2 |     FEDE F2F2 |     D2D2 F2F2 |  "C"EDCD E2E2 |
+y8\
+|   "C"C2EG c2B2 |     A2G2 G4   |     C2EG c2B2 | "Dm"B2A2 F4 \
+|  "Dm"d2de fga2 | "Am"A2AB cde2 | "E7"E2E2 c2B2 | "Am"A2z2 :|

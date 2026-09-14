@@ -1,0 +1,17 @@
+X:335
+% Recovered source file(s): FinnFest2013.abc
+T: Tavallisen taajaan
+S: Kes\"ajuhlat 2013, Saarij\"arvi; Suomalaisen Kansantanssin Yst\"av\"at r.y.
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/16
+P: 3x
+K: Am
+|: "Am"E2A-A A2E2 | "Dm"F-FD-D D2D2 | "E7"E2E-E E2B,-B, | "Am"C2A,2 A,2A,B, :|
+w: Hyp-p\"a\"an* tans-saan ta-val-li-sen taa-jaan ai, jai,* jai kun on lys-ti-\"a A-l\"a
+w: N\"ain si-t\"a men-n\"a\"an kie-*pu-*tel-laan o-man* kul-lan rin-nal-la**
+|: "Am"C2CC C2B,C | "Dm"D2D2 D4 | "E7"E2E-E E2B,-B, | "Am"C2A,2 A,4 :|
+w: sin-ne* mee, tu-le t\"an-ne vaan kans-sa-ni p\"u-ri a tans-saa-maan.
+w: Ei si-t\"a hei-li-\"a vai-het-tais' tu-han-*sit-ten* hin-nal-la.
+
+%%sep 1 1 500

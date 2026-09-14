@@ -1,0 +1,27 @@
+X:183
+% Recovered source file(s): FinnFest2013.abc
+T: Parikkalalainen
+Q: 1/4=126
+K: C
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Parikkalalainen   [Am]
+O: Finland
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/8
+%Q: 1/4=126
+K: Am
+|: "Am"e2 a>a | a>e e>e | "Dm"g>f e>d | "E7"e2 e2 :|
+|: "Am"ee e>d | e>c A>B | c>c "E7"B>B | "Am"A2 A2 :|
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Parikkalalainen   [Dm]
+O: Finland
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/8
+%Q: 1/4=126
+K: Dm
+|: "Dm"A2 d>d | d>A A>A | "Gm"c>B A>G | "A7"A2 A2 :|
+|: "Dm"AA A>G | A>F D>E | F>F "A7"E>E | "Dm"D2 D2 :|
+
+%%sep 1 1 500

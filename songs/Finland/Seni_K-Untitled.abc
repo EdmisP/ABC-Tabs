@@ -1,0 +1,40 @@
+X:223
+% Recovered source file(s): 20140609.abc; 20140619.abc; FinnFest2013.abc; Rev20130928.abc; Rev2013FF.abc; Rev20150725.abc; Rev20160116.abc
+T: Seni
+O: Finland
+K:
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Seni  [F]
+O: Finland
+M: 2/4
+L: 1/8
+K: F
+|: "Bb"BB BB | "F"AF FF | "Bb"BB BB | "F"A2 cc |\
+   "C7"Gc cc | "F"Ac cc | "C7"cB AG | "F"F2 F2 :|
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Seni  [C]
+O: Finland
+M: 2/4
+L: 1/8
+K: C
+|: "F"ff ff | "C"ec cc |  "F"ff ff | "C"e2 gg |\
+  "G7"dg gg | "C"eg gg | "G7"gf ed | "C"c2 c2 :|
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Seni  [G]
+O: Finland
+M: 2/4
+L: 1/8
+K: G
+|: "C"cc cc | "G"BG GG | "C"cc cc | "G"B2 dd |\
+   "D7"Ad dd | "G"Bd dd | "D7"dc BA | "G"G2 G2 :|
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Seni  [D]
+O: Finland
+M: 2/4
+L: 1/8
+K: D
+|: "G"gg gg | "D"fd dd | "G"gg gg | "D"f2 aa |\
+   "A7"ea aa | "D"fa aa | "A7"ag fe | "D"d2 d2 :|
+
+%%sep 1 1 500
+%%sep 1 1 500

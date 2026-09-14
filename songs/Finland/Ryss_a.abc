@@ -1,0 +1,52 @@
+X:205
+% Recovered source file(s): FinnFest2013.abc
+T: Ryss\"a
+Q: 1/4=80
+K: C
+%
+P: Ryss\"a   [F]
+O: Finland
+R: polka
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/8
+%Q: 1/4=80
+K: F
+|: "Bb"FB "F"Ac | "C7"GB "F"A2 :|\
+|: "C7"GF    ED | "F"CC     F2 :|
+%
+P: Ryss\"a   [C]
+O: Finland
+R: polka
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+%Q: 1/4=80
+L: 1/8
+K: C
+|: "F"cf "C"eg | "G7"df "C"e2 :|\
+|: "G7"dc   BA | "C"GG     c2 :|
+%
+P: Ryss\"a   [G]
+O: Finland
+R: polka
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+%Q: 1/4=80
+L: 1/8
+K: G
+|: "C"Gc "G"Bd | "D7"Ac "G"B2 :|\
+|: "D7"AG   FE | "G"DD     G2 :|
+%
+P: Ryss\"a   [D]
+O: Finland
+R: polka
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+%Q: 1/4=80
+L: 1/8
+K: D
+|: "G"dg "D"fa | "A7"eg "D"f2 :|\
+|: "A7"ed   cB | "D"AA     d2 :|
+%
+
+%%sep 1 1 500

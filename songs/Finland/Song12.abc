@@ -1,0 +1,92 @@
+X: 0
+T: Finnish Songs 12
+K:
+
+
+X: 1
+P: Rakovalkealla  [Em]
+C: Reino Helismaa 1944 (s\"av. & san.)
+M: C
+L: 1/8
+K: Em
+"Intro"B \
+| "Am7"cc "D7"dd "G"B3 G | "Am6"AA "B7"BB "Em"G3 \
+|: G \
+| "Am6"FF GA "Em"B^c ^de | "F#7"fg "F#7-5"ag  "B7"Hf3 ||
+B \
+| "Em"ee fg "B7"fe^dB | "Am7"ee "D7"ce "Gmaj7"d3 B \
+| "Am"AA "B7"Bc "Em"BG FE | "F#7"F2 "F#7-5"F2 "B7"z3 ||
+B \
+| "Am7"ee "D7"ce "Gmaj7"dB "G6"Gd | "Am6"cA "B7"Fc "Em"B3 G \
+| "Am6"FF GA "Em"BG "B7"B,^D | F2 "Em"E2 z3 ||
+B \
+| "Am7"cc "D7"dd "Gmaj9"B2 "G6"zG | "Am"AA "B7"BB "Em"G2 zG \
+| "Am6"FF GA "Em"BG "B7"B,^D | "B7"F2 "Em"E2 z3 :|
+
+
+X: 2
+P: Rakovalkealla  [Bm]
+C: Reino Helismaa 1944 (s\"av. & san.)
+M: C
+L: 1/8
+K: Bm
+"Intro"F \
+| "Em7"GG "A7"AA "D"F3 D | "Em6"EE "F#7"FF "Bm"D3 D \
+| "Em6"CC DE "Bm"F^G ^AB | "C#7"cd "C#7-5"ed  "F#7"Hc3 ||
+|: F \
+| "Bm"BB cd "F#7"cB^AF | "Em7"BB "A7"GB "Dmaj7"A3 F \
+| "Em"EE "F#7"FG "Bm"FD CB, | "C#7"C2 "C#7-5"C2 "F#7"z3 F |
+| "Em7"BB "A7"GB "Dmaj7"AF "D6"DA | "Em6"GE "F#7"CG "Bm"F3 D \
+| "Em6"CC DE "Bm"FD "F#7"F,^A, | C2 "Bm"B,2 z3 F |
+| "Em7"GG "A7"AA "Dmaj9"F2 "D6"zD | "Em"EE "F#7"FF "Bm"D2 zD \
+| "Em6"CC DE "Bm"FD "F#7"F,^A, |1-3 "F#7"C2 "Bm"B,2 z3 D |
+| "Em6"CC DE "Bm"F^G ^AB | "C#7"cd "C#7-5"ed "F#7"Hc3 \
+:|4 "F#7"C2 "Bm"HB,2 |] y4 y4 y4 y4 y4 y4
+
+
+X: 3
+P: Polka
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+N: From a transcription by Karen Myers
+M: C|
+L: 1/8
+K: Am
+|: "Am"E2AA A2B2 | c2e2 edc2 | "E7"B2e2 edcB |1,3.A2"Am"c2 edc2 :|2,4.A2"Am"A2 A2z2 :|
+|: "Dm"a3g f2f2 | "Am"efed c4 | "E7"B3c ddcB |1,3.c"Am"Bcd "A7"e2e2 :|2,4.A2"Am"A2 A2z2 :|
+
+
+X: 4
+P: Ralli
+O: Trad Finland
+Z: John Chambers <jc:trillian.mit.edu>
+M: 3/4
+L: 1/4
+K: Am
+| "E7"E2E/E/ | E2B, | "Am"D2C | C2E | "G7"G2A | "Dm"B2A | "G7"G2D | "C"E3 ||
+|: "E7"E2^G | B2c | "Am"A2B | A2E | "D7"C2D | "Dm/B"EDC | "E7"B,2C | "Am"A,2z :|
+
+
+X: 5
+P: Rantakoivun alla  [Cm]
+C: Onni Laihanen (1916-1956)
+M: 3/4
+L: 1/4
+K: Cm
+%%staffsep 45
+G, \
+| "Cm"C2=B, | C2D | E2D | E2F | GB=A | "Fm"_A2B | "Cm"G3- | "C7"GGA \
+| "Fm"FDE | "G7"F2G | "Cm"E3- | ECD | ECD | "Ab"E2F | "G7"D3- | DzG, |
+| G,=A,=B, | "Cm"C2D | E2F | G2"Adim"c | "Fm"d2c | "Bb7"ABc | "Eb"G3- | "C7"GGA \
+| "Fm"FDE | "G7"F2G | "Cm"E2C | "Fm"B2A | "Cm"GFE | "G7"D2G | "Cm"C3- | C2 |]
+
+
+X: 6
+P: Reissumies ja kissa  (the Vagabond and the cat)
+C: Reino Helismaa
+R: shottish
+M: 4/4
+L: 1/8
+K: Am
+e | "Am"a>^g a>f e>^d e>=d | c>B c>A "Dm"B3 A | "E7"^G>G G>A B2 c2 "Am"A6 z :|
+A | "G7"G>G G>A B>G  A>B | "C"c>B c>d e3 e | "B7"^d>d d>e f>B ^c>^d | "E7"e>e d>c B3 "d.C."z |]

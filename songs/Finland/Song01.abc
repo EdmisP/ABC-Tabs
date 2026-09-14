@@ -1,0 +1,74 @@
+X: 0
+T: Finnish Songs 1
+K:
+
+
+X: 1
+P: Ai kuinka kauniilta kuuluupi
+O: Trad Finland
+Z: John Chambers <jc@trillian.mit.edu>
+M: C|
+L: 1/8
+K: Am
+|: "Am"A,2B,B, C2DD | "C"E2E2 "E7"E2E2 | "Am"c2 "E7"BB "F"A2^GA | "G7"B2A2 "C"E4 :|
+|: "Dm"G2FF "G7"E2DF | "Cmaj7"E2CB, "F"A,2A,2 "I"| "Dm"C2B,C "E7"D2C2 | "Am"B,2A,2 A,4 :|
+
+
+X: 2
+P: Du \"ar s\aa vacker f\"or mina \"ogon
+R: hambo-polska
+M: 3/4
+L: a/8
+K: Am
+|: A, A,>A, | "Am"E2 E>E "E7"c>B | "Am"A2 E>F "Dm"G>F | "G7"D2 D>F A>A | "E7(C)"E3 :|
+|: E "Am"A>A | "E7"^G3 B "F"A>A | "Am"E2 C>D E>E | "Dm"D2 C>D "E7"E>E | "Am"A,3 :|
+
+
+X: 3
+M: 4/4
+L: 1/8
+P: Eik\"a sielt\"a Atlantin rannoilta kuulu
+K: Am
+|: "Am"A2 AB c2 cB | A2 Ac e2 e2 | "C"g2 ga gf ed | "E7"e4 e4 :|
+|: "Am"e2 fe "Dm"d2 ed | "Am"c2 d2 "(F)"c2 A2 | "G7"G2 cd "E7"e2 B2 | "Am"A4 A4 :|
+
+
+X: 4
+P: El\"am\"a juoksuhaudoissa  (Life in the Trenches)
+C: Tune: trad Finland, Russia
+C: Lyrics: Usko Kemppi 1927
+R: waltz
+M: 3/4
+L: 1/4
+K: Dm
+| "Dm"AFG | Ad>B | A3- | AzA/A/ | AFG | AGF | "A7"E3- | EzA/A/ ||\
+"Dm"AFG | Adf | "Gm"a3 | g2g/g/ |
+| "Dm"f2f | "Gm"edB | "A7"A3- | AzA/A/ ||\
+"Dm"AFG | Ad>B | A3- | AzA/A/ | Adf | ag>f | "A7"e3- | e2e |
+|| "Gm"g2a | bag | "Dm"a3 | f2d/d/ |"A7"A^ce | gfe | "Dm"d3- | dzA ||\
+"Dm"f3 | "A7"e3 | "Dm"d3- | d"A7"^c>e | "Dm"d3- |
+| d"D7"A>B | "Gm"G3- | G2G ||\
+"A7"e3 | ^c3 | A3- | AB>A | A2E- | EA>G | "Dm"F3- | FzA ||\
+"Dm"f3 | "A7"e3 |
+| "Dm"d3- | d"A7"^c>e | "Dm"d3- | d"D7"A>B | "Gm"G3- | GBA ||\
+"Gm"G3 | "A7"efe | "Dm"d3 | "D7"Ac"Gm"B | "A7"A2E- | EFE | "Dm"D3- | Dz2 |]
+
+
+X: 5
+P: Emma
+O: Trad Finland
+M: 3/4
+L: 1/4
+K: Am
+|: A | "Am"eee | cAc |     eee | cAc | "E7"BBB | dcB | "Am"A2A | A2 :|
+|: e | "Dm"a2a | agf | "Am"e2e | edc | "E7"BBB | dcB | "Am"A2A | A2 :|
+
+
+X: 6
+P: Emma
+O: Trad Finland
+M: 3/4
+L: 1/4
+K: Dm
+|: D | "Dm"AAA | FDF |     AAA | FDF | "A7"EEE | GFE | "Dm"D2D | D2 :|
+|: A | "Gm"d2d | dcB | "Dm"A2A | AGF | "A7"EEE | GFE | "Dm"D2D | D2 :|

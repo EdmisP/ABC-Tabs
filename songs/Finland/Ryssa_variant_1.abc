@@ -1,0 +1,55 @@
+X: 0
+T: Ryss\"a
+K: C
+
+
+X: 1
+P: Ryss\"a   [F]
+O: Finland
+R: polka
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/8
+%Q: 1/4=80
+K: F
+|: "Bb"FB "F"Ac | "C7"GB "F"A2 :|\
+|: "C7"GF    ED | "F"CC     F2 :|
+
+
+X: 2
+P: Ryss\"a   [C]
+O: Finland
+R: polka
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+Q: 1/4=80
+L: 1/8
+K: C
+|: "F"cf "C"eg | "G7"df "C"e2 :|\
+|: "G7"dc   BA | "C"GG     c2 :|
+
+
+X: 3
+P: Ryss\"a   [G]
+O: Finland
+R: polka
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+Q: 1/4=80
+L: 1/8
+K: G
+|: "C"Gc "G"Bd | "D7"Ac "G"B2 :|\
+|: "D7"AG   FE | "G"DD     G2 :|
+
+
+X: 4
+P: Ryss\"a   [A]
+O: Finland
+R: polka
+Z: 2013 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+Q: 1/4=80
+L: 1/8
+K: A
+|: "D"Ad "A"ce | "E7"Bd "A"c2 :|\
+|: "E7"BA   GF | "A"EE     A2 :|

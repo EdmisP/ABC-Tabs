@@ -1,0 +1,19 @@
+X:11
+% Recovered source file(s): Avokatrilli.abc
+T: Avokatrilli  (Am)
+O: Finland
+F: http://www.youtube.com/watch?v=ti25VV9nJ8Y
+F: http://www.youtube.com/watch?v=tCswsPXjSi0
+R: polka
+Z: 2012 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/8
+K: Am
+[|\
+"Am"AB cd | e2 e2 | "Dm"fe fa | "Am"ez e2 |\
+"Dm"dd zd | "Am"cc zc | "E7"ed cB | "Am"A2 A2 ||
+||\
+"C"e2 e2 | gg ze | "G7"gf ed | "C"e2 e2 |\
+"Dm"fa zf | "Am"ea ze | "E7"ed cB | "Am"A2 A2 |]
+
+%%sep 1 1 500

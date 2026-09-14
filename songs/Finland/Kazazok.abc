@@ -1,0 +1,26 @@
+X:84
+% Recovered source file(s): FinnFest2013.abc; Rev20130928.abc; Rev2013FF.abc
+T: Kazazok
+T: Kazat\vsok
+O: Finland, Russia
+K:
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Kazazok (Kazat\vsok)   [D,A]
+O: Finland, Russia
+M: 2/4
+L: 1/8
+K: D
+|: "D"DF FF | "A7"EG "D"F2 :|\
+|: "A"A2 E>D | CB, CA, "I"| A,B, CE | "E7"D{C}B, "A"A,2 :|
+% - - - - - - - - - - - - - - - - - - - - - - - - -
+P: Kazazok (Kazat\vsok)   [G,D]
+O: Finland, Russia
+M: 2/4
+L: 1/8
+K: G
+|: "G"GB BB | "D7"Ac "G"B2 :|\
+|: "D"d2 A>G | FE FD "I"| DE FA | "A7"G{F}E "D"D2 :|
+
+%abcmedley: Xopt=.
+%%sep 1 1 500
+%%sep 1 1 500

@@ -1,0 +1,33 @@
+X: 0
+T: Menuett fr\aan Oravais
+K:
+
+
+X: 1
+P: Menuett fr\aan Oravais  (Oravaisten Menuetti)
+Z: John Chambers <jc:trillian.mit.edu>
+N: Oravais is a small town on the west coast of Finland, north of Vaasa.
+R: minuet
+M: 3/4
+L: 1/8
+K: Dm
+|: "Dm"A>A Ac "Gm"BG | "Dm"AF "A7"F/E/^C/E/ "Dm"D2 \
+|  "Dm"d>^c de fd | "Gm"ed ^cd "A7"A2 |
+|  "Dm"A>A Ac "Gm"BG | "Dm"AF "A7"F/E/^C/E/ "Dm"DE \
+|  F/E/F/G/ AA FF | "A7"EE "Dm"D4 :|
+|: "F"C>F FE "Bb"D2 | "C7"C>c cB "F"A2 \
+| A>B cB AA | "C7"GG "F"F4 |
+|  "Dm"A>A Ac "Gm"BG | "Dm"AF "A7"F/E/^C/E/ "Dm"DE \
+|  F/E/F/G/ AA FF | "A7"EE "Dm"D4 :|
+
+
+X: 2
+P: Polska fr\aan \"Overmark
+N: trad, \"Overmark, \"Osterbotten
+Z: John Chambers <jc@trillian.mit.edu>
+M: 3/4
+L: 1/16
+K: D
+|: "D"A3d "(A7)"d2eg "D"f2d2 | "D"fefg "A7"abag "D"a2f2 | "D"a2fa "A7"ageg "D"gfdf |
+|1,3 "A7"fece "D"d2d2 "A7"A2A2 :|2,4 "A7"fece "D"d2z2 d4 |: "D"f2df "A7"feec e2fg |
+| "D"gfdf "A7"feec e2fg |  "D"a2fa "A7"ageg "D"gfdf |1,3 "A7"fece "D"d2d2 "A7"A4 :|2,4 "A7"fece "D"d2z2 d4 |]
