@@ -181,7 +181,24 @@ html[data-theme]:not([data-theme="dark"]) .theme-flag-button[aria-pressed="true"
 
 </style>
 <script id="archive-theme-init">
-(()=>{const allowed=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','bw','dark','legacy'];const countries=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan'];let theme='finland',country='finland';try{const saved=localStorage.getItem('finlandArchiveTheme');const savedCountry=localStorage.getItem('finlandArchiveCountry');if(allowed.includes(saved))theme=saved;if(countries.includes(savedCountry))country=savedCountry;else if(countries.includes(theme))country=theme}catch(e){}document.documentElement.dataset.theme=theme;document.documentElement.dataset.country=country})();
+(()=>{
+  const themes=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','bw','dark'];
+  const countries=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan'];
+  let theme='finland',country='finland',legacy=false;
+  try{
+    const saved=localStorage.getItem('finlandArchiveTheme');
+    const savedCountry=localStorage.getItem('finlandArchiveCountry');
+    const savedLegacy=localStorage.getItem('finlandArchiveLegacy');
+    if(themes.includes(saved)) theme=saved;
+    if(saved==='legacy'){theme=countries.includes(savedCountry)?savedCountry:'finland';legacy=savedLegacy===null||savedLegacy==='1'}
+    else if(savedLegacy==='1') legacy=true;
+    if(countries.includes(savedCountry)) country=savedCountry;
+    else if(countries.includes(theme)) country=theme;
+  }catch(e){}
+  document.documentElement.dataset.theme=theme;
+  document.documentElement.dataset.country=country;
+  document.documentElement.dataset.legacy=legacy?'true':'false';
+})();
 </script>
 
 <style id="handmade-country-theme">
@@ -380,42 +397,21 @@ html[data-theme="dark"] button{border-radius:3px!important;box-shadow:none!impor
 
 <style id="legacy-1997-theme">
 /* Optional late-1990s presentation. Layout and controls remain fully functional. */
-html[data-theme="legacy"]{
-  --theme-primary:#000080;
-  --theme-hover:#0000a0;
-  --theme-secondary:#c0c0c0;
-  --theme-secondary-text:#000000;
-  --theme-bg:#c0c0c0;
-  --theme-panel:#d4d0c8;
-  --theme-soft:#d4d0c8;
-  --theme-border:#808080;
-  --theme-line:#000000;
-  --theme-text:#000000;
-  --theme-muted:#333333;
-  --theme-input:#ffffff;
-  --theme-score:#ffffff;
-  --theme-editor:#ffffff;
-  --theme-editor-text:#000000;
-  --theme-track:#808080;
-  --theme-selection:#000080;
-  --theme-selection-text:#ffffff;
-  --country-accent:#000080;
-}
-html[data-theme="legacy"] body{
+html[data-legacy="true"][data-theme] body{
   margin:0!important;
   background:#c0c0c0!important;
   color:#000!important;
   font-family:"Times New Roman",Times,serif!important;
   font-size:14px!important;
 }
-html[data-theme="legacy"] .container{
+html[data-legacy="true"][data-theme] .container{
   max-width:none!important;
   width:auto!important;
   margin:4px!important;
   padding:0!important;
 }
-html[data-theme="legacy"] .titlebar{
-  background:#000080!important;
+html[data-legacy="true"][data-theme] .titlebar{
+  background:var(--theme-primary)!important;
   color:#fff!important;
   border:2px outset #ffffff!important;
   border-left:2px outset #ffffff!important;
@@ -424,7 +420,7 @@ html[data-theme="legacy"] .titlebar{
   box-shadow:none!important;
   padding:6px 8px!important;
 }
-html[data-theme="legacy"] .titlebar h1{
+html[data-legacy="true"][data-theme] .titlebar h1{
   margin:0!important;
   color:#fff!important;
   font-family:"Times New Roman",Times,serif!important;
@@ -433,21 +429,21 @@ html[data-theme="legacy"] .titlebar h1{
   letter-spacing:0!important;
   text-transform:none!important;
 }
-html[data-theme="legacy"] .site-flag{
+html[data-legacy="true"][data-theme] .site-flag{
   background:#fff!important;
   border:2px inset #ffffff!important;
   padding:1px!important;
   box-sizing:border-box!important;
 }
-html[data-theme="legacy"] .site-flag img{object-fit:fill!important}
-html[data-theme="legacy"] .panel,
-html[data-theme="legacy"] .song-library-panel,
-html[data-theme="legacy"] .playback-panel,
-html[data-theme="legacy"] .preview-meta,
-html[data-theme="legacy"] .staff-box,
-html[data-theme="legacy"] .tab-box,
-html[data-theme="legacy"] .sheet-card,
-html[data-theme="legacy"] .course-group{
+html[data-legacy="true"][data-theme] .site-flag img{object-fit:fill!important}
+html[data-legacy="true"][data-theme] .panel,
+html[data-legacy="true"][data-theme] .song-library-panel,
+html[data-legacy="true"][data-theme] .playback-panel,
+html[data-legacy="true"][data-theme] .preview-meta,
+html[data-legacy="true"][data-theme] .staff-box,
+html[data-legacy="true"][data-theme] .tab-box,
+html[data-legacy="true"][data-theme] .sheet-card,
+html[data-legacy="true"][data-theme] .course-group{
   background:#d4d0c8!important;
   color:#000!important;
   border:2px groove #ffffff!important;
@@ -455,48 +451,48 @@ html[data-theme="legacy"] .course-group{
   border-radius:0!important;
   box-shadow:none!important;
 }
-html[data-theme="legacy"] .controls{
+html[data-legacy="true"][data-theme] .controls{
   border-top:2px groove #ffffff!important;
 }
-html[data-theme="legacy"] h1,
-html[data-theme="legacy"] h2,
-html[data-theme="legacy"] h3,
-html[data-theme="legacy"] .music-title,
-html[data-theme="legacy"] .song-library-head strong,
-html[data-theme="legacy"] .playback-heading strong,
-html[data-theme="legacy"] .preview-title h2,
-html[data-theme="legacy"] .chord-name,
-html[data-theme="legacy"] .sheet-card-name,
-html[data-theme="legacy"] .tab-title{
-  color:#000080!important;
+html[data-legacy="true"][data-theme] h1,
+html[data-legacy="true"][data-theme] h2,
+html[data-legacy="true"][data-theme] h3,
+html[data-legacy="true"][data-theme] .music-title,
+html[data-legacy="true"][data-theme] .song-library-head strong,
+html[data-legacy="true"][data-theme] .playback-heading strong,
+html[data-legacy="true"][data-theme] .preview-title h2,
+html[data-legacy="true"][data-theme] .chord-name,
+html[data-legacy="true"][data-theme] .sheet-card-name,
+html[data-legacy="true"][data-theme] .tab-title{
+  color:var(--theme-primary)!important;
   font-family:"Times New Roman",Times,serif!important;
   letter-spacing:0!important;
   text-transform:none!important;
 }
-html[data-theme="legacy"] .editor>h2,
-html[data-theme="legacy"] .score-panel>h2,
-html[data-theme="legacy"] .map-panel>h2,
-html[data-theme="legacy"] .preview-title h2,
-html[data-theme="legacy"] .chord-sheet-section>h2{
+html[data-legacy="true"][data-theme] .editor>h2,
+html[data-legacy="true"][data-theme] .score-panel>h2,
+html[data-legacy="true"][data-theme] .map-panel>h2,
+html[data-legacy="true"][data-theme] .preview-title h2,
+html[data-legacy="true"][data-theme] .chord-sheet-section>h2{
   border:0!important;
   border-bottom:1px solid #808080!important;
   padding:2px 0!important;
-  color:#000080!important;
+  color:var(--theme-primary)!important;
 }
-html[data-theme="legacy"] button,
-html[data-theme="legacy"] select,
-html[data-theme="legacy"] input,
-html[data-theme="legacy"] textarea,
-html[data-theme="legacy"] label{
+html[data-legacy="true"][data-theme] button,
+html[data-legacy="true"][data-theme] select,
+html[data-legacy="true"][data-theme] input,
+html[data-legacy="true"][data-theme] textarea,
+html[data-legacy="true"][data-theme] label{
   font-family:"MS Sans Serif",Tahoma,Arial,sans-serif!important;
   font-size:12px!important;
   border-radius:0!important;
 }
-html[data-theme="legacy"] button,
-html[data-theme="legacy"] .actions button,
-html[data-theme="legacy"] #loadSongBtn,
-html[data-theme="legacy"] #importMidiBtn,
-html[data-theme="legacy"] #addChordBtn{
+html[data-legacy="true"][data-theme] button,
+html[data-legacy="true"][data-theme] .actions button,
+html[data-legacy="true"][data-theme] #loadSongBtn,
+html[data-legacy="true"][data-theme] #importMidiBtn,
+html[data-legacy="true"][data-theme] #addChordBtn{
   background:#d4d0c8!important;
   color:#000!important;
   border:2px outset #ffffff!important;
@@ -504,75 +500,75 @@ html[data-theme="legacy"] #addChordBtn{
   box-shadow:none!important;
   filter:none!important;
 }
-html[data-theme="legacy"] button:hover,
-html[data-theme="legacy"] .actions button:hover,
-html[data-theme="legacy"] #loadSongBtn:hover,
-html[data-theme="legacy"] #importMidiBtn:hover,
-html[data-theme="legacy"] #addChordBtn:hover{
+html[data-legacy="true"][data-theme] button:hover,
+html[data-legacy="true"][data-theme] .actions button:hover,
+html[data-legacy="true"][data-theme] #loadSongBtn:hover,
+html[data-legacy="true"][data-theme] #importMidiBtn:hover,
+html[data-legacy="true"][data-theme] #addChordBtn:hover{
   background:#d4d0c8!important;
   color:#000!important;
   border:2px outset #ffffff!important;
   filter:none!important;
 }
-html[data-theme="legacy"] button:active,
-html[data-theme="legacy"] .actions button:active{
+html[data-legacy="true"][data-theme] button:active,
+html[data-legacy="true"][data-theme] .actions button:active{
   border-style:inset!important;
   padding-top:1px!important;
   padding-left:1px!important;
 }
-html[data-theme="legacy"] select,
-html[data-theme="legacy"] input[type="search"],
-html[data-theme="legacy"] input[type="text"],
-html[data-theme="legacy"] input[type="url"],
-html[data-theme="legacy"] input[type="number"],
-html[data-theme="legacy"] #abcInput{
+html[data-legacy="true"][data-theme] select,
+html[data-legacy="true"][data-theme] input[type="search"],
+html[data-legacy="true"][data-theme] input[type="text"],
+html[data-legacy="true"][data-theme] input[type="url"],
+html[data-legacy="true"][data-theme] input[type="number"],
+html[data-legacy="true"][data-theme] #abcInput{
   background:#fff!important;
   color:#000!important;
   border:2px inset #ffffff!important;
   outline:0!important;
   box-shadow:none!important;
 }
-html[data-theme="legacy"] #abcInput{
+html[data-legacy="true"][data-theme] #abcInput{
   font-family:"Courier New",Courier,monospace!important;
 }
-html[data-theme="legacy"] .song-library-panel,
-html[data-theme="legacy"] .playback-panel,
-html[data-theme="legacy"] .preview-head,
-html[data-theme="legacy"] .sheet-card-head,
-html[data-theme="legacy"] .kantele-control,
-html[data-theme="legacy"] .midi-clean-control,
-html[data-theme="legacy"] .checkbox-control,
-html[data-theme="legacy"] .fixed-reference,
-html[data-theme="legacy"] .course-group h3,
-html[data-theme="legacy"] .chord-table th{
+html[data-legacy="true"][data-theme] .song-library-panel,
+html[data-legacy="true"][data-theme] .playback-panel,
+html[data-legacy="true"][data-theme] .preview-head,
+html[data-legacy="true"][data-theme] .sheet-card-head,
+html[data-legacy="true"][data-theme] .kantele-control,
+html[data-legacy="true"][data-theme] .midi-clean-control,
+html[data-legacy="true"][data-theme] .checkbox-control,
+html[data-legacy="true"][data-theme] .fixed-reference,
+html[data-legacy="true"][data-theme] .course-group h3,
+html[data-legacy="true"][data-theme] .chord-table th{
   background:#d4d0c8!important;
   color:#000!important;
   border-color:#808080!important;
 }
-html[data-theme="legacy"] .preview-head,
-html[data-theme="legacy"] .sheet-card-head{
+html[data-legacy="true"][data-theme] .preview-head,
+html[data-legacy="true"][data-theme] .sheet-card-head{
   border-top:0!important;
   border-bottom:1px solid #808080!important;
 }
-html[data-theme="legacy"] .preview-head h2,
-html[data-theme="legacy"] .sheet-card-head .sheet-card-name{
-  color:#000080!important;
+html[data-legacy="true"][data-theme] .preview-head h2,
+html[data-legacy="true"][data-theme] .sheet-card-head .sheet-card-name{
+  color:var(--theme-primary)!important;
 }
-html[data-theme="legacy"] .music-system,
-html[data-theme="legacy"] .score-host,
-html[data-theme="legacy"] .tab-svg,
-html[data-theme="legacy"] .staff-box,
-html[data-theme="legacy"] .tab-box{
+html[data-legacy="true"][data-theme] .music-system,
+html[data-legacy="true"][data-theme] .score-host,
+html[data-legacy="true"][data-theme] .tab-svg,
+html[data-legacy="true"][data-theme] .staff-box,
+html[data-legacy="true"][data-theme] .tab-box{
   background:#fff!important;
   border-color:#808080!important;
 }
-html[data-theme="legacy"] a{
+html[data-legacy="true"][data-theme] a{
   color:#0000ee!important;
   text-decoration:underline!important;
 }
-html[data-theme="legacy"] a:visited{color:#551a8b!important}
-html[data-theme="legacy"] ::selection{background:#000080!important;color:#fff!important}
-html[data-theme="legacy"] .theme-footer{
+html[data-legacy="true"][data-theme] a:visited{color:#551a8b!important}
+html[data-legacy="true"][data-theme] ::selection{background:var(--theme-primary)!important;color:#fff!important}
+html[data-legacy="true"][data-theme] .theme-footer{
   margin:4px!important;
   padding:5px!important;
   background:#d4d0c8!important;
@@ -582,19 +578,19 @@ html[data-theme="legacy"] .theme-footer{
   border-radius:0!important;
   box-shadow:none!important;
 }
-html[data-theme="legacy"] .theme-footer-label{color:#000!important;font-weight:700!important}
-html[data-theme="legacy"] .theme-flag-button{
+html[data-legacy="true"][data-theme] .theme-footer-label{color:#000!important;font-weight:700!important}
+html[data-legacy="true"][data-theme] .theme-flag-button{
   background:transparent!important;
   border:0!important;
   box-shadow:none!important;
   padding:0!important;
 }
-html[data-theme="legacy"] .theme-flag-button[aria-pressed="true"]{
-  box-shadow:inset 0 -3px 0 #000080!important;
+html[data-legacy="true"][data-theme] .theme-flag-button[aria-pressed="true"]{
+  box-shadow:inset 0 -3px 0 var(--theme-primary)!important;
 }
-html[data-theme="legacy"] .theme-word-button,
-html[data-theme="legacy"] .theme-dark-button,
-html[data-theme="legacy"] .theme-legacy-button{
+html[data-legacy="true"][data-theme] .theme-word-button,
+html[data-legacy="true"][data-theme] .theme-dark-button,
+html[data-legacy="true"][data-theme] .theme-legacy-button{
   min-height:26px!important;
   padding:3px 8px!important;
   background:#d4d0c8!important;
@@ -605,57 +601,57 @@ html[data-theme="legacy"] .theme-legacy-button{
   font-weight:400!important;
   box-shadow:none!important;
 }
-html[data-theme="legacy"] .theme-word-button[aria-pressed="true"],
-html[data-theme="legacy"] .theme-dark-button[aria-pressed="true"],
-html[data-theme="legacy"] .theme-legacy-button[aria-pressed="true"]{
+html[data-legacy="true"][data-theme] .theme-word-button[aria-pressed="true"],
+html[data-legacy="true"][data-theme] .theme-dark-button[aria-pressed="true"],
+html[data-legacy="true"][data-theme] .theme-legacy-button[aria-pressed="true"]{
   border-style:inset!important;
   color:#000!important;
   box-shadow:none!important;
 }
-html[data-theme="legacy"] #audioPlayer,
-html[data-theme="legacy"] #audioPlayer .abcjs-inline-audio{
+html[data-legacy="true"][data-theme] #audioPlayer,
+html[data-legacy="true"][data-theme] #audioPlayer .abcjs-inline-audio{
   background:#d4d0c8!important;
   border-color:#808080!important;
   border-radius:0!important;
   box-shadow:none!important;
 }
-html[data-theme="legacy"] #audioPlayer button,
-html[data-theme="legacy"] .abcjs-inline-audio button{
+html[data-legacy="true"][data-theme] #audioPlayer button,
+html[data-legacy="true"][data-theme] .abcjs-inline-audio button{
   background:#d4d0c8!important;
   color:#000!important;
   border:2px outset #ffffff!important;
 }
-html[data-theme="legacy"] .abcjs-inline-audio .abcjs-midi-progress-background{
+html[data-legacy="true"][data-theme] .abcjs-inline-audio .abcjs-midi-progress-background{
   background:#808080!important;
 }
-html[data-theme="legacy"] .abcjs-inline-audio .abcjs-midi-progress-indicator{
-  background:#000080!important;
+html[data-legacy="true"][data-theme] .abcjs-inline-audio .abcjs-midi-progress-indicator{
+  background:var(--theme-primary)!important;
 }
-html[data-theme="legacy"] .music-title,
-html[data-theme="legacy"] .chord-name{
+html[data-legacy="true"][data-theme] .music-title,
+html[data-legacy="true"][data-theme] .chord-name{
   font-size:24px!important;
 }
-html[data-theme="legacy"] .help,
-html[data-theme="legacy"] .legend,
-html[data-theme="legacy"] #playbackStatus,
-html[data-theme="legacy"] .song-library-head span,
-html[data-theme="legacy"] #songLibraryStatus,
-html[data-theme="legacy"] .song-source-meta,
-html[data-theme="legacy"] .voicing-info,
-html[data-theme="legacy"] .sheet-empty{
+html[data-legacy="true"][data-theme] .help,
+html[data-legacy="true"][data-theme] .legend,
+html[data-legacy="true"][data-theme] #playbackStatus,
+html[data-legacy="true"][data-theme] .song-library-head span,
+html[data-legacy="true"][data-theme] #songLibraryStatus,
+html[data-legacy="true"][data-theme] .song-source-meta,
+html[data-legacy="true"][data-theme] .voicing-info,
+html[data-legacy="true"][data-theme] .sheet-empty{
   color:#333!important;
 }
 </style>
 
 
 <style id="legacy-1997-extra">
-html[data-theme="legacy"] body{
-  background:#008080!important;
+html[data-legacy="true"][data-theme] body{
+  background:var(--theme-primary)!important;
   font-family:"MS Sans Serif",Tahoma,Arial,sans-serif!important;
   font-size:12px!important;
   padding:0!important;
 }
-html[data-theme="legacy"] .container{
+html[data-legacy="true"][data-theme] .container{
   width:calc(100% - 12px)!important;
   max-width:980px!important;
   margin:6px auto 4px!important;
@@ -664,18 +660,18 @@ html[data-theme="legacy"] .container{
   border:2px outset #fff!important;
   box-sizing:border-box!important;
 }
-html[data-theme="legacy"] .titlebar{
+html[data-legacy="true"][data-theme] .titlebar{
   position:relative!important;
   min-height:28px!important;
   margin:0 0 4px!important;
   padding:3px 78px 3px 4px!important;
-  background:#000080!important;
+  background:var(--theme-primary)!important;
   color:#fff!important;
   border:0!important;
   border-radius:0!important;
   align-items:center!important;
 }
-html[data-theme="legacy"] .titlebar::after{
+html[data-legacy="true"][data-theme] .titlebar::after{
   content:"_  □  ×";
   position:absolute;
   right:3px;
@@ -690,18 +686,18 @@ html[data-theme="legacy"] .titlebar::after{
   letter-spacing:2px;
   box-sizing:border-box;
 }
-html[data-theme="legacy"] .titlebar h1{
+html[data-legacy="true"][data-theme] .titlebar h1{
   color:#fff!important;
   font:700 14px/18px "MS Sans Serif",Tahoma,Arial,sans-serif!important;
   text-shadow:none!important;
   letter-spacing:0!important;
 }
-html[data-theme="legacy"] .site-flag{
+html[data-legacy="true"][data-theme] .site-flag{
   width:34px!important;height:22px!important;flex:0 0 34px!important;
   padding:1px!important;background:#fff!important;border:2px inset #fff!important;
 }
-html[data-theme="legacy"] .site-flag img{width:30px!important;height:18px!important;object-fit:cover!important}
-html[data-theme="legacy"] .panel{
+html[data-legacy="true"][data-theme] .site-flag img{width:30px!important;height:18px!important;object-fit:cover!important}
+html[data-legacy="true"][data-theme] .panel{
   margin:3px 0!important;
   padding:5px!important;
   background:#c0c0c0!important;
@@ -709,34 +705,34 @@ html[data-theme="legacy"] .panel{
   border-radius:0!important;
   box-shadow:none!important;
 }
-html[data-theme="legacy"] .editor-layout{gap:4px!important;grid-template-columns:minmax(255px,290px) minmax(0,1fr)!important}
-html[data-theme="legacy"] .controls{gap:4px!important}
-html[data-theme="legacy"] .editor>h2,
-html[data-theme="legacy"] .score-panel>h2,
-html[data-theme="legacy"] .map-panel>h2,
-html[data-theme="legacy"] .preview-title h2,
-html[data-theme="legacy"] .chord-sheet-section>h2{
+html[data-legacy="true"][data-theme] .editor-layout{gap:4px!important;grid-template-columns:minmax(255px,290px) minmax(0,1fr)!important}
+html[data-legacy="true"][data-theme] .controls{gap:4px!important}
+html[data-legacy="true"][data-theme] .editor>h2,
+html[data-legacy="true"][data-theme] .score-panel>h2,
+html[data-legacy="true"][data-theme] .map-panel>h2,
+html[data-legacy="true"][data-theme] .preview-title h2,
+html[data-legacy="true"][data-theme] .chord-sheet-section>h2{
   margin:-3px -3px 4px!important;
   padding:2px 4px!important;
   color:#fff!important;
-  background:#000080!important;
+  background:var(--theme-primary)!important;
   border:0!important;
   font:700 12px/17px "MS Sans Serif",Tahoma,Arial,sans-serif!important;
 }
-html[data-theme="legacy"] .song-library-panel,
-html[data-theme="legacy"] .playback-panel,
-html[data-theme="legacy"] .preview-meta,
-html[data-theme="legacy"] .staff-box,
-html[data-theme="legacy"] .tab-box,
-html[data-theme="legacy"] .sheet-card,
-html[data-theme="legacy"] .course-group{
+html[data-legacy="true"][data-theme] .song-library-panel,
+html[data-legacy="true"][data-theme] .playback-panel,
+html[data-legacy="true"][data-theme] .preview-meta,
+html[data-legacy="true"][data-theme] .staff-box,
+html[data-legacy="true"][data-theme] .tab-box,
+html[data-legacy="true"][data-theme] .sheet-card,
+html[data-legacy="true"][data-theme] .course-group{
   border:2px inset #fff!important;
   border-radius:0!important;
   box-shadow:none!important;
 }
-html[data-theme="legacy"] select,
-html[data-theme="legacy"] input,
-html[data-theme="legacy"] textarea{
+html[data-legacy="true"][data-theme] select,
+html[data-legacy="true"][data-theme] input,
+html[data-legacy="true"][data-theme] textarea{
   min-height:22px!important;
   padding:2px 3px!important;
   border:2px inset #fff!important;
@@ -744,7 +740,7 @@ html[data-theme="legacy"] textarea{
   background:#fff!important;
   color:#000!important;
 }
-html[data-theme="legacy"] button{
+html[data-legacy="true"][data-theme] button{
   min-height:23px!important;
   padding:2px 7px!important;
   border:2px outset #fff!important;
@@ -753,36 +749,36 @@ html[data-theme="legacy"] button{
   color:#000!important;
   font:12px "MS Sans Serif",Tahoma,Arial,sans-serif!important;
 }
-html[data-theme="legacy"] button:focus,
-html[data-theme="legacy"] select:focus,
-html[data-theme="legacy"] input:focus{outline:1px dotted #000!important;outline-offset:-4px!important}
-html[data-theme="legacy"] .music-system,
-html[data-theme="legacy"] .score-host,
-html[data-theme="legacy"] .staff-box,
-html[data-theme="legacy"] .tab-box,
-html[data-theme="legacy"] .tab-svg{
+html[data-legacy="true"][data-theme] button:focus,
+html[data-legacy="true"][data-theme] select:focus,
+html[data-legacy="true"][data-theme] input:focus{outline:1px dotted #000!important;outline-offset:-4px!important}
+html[data-legacy="true"][data-theme] .music-system,
+html[data-legacy="true"][data-theme] .score-host,
+html[data-legacy="true"][data-theme] .staff-box,
+html[data-legacy="true"][data-theme] .tab-box,
+html[data-legacy="true"][data-theme] .tab-svg{
   background:#fff!important;
   border:2px inset #fff!important;
 }
-html[data-theme="legacy"] .music-title,
-html[data-theme="legacy"] .chord-name{
+html[data-legacy="true"][data-theme] .music-title,
+html[data-legacy="true"][data-theme] .chord-name{
   font-family:"Times New Roman",Times,serif!important;
   font-weight:700!important;
-  color:#000080!important;
+  color:var(--theme-primary)!important;
 }
-html[data-theme="legacy"] .song-library-head strong,
-html[data-theme="legacy"] .playback-heading strong{
+html[data-legacy="true"][data-theme] .song-library-head strong,
+html[data-legacy="true"][data-theme] .playback-heading strong{
   color:#000!important;
   font-family:"MS Sans Serif",Tahoma,Arial,sans-serif!important;
 }
-html[data-theme="legacy"] .theme-footer{
+html[data-legacy="true"][data-theme] .theme-footer{
   width:calc(100% - 12px)!important;
   max-width:980px!important;
   margin:0 auto 6px!important;
   background:#c0c0c0!important;
   border:2px outset #fff!important;
 }
-html[data-theme="legacy"] .container::after{
+html[data-legacy="true"][data-theme] .container::after{
   content:"Ready";
   display:block;
   margin-top:4px;
@@ -794,13 +790,23 @@ html[data-theme="legacy"] .container::after{
   border:2px inset #fff;
   font:11px "MS Sans Serif",Tahoma,Arial,sans-serif;
 }
-html[data-theme="legacy"] .theme-flag-button img{image-rendering:auto!important}
-html[data-theme="legacy"] ::-webkit-scrollbar{width:16px;height:16px}
-html[data-theme="legacy"] ::-webkit-scrollbar-track{background:#c0c0c0}
-html[data-theme="legacy"] ::-webkit-scrollbar-thumb{background:#c0c0c0;border:2px outset #fff}
-@media(max-width:760px){html[data-theme="legacy"] .editor-layout{grid-template-columns:1fr!important}.titlebar::after{display:none}}
+html[data-legacy="true"][data-theme] .theme-flag-button img{image-rendering:auto!important}
+html[data-legacy="true"][data-theme] ::-webkit-scrollbar{width:16px;height:16px}
+html[data-legacy="true"][data-theme] ::-webkit-scrollbar-track{background:#c0c0c0}
+html[data-legacy="true"][data-theme] ::-webkit-scrollbar-thumb{background:#c0c0c0;border:2px outset #fff}
+@media(max-width:760px){html[data-legacy="true"][data-theme] .editor-layout{grid-template-columns:1fr!important}.titlebar::after{display:none}}
 </style>
 
+
+<style id="dark-score-fix">
+html[data-theme="dark"]{--theme-score:#f4f6f7;--theme-score-ink:#4c78a8;--theme-score-line:#92a6ba}
+html[data-theme="dark"] .staff-box,html[data-theme="dark"] .tab-box,html[data-theme="dark"] .sheet-card,html[data-theme="dark"] .sheet-card-score,html[data-theme="dark"] .sheet-card-tab{background:#f4f6f7!important}
+html[data-theme="dark"] #chordStaff svg path,html[data-theme="dark"] .sheet-card-score svg path{fill:#4c78a8!important;stroke:#4c78a8!important}
+html[data-theme="dark"] #chordStaff svg text,html[data-theme="dark"] .sheet-card-score svg text{fill:#4c78a8!important}
+html[data-theme="dark"] .tab-line{border-top-color:#92a6ba!important}
+html[data-theme="dark"] .tab-label,html[data-theme="dark"] .tab-value{color:#4c78a8!important}
+html[data-theme="dark"] .tab-value{background:#f4f6f7!important}
+</style>
 </head>
 <body>
 <main class="container">
@@ -1005,16 +1011,16 @@ const GENERIC_INSTRUMENTS={
   baglamas:{label:'Baglamas',preserveCourseOrder:true,tunings:{standard:{label:'D4 A4 D5',courses:[['D4'],['A4'],['D5']]}}},
   baglama:{label:'Bağlama',preserveCourseOrder:true,fretSystem:'baglama17',maxChordFretSpan:5,tunings:{standard:{label:'G2 D3 A3',courses:[['G2'],['D3'],['A3']]}}},
   cifteli:{label:'Çifteli',preserveCourseOrder:true,maxChordFretSpan:5,tunings:{
-    trad_ad:{label:'Traditional A3 / D4',fretSystem:'cifteliTraditional',courses:[['A3'],['D4']]},
-    trad_be:{label:'Traditional B3 / E4',fretSystem:'cifteliTraditional',courses:[['B3'],['E4']]},
-    trad_cf:{label:'Traditional C4 / F4',fretSystem:'cifteliTraditional',courses:[['C4'],['F4']]},
-    '12tet_ad':{label:'12-TET A3 / D4',courses:[['A3'],['D4']]},
-    '12tet_be':{label:'12-TET B3 / E4',courses:[['B3'],['E4']]},
-    '12tet_cf':{label:'12-TET C4 / F4',courses:[['C4'],['F4']]}
+    trad_ad:{label:'Traditional A3 / D4',fretSystem:'cifteliTraditional',courses:[{strings:['A3'],drone:true,hiddenInTab:true},{strings:['D4']}]},
+    trad_be:{label:'Traditional B3 / E4',fretSystem:'cifteliTraditional',courses:[{strings:['B3'],drone:true,hiddenInTab:true},{strings:['E4']}]},
+    trad_cf:{label:'Traditional C4 / F4',fretSystem:'cifteliTraditional',courses:[{strings:['C4'],drone:true,hiddenInTab:true},{strings:['F4']}]},
+    '12tet_ad':{label:'12-TET A3 / D4',courses:[{strings:['A3'],drone:true,hiddenInTab:true},{strings:['D4']}]},
+    '12tet_be':{label:'12-TET B3 / E4',courses:[{strings:['B3'],drone:true,hiddenInTab:true},{strings:['E4']}]},
+    '12tet_cf':{label:'12-TET C4 / F4',courses:[{strings:['C4'],drone:true,hiddenInTab:true},{strings:['F4']}]}
   }},
   cifteli_three:{label:'Çifteli (3-string)',preserveCourseOrder:true,maxChordFretSpan:5,tunings:{custom:{label:'G2 D3 A3 — traditional / hybrid',courses:[
-    {strings:['G2'],fretSystem:'cifteliTraditional'},
-    {strings:['D3'],fretSystem:'cifteliTraditional'},
+    {strings:['G2'],fretSystem:'cifteliTraditional',drone:true,hiddenInTab:true},
+    {strings:['D3'],fretSystem:'cifteliTraditional',drone:true,hiddenInTab:true},
     {strings:['A3'],fretSystem:'cifteliHybrid'}
   ]}}},
   dombra:{label:'Dombra',preserveCourseOrder:true,tunings:{standard:{label:'D4 G4',courses:[['D4'],['G4']]}}},
@@ -1192,7 +1198,7 @@ function physicalCourses(){
       const openNote=strings[0];
       const openMidi=noteToMidi(openNote);
       const system=spec.fretSystem||t.fretSystem||config.fretSystem||'12tet';
-      return {course:i+1,openNote,openMidi,strings,positions:chordFretDefs(system,openMidi)};
+      return {course:i+1,openNote,openMidi,strings,drone:!!spec.drone,hiddenInTab:!!spec.hiddenInTab,positions:chordFretDefs(system,openMidi)};
     });
   }
   if(id==='dulcimer'){
@@ -1210,7 +1216,9 @@ function bestFrettedVoicings(){
   const tones=chordTonePcs();
   const pcs=new Set(tones.map(t=>t.pc));
   const weights=new Map(tones.map(t=>[t.pc,Math.max(t.weight,weightsSafe(t.pc,tones))]));
+  const cifteliMelodyOnly=instrumentId()==='cifteli'||instrumentId()==='cifteli_three';
   const choices=courses.map(course=>{
+    if(cifteliMelodyOnly && course.drone) return [null];
     const byPc=new Map();
     for(const p of course.positions){
       const pc=mod(p.midi);
@@ -1340,10 +1348,8 @@ function row(label,value,muted=false){
 function tabRowsForVoicing(v){
   if(!v)return [{label:'',value:'×',muted:true}];
   if(v.kind==='fretted'){
-    const items=v.courses.map((course,i)=>({course,choice:v.shape[i]}));
-    const ordered=GENERIC_INSTRUMENTS[instrumentId()]?.preserveCourseOrder
-      ? items
-      : items.sort((a,b)=>b.course.openMidi-a.course.openMidi||b.course.course-a.course.course);
+    const items=v.courses.map((course,i)=>({course,choice:v.shape[i]})).filter(item=>!item.course.hiddenInTab);
+    const ordered=items.sort((a,b)=>b.course.openMidi-a.course.openMidi||b.course.course-a.course.course);
     return ordered.map(item=>({label:`${item.course.course} ${item.course.openNote}`,value:item.choice?item.choice.fret:'×',muted:!item.choice}));
   }
   if(v.kind==='fixed'){
@@ -1468,7 +1474,7 @@ renderChordSheet();
 
 <script id="archive-theme-controls">
 (()=>{
-  const allowed=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','bw','dark','legacy'];
+  const allowed=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','bw','dark'];
   const countries=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan'];
   const meta=document.querySelector('meta[name="theme-color"]');
   const flagUrls={
@@ -1506,20 +1512,35 @@ renderChordSheet();
     if(!icon){icon=document.createElement('link');icon.id='themeFavicon';icon.rel='icon';icon.type='image/svg+xml';document.head.appendChild(icon)}
     icon.href=src;
   }
+  function syncThemeButtons(){
+    const legacy=document.documentElement.dataset.legacy==='true';
+    const theme=document.documentElement.dataset.theme||'finland';
+    document.querySelectorAll('[data-page-theme]').forEach(button=>{
+      const target=button.dataset.pageTheme;
+      button.setAttribute('aria-pressed',(target==='legacy'?legacy:target===theme)?'true':'false');
+    });
+  }
   function setTheme(theme,save=true){
+    if(theme==='legacy'){
+      const next=document.documentElement.dataset.legacy!=='true';
+      document.documentElement.dataset.legacy=next?'true':'false';
+      if(save){try{localStorage.setItem('finlandArchiveLegacy',next?'1':'0');if(localStorage.getItem('finlandArchiveTheme')==='legacy')localStorage.setItem('finlandArchiveTheme',document.documentElement.dataset.theme||'finland')}catch(e){}}
+      syncThemeButtons();updateFlag(currentCountry());
+      if(meta){const value=getComputedStyle(document.documentElement).getPropertyValue('--theme-primary').trim();if(value)meta.setAttribute('content',value)}
+      if(typeof regenerate==='function') requestAnimationFrame(()=>requestAnimationFrame(()=>regenerate()));
+      return;
+    }
     if(!allowed.includes(theme))theme='finland';
     let country=currentCountry();
     if(countries.includes(theme)){country=theme;document.documentElement.dataset.country=country}
     document.documentElement.dataset.theme=theme;
     if(save){try{localStorage.setItem('finlandArchiveTheme',theme);localStorage.setItem('finlandArchiveCountry',country)}catch(e){}}
-    document.querySelectorAll('[data-page-theme]').forEach(button=>button.setAttribute('aria-pressed',button.dataset.pageTheme===theme?'true':'false'));
-    updateFlag(country);
-    if(typeof brightenScoreSvg==='function'){requestAnimationFrame(()=>document.querySelectorAll('.score-host>svg').forEach(brightenScoreSvg))}
+    syncThemeButtons();updateFlag(country);
     if(meta){const value=getComputedStyle(document.documentElement).getPropertyValue('--theme-primary').trim();if(value)meta.setAttribute('content',value)}
   }
   window.addEventListener('DOMContentLoaded',()=>{
     document.querySelectorAll('[data-page-theme]').forEach(button=>button.addEventListener('click',()=>setTheme(button.dataset.pageTheme)));
-    setTheme(document.documentElement.dataset.theme||'finland',false);
+    setTheme(document.documentElement.dataset.theme||'finland',false);syncThemeButtons();
   });
 })();
 </script>
