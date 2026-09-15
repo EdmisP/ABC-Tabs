@@ -1,3 +1,3 @@
-# Finland ABC Archive and Tab Maker
+# Harakka's ABC Archive and Tab Maker
 
-Static browser-based ABC archive, notation viewer and tablature maker.
+yup, what he said
