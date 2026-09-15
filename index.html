@@ -781,7 +781,15 @@ html[data-theme="legacy"] ::-webkit-scrollbar-thumb{background:#c0c0c0;border:2p
     <label>Instrument
       <select id="instrumentPreset">
         <option value="balalaika_prima">Prima Balalaika</option>
+        <option value="bouzouki">Bouzouki</option>
+        <option value="baglamas">Baglamas</option>
+        <option value="baglama">Bağlama</option>
+        <option value="cifteli">Çifteli</option>
+        <option value="cifteli_three">Çifteli (3-string)</option>
+        <option value="dombra">Dombra</option>
         <option value="domra_prima">Prima Domra</option>
+        <option value="panduri">Panduri</option>
+        <option value="tzouras">Tzouras</option>
         <option value="waldzither">Waldzither</option>
         <option value="mandolin">Mandolin</option>
         <option value="citera">Citera</option>
@@ -1294,7 +1302,7 @@ function buildCifteliTuning(id=selectedCifteliTuningId()){
     n:0,
     note:preset.drone.note,
     hz:midiHz(preset.drone.midi),
-    chordOnly:true
+    chordOnly:false
   };
 
   let melody=[];
@@ -1327,14 +1335,18 @@ function buildCifteliTuning(id=selectedCifteliTuningId()){
     });
   }
 
-  return {
-    id,
-    label:preset.label,
-    family:preset.family,
-    drone,
-    melody,
-    octaveFret
-  };
+  const lowerOpenHz=midiHz(preset.drone.midi);
+  const lower=preset.family==='traditional'
+    ? TRADITIONAL_CIFTELI_CENTS.map((cents,fret)=>({
+        section:'D',fret,n:fret,note:`${preset.drone.note} + ${fret}`,
+        hz:lowerOpenHz*Math.pow(2,cents/1200),cents
+      }))
+    : Array.from({length:14},(_,fret)=>({
+        section:'D',fret,n:fret,note:midiName(preset.drone.midi+fret),
+        hz:midiHz(preset.drone.midi+fret),cents:fret*100
+      }));
+
+  return {id,label:preset.label,family:preset.family,drone,lower,melody,octaveFret};
 }
 
 
@@ -1859,108 +1871,112 @@ const GENERIC_INSTRUMENTS = {
     fretting:'12tet',
     balalaika:true,
     tunings:{
-      standard:{
-        label:'Standard — E4 E4 A4',
+      standard:{label:'Standard — E4 E4 A4',courses:[{strings:['E4']},{strings:['E4']},{strings:['A4']}]},
+      folk_ceg:{label:'Folk — C4 E4 G4',courses:[{strings:['C4']},{strings:['E4']},{strings:['G4']}]},
+      russian_guitar:{label:'Russian guitar — G3 B3 D4',courses:[{strings:['G3']},{strings:['B3']},{strings:['D4']}]},
+      domra_style:{label:'Domra-style — E4 A4 D5',courses:[{strings:['E4']},{strings:['A4']},{strings:['D5']}]},
+      folk_dfa:{label:'Folk — D4 F4 A4',courses:[{strings:['D4']},{strings:['F4']},{strings:['A4']}]}
+    }
+  },
+
+  bouzouki:{
+    label:'Bouzouki',
+    fretting:'12tet',
+    preserveCourseOrder:true,
+    tunings:{
+      trichordo:{label:'3-course — D3 A3 D4',courses:[{strings:['D3']},{strings:['A3']},{strings:['D4']}]},
+      tetrachordo:{label:'4-course — C3 F3 A3 D4',courses:[{strings:['C3']},{strings:['F3']},{strings:['A3']},{strings:['D4']}]}
+    }
+  },
+
+  baglamas:{
+    label:'Baglamas',
+    fretting:'12tet',
+    preserveCourseOrder:true,
+    tunings:{standard:{label:'D4 A4 D5',courses:[{strings:['D4']},{strings:['A4']},{strings:['D5']}]}}
+  },
+
+  baglama:{
+    label:'Bağlama',
+    fretting:'microtonal',
+    fretSystem:'baglama17',
+    nearestPitchMode:true,
+    matchToleranceCents:70,
+    maxChordFretSpan:5,
+    preserveCourseOrder:true,
+    tunings:{standard:{label:'G2 D3 A3',courses:[{strings:['G2']},{strings:['D3']},{strings:['A3']}]}}
+  },
+
+  cifteli_three:{
+    label:'Çifteli (3-string)',
+    fretting:'microtonal',
+    nearestPitchMode:true,
+    matchToleranceCents:120,
+    maxChordFretSpan:5,
+    preserveCourseOrder:true,
+    preferredMelodyCourseIndex:2,
+    preferredMelodyStrength:'strong',
+    tunings:{
+      custom:{
+        label:'G2 D3 A3 — traditional / hybrid',
         courses:[
-          {strings:['E4']},
-          {strings:['E4']},
-          {strings:['A4']}
+          {strings:['G2'],fretSystem:'cifteliTraditional'},
+          {strings:['D3'],fretSystem:'cifteliTraditional'},
+          {strings:['A3'],fretSystem:'cifteliHybrid'}
         ]
-      },
-      folk_ceg:{
-        label:'Folk — C4 E4 G4',
-        courses:[{strings:['C4']},{strings:['E4']},{strings:['G4']}]
-      },
-      russian_guitar:{
-        label:'Russian guitar — G3 B3 D4',
-        courses:[{strings:['G3']},{strings:['B3']},{strings:['D4']}]
-      },
-      domra_style:{
-        label:'Domra-style — E4 A4 D5',
-        courses:[{strings:['E4']},{strings:['A4']},{strings:['D5']}]
-      },
-      folk_dfa:{
-        label:'Folk — D4 F4 A4',
-        courses:[{strings:['D4']},{strings:['F4']},{strings:['A4']}]
       }
     }
+  },
+
+  dombra:{
+    label:'Dombra',
+    fretting:'12tet',
+    preserveCourseOrder:true,
+    preferredMelodyCourseIndex:1,
+    melodyCoursePenalty:1.2,
+    tunings:{standard:{label:'D4 G4',courses:[{strings:['D4']},{strings:['G4']}]}}
   },
 
   domra_prima:{
     label:'Prima Domra',
     fretting:'12tet',
     tunings:{
-      three_string:{
-        label:'3-string — E4 A4 D5',
-        courses:[
-          {strings:['E4']},
-          {strings:['A4']},
-          {strings:['D5']}
-        ]
-      },
-      four_string:{
-        label:'4-string — G3 D4 A4 E5',
-        courses:[
-          {strings:['G3']},
-          {strings:['D4']},
-          {strings:['A4']},
-          {strings:['E5']}
-        ]
-      }
+      three_string:{label:'3-string — E4 A4 D5',courses:[{strings:['E4']},{strings:['A4']},{strings:['D5']}]},
+      four_string:{label:'4-string — G3 D4 A4 E5',courses:[{strings:['G3']},{strings:['D4']},{strings:['A4']},{strings:['E5']}]}
     }
+  },
+
+  panduri:{
+    label:'Panduri',
+    fretting:'12tet',
+    preserveCourseOrder:true,
+    tunings:{
+      standard:{label:'G3 A3 C4',courses:[{strings:['G3']},{strings:['A3']},{strings:['C4']}]},
+      alternative:{label:'E3 B3 A4',courses:[{strings:['E3']},{strings:['B3']},{strings:['A4']}]}
+    }
+  },
+
+  tzouras:{
+    label:'Tzouras',
+    fretting:'12tet',
+    preserveCourseOrder:true,
+    tunings:{standard:{label:'D3 A3 D4',courses:[{strings:['D3']},{strings:['A3']},{strings:['D4']}]}}
   },
 
   waldzither:{
     label:'Waldzither',
     fretting:'12tet',
     tunings:{
-      standard:{
-        label:'Standard/common — C3 G3/G3 C4/C4 E4/E4 G4/G4',
-        courses:[
-          {strings:['C3']},
-          {strings:['G3','G3']},
-          {strings:['C4','C4']},
-          {strings:['E4','E4']},
-          {strings:['G4','G4']}
-        ]
-      },
-      d_tuning:{
-        label:'D tuning — D3 A3/A3 D4/D4 F♯4/F♯4 A4/A4',
-        courses:[
-          {strings:['D3']},
-          {strings:['A3','A3']},
-          {strings:['D4','D4']},
-          {strings:['F♯4','F♯4']},
-          {strings:['A4','A4']}
-        ]
-      },
-      open_g_major:{
-        label:'Open G major — G2 D3/D3 G3/G3 B3/B3 D4/D4',
-        courses:[
-          {strings:['G2']},
-          {strings:['D3','D3']},
-          {strings:['G3','G3']},
-          {strings:['B3','B3']},
-          {strings:['D4','D4']}
-        ]
-      }
+      standard:{label:'Standard/common — C3 G3/G3 C4/C4 E4/E4 G4/G4',courses:[{strings:['C3']},{strings:['G3','G3']},{strings:['C4','C4']},{strings:['E4','E4']},{strings:['G4','G4']}]},
+      d_tuning:{label:'D tuning — D3 A3/A3 D4/D4 F♯4/F♯4 A4/A4',courses:[{strings:['D3']},{strings:['A3','A3']},{strings:['D4','D4']},{strings:['F♯4','F♯4']},{strings:['A4','A4']}]},
+      open_g_major:{label:'Open G major — G2 D3/D3 G3/G3 B3/B3 D4/D4',courses:[{strings:['G2']},{strings:['D3','D3']},{strings:['G3','G3']},{strings:['B3','B3']},{strings:['D4','D4']}]}
     }
   },
 
   mandolin:{
     label:'Mandolin',
     fretting:'12tet',
-    tunings:{
-      standard:{
-        label:'Standard — G3 D4 A4 E5',
-        courses:[
-          {strings:['G3','G3']},
-          {strings:['D4','D4']},
-          {strings:['A4','A4']},
-          {strings:['E5','E5']}
-        ]
-      }
-    }
+    tunings:{standard:{label:'Standard — G3 D4 A4 E5',courses:[{strings:['G3','G3']},{strings:['D4','D4']},{strings:['A4','A4']},{strings:['E5','E5']}]}}
   },
 
   tamburitza:{
@@ -1968,26 +1984,11 @@ const GENERIC_INSTRUMENTS = {
     fretting:'12tet',
     preserveCourseOrder:true,
     tunings:{
-      d_tuning:{
-        label:'D3–A4–D4',
-        courses:[
-          {strings:['D3']},
-          {strings:['A4']},
-          {strings:['D4']}
-        ]
-      },
-      c_tuning:{
-        label:'C3–G4–C4',
-        courses:[
-          {strings:['C3']},
-          {strings:['G4']},
-          {strings:['C4']}
-        ]
-      }
+      d_tuning:{label:'D4–A4–D5',courses:[{strings:['D4']},{strings:['A4']},{strings:['D5']}]},
+      c_tuning:{label:'C4–G4–C5',courses:[{strings:['C4']},{strings:['G4']},{strings:['C5']}]}
     }
   }
 };
-
 function genericNoteTextToMidi(note){
   const clean=String(note)
     .trim()
@@ -2018,10 +2019,102 @@ function selectedGenericTuningId(){
   return document.getElementById('genericTuningPreset')?.value || 'standard';
 }
 
-function genericFretDefinitions(config){
+const BAGLAMA_17_RATIOS=[
+  1,18/17,12/11,9/8,81/68,27/22,81/64,4/3,24/17,
+  16/11,3/2,27/17,18/11,27/16,16/9,32/17,64/33,2
+];
+const BAGLAMA_17_LABELS=[
+  '0','1','1½','2','3','3½','4','5','6','6½','7','8','8½','9','10','11','11½','12'
+];
+const CIFTELI_TRADITIONAL_OCTAVE_CENTS=[0,200,350,500,700,850,1000,1200];
+const CIFTELI_HYBRID_FRETS=[
+  [0,'A3',220],
+  [1,'B3',midiHz(59)],
+  [2,'C4',midiHz(60)],
+  [3,'C4 sori',270],
+  [4,'C♯4',midiHz(61)],
+  [5,'D4',midiHz(62)],
+  [6,'D♯4',midiHz(63)],
+  [7,'E4',midiHz(64)],
+  [8,'F4',midiHz(65)],
+  [9,'F4 sori',360],
+  [10,'G4',midiHz(67)],
+  [11,'G♯4',midiHz(68)],
+  [12,'A4',midiHz(69)],
+  [13,'A♯4',midiHz(70)],
+  [14,'B4',midiHz(71)],
+  [15,'C5',midiHz(72)],
+  [16,'C5 sori',540],
+  [17,'C♯5',midiHz(73)],
+  [18,'D5',midiHz(74)],
+  [19,'D♯5',midiHz(75)],
+  [20,'E5',midiHz(76)],
+  [21,'F5',midiHz(77)],
+  [22,'F5 sori',720],
+  [23,'G5',midiHz(79)],
+  [24,'G♯5',midiHz(80)],
+  [25,'A5',midiHz(81)],
+  [26,'A♯5',midiHz(82)],
+  [27,'B5',midiHz(83)]
+];
+
+function addHalfFretLabel(label,offset){
+  const half=String(label).includes('½');
+  const value=parseFloat(String(label).replace('½','.5'))+offset;
+  const whole=Math.floor(value+1e-9);
+  return half ? `${whole}½` : String(Math.round(value));
+}
+
+function genericFretDefinitions(config,courseSpec={},tuning={}){
+  const system=courseSpec.fretSystem || tuning.fretSystem || config.fretSystem || config.fretting || '12tet';
+
+  if(system==='baglama17'){
+    const defs=[];
+    for(let octave=0;octave<2;octave++){
+      BAGLAMA_17_RATIOS.forEach((ratio,i)=>{
+        if(octave>0 && i===0) return;
+        defs.push({
+          label:addHalfFretLabel(BAGLAMA_17_LABELS[i],octave*12),
+          value:defs.length,
+          fretIndex:defs.length,
+          ratio:ratio*Math.pow(2,octave)
+        });
+      });
+    }
+    return defs;
+  }
+
+  if(system==='cifteliTraditional'){
+    const defs=[];
+    for(let octave=0;octave<3;octave++){
+      CIFTELI_TRADITIONAL_OCTAVE_CENTS.forEach((cents,i)=>{
+        if(octave>0 && i===0) return;
+        defs.push({
+          label:String(defs.length),
+          value:defs.length,
+          fretIndex:defs.length,
+          ratio:Math.pow(2,(cents+octave*1200)/1200)
+        });
+      });
+    }
+    return defs;
+  }
+
+  if(system==='cifteliHybrid'){
+    const openHz=CIFTELI_HYBRID_FRETS[0][2];
+    return CIFTELI_HYBRID_FRETS.map(([fret,note,hz],i)=>({
+      label:String(fret),
+      value:fret,
+      fretIndex:i,
+      ratio:hz/openHz,
+      note
+    }));
+  }
+
   return Array.from({length:25},(_,fret)=>({
     label:String(fret),
     value:fret,
+    fretIndex:fret,
     ratio:Math.pow(2,fret/12)
   }));
 }
@@ -2036,9 +2129,8 @@ function buildGenericInstrument(){
 
   const tuningId=selectedGenericTuningId();
   const tuning=config.tunings[tuningId] || Object.values(config.tunings)[0];
-  const frets=genericFretDefinitions(config);
-
   const courses=tuning.courses.map((course,index)=>{
+    const frets=genericFretDefinitions(config,course,tuning);
     const stringNames=course.strings.slice();
     const openMidis=stringNames.map(genericNoteTextToMidi);
 
@@ -2056,6 +2148,7 @@ function buildGenericInstrument(){
         n:fret.label,
         fret:fret.label,
         fretValue:fret.value,
+        fretIndex:Number.isFinite(fret.fretIndex)?fret.fretIndex:fret.value,
         ratio:fret.ratio,
         courseIndex:index,
         stringNames,
@@ -2064,11 +2157,14 @@ function buildGenericInstrument(){
         playedMidi,
         playedHz,
         playedName:
-          config.fretting==='12tet'
+          fret.note || (config.fretting==='12tet'
             ? midiName(playedMidi)
-            : (fret.value===0
-                ? midiName(referenceMidi)
-                : `${midiName(referenceMidi)} + ${fret.label}`),
+            : (()=>{
+                const nearest=Math.round(playedMidi);
+                const cents=Math.round((playedMidi-nearest)*100);
+                const suffix=cents===0?'':` ${cents>0?'+':''}${cents}¢`;
+                return `${midiName(nearest)}${suffix}`;
+              })()),
         drone:!!course.drone
       };
     });
@@ -2170,35 +2266,40 @@ function genericCandidateSet(hz,{includeDrone=false,octaveShift=0}={}){
     if(course.drone && !includeDrone) continue;
 
     const best=genericCourseCandidate(course,shiftedHz);
-
     if(best){
-      candidates.push({
-        ...best,
-        originalSourceHz:hz,
-        sourceHz:shiftedHz,
-        octaveShift
-      });
+      candidates.push({...best,originalSourceHz:hz,sourceHz:shiftedHz,octaveShift});
     }
   }
-
-  if(!candidates.length) return [];
 
   const finite=candidates.filter(c=>Number.isFinite(c.distanceCents));
   if(!finite.length) return [];
 
+  const nearestMode=!!ACTIVE_GENERIC.config.nearestPitchMode;
+  const tolerance=Number.isFinite(ACTIVE_GENERIC.config.matchToleranceCents)
+    ? ACTIVE_GENERIC.config.matchToleranceCents
+    : 1.0;
   const globalBest=Math.min(...finite.map(c=>c.distanceCents));
+  if(globalBest>tolerance) return [];
 
-  // Preserve the written octave exactly. If this pitch does not exist on the
-  // instrument within the available fret range, do not fold it into another octave.
-  if(globalBest>1.0) return [];
+  let pool=nearestMode
+    ? finite.filter(c=>c.distanceCents<=globalBest+0.75)
+    : finite.filter(c=>c.distanceCents<=1.0);
 
-  const accurate=finite.filter(c=>c.distanceCents<=1.0);
-  const minimumFret=Math.min(...accurate.map(c=>c.fretValue));
+  const preferred=ACTIVE_GENERIC.config.preferredMelodyCourseIndex;
+  if(
+    ACTIVE_GENERIC.config.preferredMelodyStrength==='strong' &&
+    Number.isInteger(preferred) &&
+    pool.some(c=>c.courseIndex===preferred)
+  ){
+    pool=pool.filter(c=>c.courseIndex===preferred);
+  }
 
-  return accurate
-    .filter(c=>Math.abs(c.fretValue-minimumFret)<1e-9)
+  const minimumFret=Math.min(...pool.map(c=>c.fretIndex ?? c.fretValue));
+  return pool
+    .filter(c=>Math.abs((c.fretIndex ?? c.fretValue)-minimumFret)<1e-9)
     .sort((a,b)=>
       a.distanceCents-b.distanceCents ||
+      ((a.courseIndex===preferred)?-1:0)-((b.courseIndex===preferred)?-1:0) ||
       b.courseIndex-a.courseIndex
     );
 }
@@ -2225,7 +2326,7 @@ function genericContourCost(a,b){
 }
 
 function genericTransitionCost(a,b){
-  const fretMove=Math.abs(a.fretValue-b.fretValue);
+  const fretMove=Math.abs((a.fretIndex??a.fretValue)-(b.fretIndex??b.fretValue));
   const courseMove=Math.abs(a.courseIndex-b.courseIndex);
 
   return (
@@ -2238,20 +2339,23 @@ function genericTransitionCost(a,b){
 function genericMelodyPreference(candidate){
   if(!ACTIVE_GENERIC) return 0;
 
+  const preferred=ACTIVE_GENERIC.config.preferredMelodyCourseIndex;
+  if(Number.isInteger(preferred)){
+    if(candidate.courseIndex===preferred) return -0.35;
+    return Number.isFinite(ACTIVE_GENERIC.config.melodyCoursePenalty)
+      ? ACTIVE_GENERIC.config.melodyCoursePenalty
+      : 1.8;
+  }
+
   const playable=ACTIVE_GENERIC.courses.filter(c=>!c.drone);
   if(!playable.length) return 0;
-
   const highestReference=Math.max(...playable.map(c=>c.referenceMidi));
   const course=ACTIVE_GENERIC.courses[candidate.courseIndex];
-
-  return Math.max(
-    0,
-    (highestReference-course.referenceMidi)/12
-  )*0.35;
+  return Math.max(0,(highestReference-course.referenceMidi)/12)*0.35;
 }
 
 function genericFretHeightCost(candidate){
-  const fret=candidate.fretValue;
+  const fret=candidate.fretIndex ?? candidate.fretValue;
 
   return (
     fret*0.08 +
@@ -2368,28 +2472,17 @@ function genericCandidateForCoursePitch(
 
   if(course.drone){
     const open=course.positions[0];
-    const distanceCents=Math.abs(
-      1200*Math.log2(shiftedHz/open.playedHz)
-    );
-
-    return {
-      ...open,
-      originalSourceHz:pitch.hz,
-      sourceHz:shiftedHz,
-      distanceCents
-    };
+    const distanceCents=Math.abs(1200*Math.log2(shiftedHz/open.playedHz));
+    return {...open,originalSourceHz:pitch.hz,sourceHz:shiftedHz,distanceCents};
   }
 
   const candidate=genericCourseCandidate(course,shiftedHz);
+  const tolerance=Number.isFinite(ACTIVE_GENERIC?.config?.matchToleranceCents)
+    ? ACTIVE_GENERIC.config.matchToleranceCents
+    : 1.0;
+  if(!candidate || candidate.distanceCents>tolerance) return null;
 
-  if(!candidate || candidate.distanceCents>1.0) return null;
-
-  return {
-    ...candidate,
-    originalSourceHz:pitch.hz,
-    sourceHz:shiftedHz,
-    octaveShift
-  };
+  return {...candidate,originalSourceHz:pitch.hz,sourceHz:shiftedHz,octaveShift};
 }
 
 
@@ -2799,6 +2892,19 @@ function chooseBalalaikaTraditionalEvents(events){
   return result;
 }
 
+function genericChordShapePlayable(chosen){
+  if(!ACTIVE_GENERIC) return true;
+  const fretted=chosen
+    .filter(p=>(p.fretIndex ?? p.fretValue)>0)
+    .map(p=>p.fretIndex ?? p.fretValue);
+  if(fretted.length<2) return true;
+  const span=Math.max(...fretted)-Math.min(...fretted);
+  const limit=Number.isFinite(ACTIVE_GENERIC.config.maxChordFretSpan)
+    ? ACTIVE_GENERIC.config.maxChordFretSpan
+    : 4;
+  return span<=limit;
+}
+
 function genericChordAssignment(pitches,{fullStrum=false,octaveShift=0}={}){
   if(!ACTIVE_GENERIC || !pitches.length) return [];
 
@@ -2807,6 +2913,7 @@ function genericChordAssignment(pitches,{fullStrum=false,octaveShift=0}={}){
 
   function search(courseIndex,usedPitchIndexes,chosen,cost){
     if(courseIndex>=courses.length){
+      if(!genericChordShapePlayable(chosen)) return;
       const state={
         count:chosen.length,
         cost,
@@ -2877,7 +2984,7 @@ function genericChordAssignment(pitches,{fullStrum=false,octaveShift=0}={}){
         chosen,
         cost+
           c.distanceCents*10000+
-          c.fretValue*100
+          (c.fretIndex??c.fretValue)*100
       );
 
       chosen.pop();
@@ -2908,7 +3015,7 @@ function genericChordAssignment(pitches,{fullStrum=false,octaveShift=0}={}){
 
         const score=
           c.distanceCents*10000+
-          c.fretValue*100;
+          (c.fretIndex??c.fretValue)*100;
 
         if(!bestFill || score<bestFill.score){
           bestFill={...c,score};
@@ -2923,6 +3030,39 @@ function genericChordAssignment(pitches,{fullStrum=false,octaveShift=0}={}){
   }
 
   return chosen;
+}
+
+function cifteliThreeDronePositions(event,melody){
+  if(!ACTIVE_GENERIC || ACTIVE_GENERIC.id!=='cifteli_three') return [];
+  const used=new Set((melody||[]).map(p=>p.courseIndex));
+  const harmony=balalaikaChordPitchClasses(event?.chordSymbol);
+  const out=[];
+
+  for(const course of ACTIVE_GENERIC.courses.slice(0,2)){
+    if(used.has(course.index)) continue;
+
+    if(harmony?.pcs?.size){
+      const candidates=course.positions
+        .map(position=>({
+          position,
+          pc:balalaikaPitchClass(Math.round(position.playedMidi)),
+          fret:position.fretIndex ?? position.fretValue
+        }))
+        .filter(x=>harmony.pcs.has(x.pc))
+        .sort((a,b)=>
+          (a.fret===0?-1:0)-(b.fret===0?-1:0) ||
+          a.fret-b.fret
+        );
+      if(candidates.length){
+        out.push({...candidates[0].position,cifteliDrone:true});
+        continue;
+      }
+    }
+
+    const open=course.positions[0];
+    if(open) out.push({...open,cifteliDrone:true});
+  }
+  return out;
 }
 
 function chooseGenericEvents(events){
@@ -2944,6 +3084,10 @@ function chooseGenericEvents(events){
         )[0];
 
         if(fallback) result.set(event.startChar,[fallback]);
+      }
+      if(ACTIVE_GENERIC?.id==='cifteli_three' && result.has(event.startChar)){
+        const melody=result.get(event.startChar);
+        result.set(event.startChar,melody.concat(cifteliThreeDronePositions(event,melody)));
       }
       continue;
     }
@@ -3281,7 +3425,7 @@ function refreshInstrumentState(){
         : '12-TET chromatic';
 
       desc.textContent=
-        `Lower ${drone.note} is an untouched open drone and is used only for written ABC chords. `+
+        `Lower ${drone.note} is normally sounded as an open drone under the melody; a written ABC chord symbol may move it to a nearby chord tone. `+
         `Upper ${open.note} is the melody string with 13 ${fretType} frets. `+
         `Pitch matching uses nearest cents distance. Low-register pieces are octave-shifted coherently, `+
         `then normalized back down whenever the whole melody would unnecessarily sit above the octave fret.`;
@@ -3289,7 +3433,7 @@ function refreshInstrumentState(){
 
     if(legend){
       legend.textContent=
-        `Top = MELODY · Bottom = DRONE · fret 0–13 · octave fret = ${ACTIVE_CIFTELI.octaveFret} · drone 0 is chord-only`;
+        `Top = MELODY · Bottom = DRONE/HARMONY · fret 0–13 · octave fret = ${ACTIVE_CIFTELI.octaveFret} · single-note passages keep the low string droning`;
     }
     return;
   }
@@ -3450,8 +3594,16 @@ function refreshInstrumentState(){
           : ' The traditional strum + drones option is available on the Standard E–E–A tuning.';
       }
 
+      const pitchRule=config.nearestPitchMode
+        ? 'Western written pitches are matched to the physically nearest fret by frequency, while keeping the written register.'
+        : 'Written ABC/MIDI octave is preserved exactly and exact pitches prefer the lowest available fret.';
+      const preference=config.preferredMelodyCourseIndex===1 && ACTIVE_GENERIC.id==='dombra'
+        ? ' The upper G string is preferred for melody when the fingering is otherwise equivalent, but the D string remains fully usable.'
+        : (ACTIVE_GENERIC.id==='cifteli_three'
+            ? ' The A string is strongly preferred for melody; the two lower strings remain available for drones and chords.'
+            : '');
       desc.textContent=
-        `${ACTIVE_GENERIC.courses.length} courses. Written ABC/MIDI octave is preserved exactly. Fingering uses only the exact written pitch, then prefers the lowest available fret and small course changes. On doubled courses, fret calculation uses the lowest-pitched string in that course as the reference.${extra}`;
+        `${ACTIVE_GENERIC.courses.length} courses. ${pitchRule} Chord shapes are restricted to a playable hand span instead of printing widely separated frets at the same instant.${preference}${extra}`;
     }
 
     if(legend){
@@ -3459,10 +3611,11 @@ function refreshInstrumentState(){
         ? ' · ↓/↑ = alternating full strum · open E drones used when harmonically suitable'
         : '';
 
+      const fretWord=config.nearestPitchMode?'fret/position':'fret';
       legend.textContent=(
         config.preserveCourseOrder
-          ? `Top-to-bottom = tuning order · numbers = fret · tuning: ${tuningLabel}`
-          : `Top-to-bottom = highest-numbered course to course 1 · numbers = fret · tuning: ${tuningLabel}`
+          ? `Top-to-bottom = tuning order · numbers = ${fretWord} · tuning: ${tuningLabel}`
+          : `Top-to-bottom = highest-numbered course to course 1 · numbers = ${fretWord} · tuning: ${tuningLabel}`
       )+traditionalNote;
     }
 
@@ -3918,6 +4071,26 @@ function cifteliDroneDistance(hz){
   return d ? courseDistance(d,hz) : Infinity;
 }
 
+function cifteliLowerChordPosition(symbol){
+  const harmony=balalaikaChordPitchClasses(symbol);
+  if(!harmony?.pcs?.size) return ACTIVE_CIFTELI.drone;
+
+  const ranked=(ACTIVE_CIFTELI.lower||[ACTIVE_CIFTELI.drone])
+    .filter(Boolean)
+    .map(position=>{
+      const pc=balalaikaPitchClass(frequencyToNearestMidi(position.hz));
+      const inChord=harmony.pcs.has(pc);
+      const openBonus=position.fret===0 ? -1.5 : 0;
+      return {...position,_score:(inChord?0:50)+position.fret*0.35+openBonus};
+    })
+    .sort((a,b)=>a._score-b._score || a.fret-b.fret);
+
+  const out=ranked[0]||ACTIVE_CIFTELI.drone;
+  const clean={...out};
+  delete clean._score;
+  return clean;
+}
+
 function chooseCifteliEvents(events){
   const result=new Map();
   const melodyOctaveShift=cifteliNormalizedOctaveShift(events);
@@ -3925,59 +4098,17 @@ function chooseCifteliEvents(events){
   for(const e of events){
     if(!e.pitches.length) continue;
 
-    if(e.pitches.length===1){
-      const melody=nearestCifteliMelodyCandidate(
-        e.pitches[0].hz,
-        melodyOctaveShift
-      );
-      if(melody) result.set(e.startChar,[melody]);
-      continue;
-    }
+    const melody=nearestCifteliMelodyCandidate(e.pitches[0].hz,melodyOctaveShift);
+    if(!melody) continue;
 
-    let dronePitchIndex=-1;
-    let bestDroneDistance=Infinity;
+    // Traditional playing keeps the lower string sounding as an open drone.
+    // If the ABC supplies a chord symbol, the lower string may move to the
+    // nearest low-fret chord tone instead.
+    const lower=e.chordSymbol
+      ? cifteliLowerChordPosition(e.chordSymbol)
+      : ACTIVE_CIFTELI.drone;
 
-    e.pitches.forEach((p,i)=>{
-      const d=cifteliDroneDistance(p.hz);
-      if(d<bestDroneDistance){
-        bestDroneDistance=d;
-        dronePitchIndex=i;
-      }
-    });
-
-    const useDrone=bestDroneDistance<=50;
-    const chosen=[];
-
-    if(useDrone){
-      chosen.push({...ACTIVE_CIFTELI.drone,distanceCents:bestDroneDistance});
-    }
-
-    let bestMelody=null;
-    let bestMelodyCost=Infinity;
-
-    e.pitches.forEach((p,i)=>{
-      if(useDrone && i===dronePitchIndex) return;
-
-      const candidate=nearestCifteliMelodyCandidate(
-        p.hz,
-        melodyOctaveShift
-      );
-
-      if(candidate && candidate.distanceCents<bestMelodyCost){
-        bestMelody=candidate;
-        bestMelodyCost=candidate.distanceCents;
-      }
-    });
-
-    if(!bestMelody && e.pitches.length){
-      bestMelody=nearestCifteliMelodyCandidate(
-        e.pitches[0].hz,
-        melodyOctaveShift
-      );
-    }
-
-    if(bestMelody) chosen.unshift(bestMelody);
-    if(chosen.length) result.set(e.startChar,chosen);
+    result.set(e.startChar,[melody,{...lower}]);
   }
 
   return result;
@@ -4864,6 +4995,64 @@ function changeSongOctave(delta){
   render();
 }
 
+function isAnyCifteli(){
+  return selectedInstrumentId()==='cifteli' || selectedInstrumentId()==='cifteli_three';
+}
+
+function cifteliMelodyOnlyAbc(abc){
+  let keyName='C';
+  let barAcc={};
+  const lines=abc.split(/\r?\n/);
+
+  return lines.map(line=>{
+    const field=line.match(/^\s*([A-Za-z]):\s*(.*)$/);
+    if(field){
+      if(field[1]==='K'){
+        keyName=(field[2].trim().split(/\s+/)[0]||keyName);
+        barAcc={};
+      }
+      return line;
+    }
+    if(/^\s*%/.test(line)) return line;
+
+    let out='';
+    for(let i=0;i<line.length;){
+      if(line[i]==='|' || line[i]===':'){
+        barAcc={};
+        out+=line[i++];
+        continue;
+      }
+
+      if(line[i]==='['){
+        const close=line.indexOf(']',i+1);
+        if(close>i){
+          const inside=line.slice(i+1,close);
+          if(/^[A-Za-z]:/.test(inside) || /^\d/.test(inside)){
+            out+=line.slice(i,close+1);
+            i=close+1;
+            continue;
+          }
+
+          const tokens=inside.match(/[_=^]*[A-Ga-g][,']*(?:\d*\/?\d*)?/g)||[];
+          if(tokens.length>1){
+            const ranked=tokens.map(token=>{
+              const pitchToken=(token.match(/^[_=^]*[A-Ga-g][,']*/)||[''])[0];
+              const parsed=parsePitchToken(pitchToken,keyName,{...barAcc},440);
+              return {token,midi:parsed?.midi ?? -Infinity};
+            }).sort((a,b)=>b.midi-a.midi);
+            out+=ranked[0].token;
+            i=close+1;
+            continue;
+          }
+        }
+      }
+
+      out+=line[i++];
+    }
+    return out;
+  }).join('\n');
+}
+
 function displayAbc(abc){
   const lines=abc.split(/\r?\n/);
   const out=[],music=[];
@@ -5497,7 +5686,8 @@ function render(){
   try{
     if(!window.ABCJS) throw new Error('ABCJS failed to load.');
 
-    const renderedAbc=displayAbc(shiftedNotation);
+    const baseRenderedAbc=displayAbc(shiftedNotation);
+    const renderedAbc=isAnyCifteli()?cifteliMelodyOnlyAbc(baseRenderedAbc):baseRenderedAbc;
     const sourceEvents=parseSourceEvents(renderedAbc);
     const courseMap=chooseInstrumentEvents(sourceEvents);
 
@@ -5623,13 +5813,15 @@ function buildCourseTable(){
   if(isCifteli()){
     const droneGroup=document.createElement('div');
     droneGroup.className='course-group';
-    droneGroup.innerHTML='<h3>Low string — drone (chords only)</h3>';
+    droneGroup.innerHTML='<h3>Low string — open drone / chord harmony</h3>';
 
-    const d=ACTIVE_CIFTELI.drone;
-    const droneRow=document.createElement('div');
-    droneRow.className='course-row';
-    droneRow.innerHTML=`<strong>Open</strong><span>${d.note}</span><span>${d.hz.toFixed(3)} Hz</span>`;
-    droneGroup.appendChild(droneRow);
+    for(const d of ACTIVE_CIFTELI.lower){
+      const droneRow=document.createElement('div');
+      droneRow.className='course-row';
+      const fretLabel=d.fret===0?'Open':`Fret ${d.fret}`;
+      droneRow.innerHTML=`<strong>${fretLabel}</strong><span>${d.note}</span><span>${d.hz.toFixed(3)} Hz</span>`;
+      droneGroup.appendChild(droneRow);
+    }
     root.appendChild(droneGroup);
 
     const melodyGroup=document.createElement('div');
@@ -7206,6 +7398,8 @@ document.getElementById('chordGeneratorBtn').addEventListener('click',()=>{
 
   if(isGenericCourseInstrument()){
     params.set('tuning',selectedGenericTuningId());
+  }else if(isCifteli()){
+    params.set('tuning',selectedCifteliTuningId());
   }else if(isDulcimer()){
     params.set('tuning',selectedDulcimerTuningId());
   }else if(isKantele()){

@@ -1,5 +1,5 @@
 X: 1
-T: Zaplanski \vCa\vcak
+T: Zaplanski Čačak
 O: Bulgaria
 M: 2/4
 L: 1/16
@@ -7,13 +7,13 @@ K: GMix
 |: "G"{D}~G2D ~B2D | ~c2D ~B2D | ~G2D ~B2D |1,3 "D7"~A2D ~d2D :|2,4 "D7"~A2D ~A3 :|
 |: "D"^F2G ~A2G | ^F2G ~A2G | "A7"cBA G^FG |1,3 "D"A2D ~A2D :|2,4 "D"~A3- "fine"A3 :|
 |: "Dm"{G}A4- | A4- |A4- |A4 :|
-P:
+P: 
 |::: "Dm"^GAB AGF | GAB AGF | GAB AGF | ~A3 F3 :::|
 |::: "E"^GAB AGF | ~E2B, ~^G2B, | "Dm"^GAB AGF | "E"~E2B, ~E3 :::|
 
 
 X: 2
-T: Zaplanski \vCa\vcak
+T: Zaplanski Čačak
 Z: John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
 M: 2/4
 L: 1/16
@@ -21,6 +21,6 @@ K: AMix
 |::: "A"{E}~A2E ~c2E | ~d2E ~c2E | ~A2E ~c2E |1,3 "E7"~B2E ~e2E :|2,4 "E7"~B2E ~B2E :|
 |::: "E"^G2A ~B2A | ^G2A ~B2A | "B7"dcB A^GA |1,3 "E"B2E ~B2E :|2,4 "E"~B3- "fine"B3 :|
 |: "Em"{A}B4- | B4- | B4- | B4 :|
-P:
+P: 
 |::: "Em"^ABc BAG | ABc BAG | ABc BAG | ~B3 G3 :::|
 |::: "F#"^ABc BAG | ~F2C ~^A2C | "Em"^ABc BAG | "F#"~F2C ~F3 :::|

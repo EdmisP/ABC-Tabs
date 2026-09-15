@@ -1,6 +1,6 @@
 X: 1
-T:Kalamatian\'os: Samiotissa
-T:Girl from Samos
+T: Kalamatianós: Samiotissa
+T: Girl from Samos
 O:Greece
 R:kalamatianos
 Z:John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
@@ -9,7 +9,7 @@ N:The instrumental interlude here is a "generic" interlude used in much Greek mu
 M:7/8
 L:1/8
 K:G
-P:Instr:
+P: Instr:
 |: z[ge][fd][ec] | "D7"[d2B][dB] [cA][BG] [cA][dB] | "G"[B2G][cA] [dB][ge][fd][ec] \
 | "D7"[d2B][dB] [cA][BG] [cA][dB] | "G"[B3G] :|
 P: Vocal:

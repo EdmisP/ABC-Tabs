@@ -1,5 +1,5 @@
 X: 1
-T: U\vzi\vcka \vCarlama
+T: Užička Čarlama
 O: Srbija
 Z: 1997 by John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/abc/
 M: 2/4
@@ -10,7 +10,7 @@ P: C instruments
 | fed^c d2e2 | ^c2d2 "E"~B4 \
 | "Dm"fed^c d2e2 | ^c2d2 "E"~B3A \
 | ^GAB2 "B7"BAGA | "E"B4 [B4E4] :|
-P:
+P: 
 K:A
 |: "A"[e2c2][c2A2] "E7"[d4B4] \
 | "A"[c2A2][A2E2] "E7"[B4G4] \
@@ -21,13 +21,13 @@ K:A
 | "A"[c2A2][A2E2] "B7"[G2E2][A2F2] \
 | "E7"[B4G4E4] [B4G4E4] :|
 %%sep 5 5 500
-P:
+P: 
 K: Dm
 |: "Gm"fed^c d2e2 | ^c2d2 B2c2 \
 | BAG^F G2A2 | ^F2G2 "A"~E4 \
 | "Gm"BAG^F G2A2 | ^F2G2 "A"~E3D \
 | ^CDE2 "E7"EDCD | "A"E4 [E4A,4] :|
-P:
+P: 
 K:D
 |: "D"[A2F2][F2D2] "A7"[G4E4] \
 | "D"[F2D2][D2A,2] "A7"[E4C4] \
@@ -44,7 +44,7 @@ K: Bm
 | gfe^d e2f2 | ^d2e2 "F#"~c4 \
 | "Em"gfe^d e2f2 | ^d2e2 "F#"~c3B \
 | ^ABc2 "C7"cBAB | "F#"c4 [c4F4] :|
-P:
+P: 
 K:B
 |: "B"[f2d2][d2B2] "F#7"[e4c4] \
 | "B"[d2B2][B2F2] "F#7"[c4A4] \
@@ -55,13 +55,13 @@ K:B
 | "B"[d2B2][B2F2] "C7"[A2F2][B2G2] \
 | "F#7"[c4A4F4] [c4A4F4] :|
 %%sep 5 5 500
-P:
+P: 
 K: Em
 |: "Am"gfe^d e2f2 | ^d2e2 c2d2 \
 | cBA^G A2B2 | ^G2A2 "B"~F4 \
 | "Am"cBA^G A2B2 | ^G2A2 "B"~F3E \
 | ^DEF2 "F#7"FEDE | "B"F4 [F4B,4] :|
-P:
+P: 
 K:E
 |: "E"[B2G2][G2E2] "B7"[A4F4] \
 | "E"[G2E2][E2B,2] "B7"[F4D4] \

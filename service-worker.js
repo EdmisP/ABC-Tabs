@@ -1,4 +1,4 @@
-const CACHE_NAME = 'harakka-abc-archive-balkan-v2';
+const CACHE_NAME = 'harakka-abc-archive-instruments-v3';
 const CORE = [
   './',
   './index.html',

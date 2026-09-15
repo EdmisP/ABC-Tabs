@@ -819,7 +819,15 @@ html[data-theme="legacy"] ::-webkit-scrollbar-thumb{background:#c0c0c0;border:2p
       <label>Instrument
         <select id="instrumentPreset">
           <option value="balalaika_prima">Prima Balalaika</option>
+          <option value="bouzouki">Bouzouki</option>
+          <option value="baglamas">Baglamas</option>
+          <option value="baglama">Bağlama</option>
+          <option value="cifteli">Çifteli</option>
+          <option value="cifteli_three">Çifteli (3-string)</option>
+          <option value="dombra">Dombra</option>
           <option value="domra_prima">Prima Domra</option>
+          <option value="panduri">Panduri</option>
+          <option value="tzouras">Tzouras</option>
           <option value="waldzither">Waldzither</option>
           <option value="mandolin">Mandolin</option>
           <option value="citera">Citera</option>
@@ -983,45 +991,53 @@ const CHORDS={
 };
 
 const GENERIC_INSTRUMENTS={
-  balalaika_prima:{
-    label:'Prima Balalaika',
-    tunings:{
-      standard:{label:'Standard — E4 E4 A4',courses:[['E4'],['E4'],['A4']]},
-      folk_ceg:{label:'Folk — C4 E4 G4',courses:[['C4'],['E4'],['G4']]},
-      russian_guitar:{label:'Russian guitar — G3 B3 D4',courses:[['G3'],['B3'],['D4']]},
-      domra_style:{label:'Domra-style — E4 A4 D5',courses:[['E4'],['A4'],['D5']]},
-      folk_dfa:{label:'Folk — D4 F4 A4',courses:[['D4'],['F4'],['A4']]}
-    }
-  },
-  domra_prima:{
-    label:'Prima Domra',
-    tunings:{
-      three_string:{label:'3-string — E4 A4 D5',courses:[['E4'],['A4'],['D5']]},
-      four_string:{label:'4-string — G3 D4 A4 E5',courses:[['G3'],['D4'],['A4'],['E5']]}
-    }
-  },
-  waldzither:{
-    label:'Waldzither',
-    tunings:{
-      standard:{label:'Standard/common — C3 G3/G3 C4/C4 E4/E4 G4/G4',courses:[['C3'],['G3','G3'],['C4','C4'],['E4','E4'],['G4','G4']]},
-      d_tuning:{label:'D tuning — D3 A3/A3 D4/D4 F♯4/F♯4 A4/A4',courses:[['D3'],['A3','A3'],['D4','D4'],['F♯4','F♯4'],['A4','A4']]},
-      open_g_major:{label:'Open G major — G2 D3/D3 G3/G3 B3/B3 D4/D4',courses:[['G2'],['D3','D3'],['G3','G3'],['B3','B3'],['D4','D4']]}
-    }
-  },
-  mandolin:{
-    label:'Mandolin',
-    tunings:{standard:{label:'Standard — G3 D4 A4 E5',courses:[['G3','G3'],['D4','D4'],['A4','A4'],['E5','E5']]}}
-  },
-  tamburitza:{
-    label:'Tamburitza',
-    preserveCourseOrder:true,
-    tunings:{
-      d_tuning:{label:'D3–A4–D4',courses:[['D3'],['A4'],['D4']]},
-      c_tuning:{label:'C3–G4–C4',courses:[['C3'],['G4'],['C4']]}
-    }
-  }
+  balalaika_prima:{label:'Prima Balalaika',tunings:{
+    standard:{label:'Standard — E4 E4 A4',courses:[['E4'],['E4'],['A4']]},
+    folk_ceg:{label:'Folk — C4 E4 G4',courses:[['C4'],['E4'],['G4']]},
+    russian_guitar:{label:'Russian guitar — G3 B3 D4',courses:[['G3'],['B3'],['D4']]},
+    domra_style:{label:'Domra-style — E4 A4 D5',courses:[['E4'],['A4'],['D5']]},
+    folk_dfa:{label:'Folk — D4 F4 A4',courses:[['D4'],['F4'],['A4']]}
+  }},
+  bouzouki:{label:'Bouzouki',preserveCourseOrder:true,tunings:{
+    trichordo:{label:'3-course — D3 A3 D4',courses:[['D3'],['A3'],['D4']]},
+    tetrachordo:{label:'4-course — C3 F3 A3 D4',courses:[['C3'],['F3'],['A3'],['D4']]}
+  }},
+  baglamas:{label:'Baglamas',preserveCourseOrder:true,tunings:{standard:{label:'D4 A4 D5',courses:[['D4'],['A4'],['D5']]}}},
+  baglama:{label:'Bağlama',preserveCourseOrder:true,fretSystem:'baglama17',maxChordFretSpan:5,tunings:{standard:{label:'G2 D3 A3',courses:[['G2'],['D3'],['A3']]}}},
+  cifteli:{label:'Çifteli',preserveCourseOrder:true,maxChordFretSpan:5,tunings:{
+    trad_ad:{label:'Traditional A3 / D4',fretSystem:'cifteliTraditional',courses:[['A3'],['D4']]},
+    trad_be:{label:'Traditional B3 / E4',fretSystem:'cifteliTraditional',courses:[['B3'],['E4']]},
+    trad_cf:{label:'Traditional C4 / F4',fretSystem:'cifteliTraditional',courses:[['C4'],['F4']]},
+    '12tet_ad':{label:'12-TET A3 / D4',courses:[['A3'],['D4']]},
+    '12tet_be':{label:'12-TET B3 / E4',courses:[['B3'],['E4']]},
+    '12tet_cf':{label:'12-TET C4 / F4',courses:[['C4'],['F4']]}
+  }},
+  cifteli_three:{label:'Çifteli (3-string)',preserveCourseOrder:true,maxChordFretSpan:5,tunings:{custom:{label:'G2 D3 A3 — traditional / hybrid',courses:[
+    {strings:['G2'],fretSystem:'cifteliTraditional'},
+    {strings:['D3'],fretSystem:'cifteliTraditional'},
+    {strings:['A3'],fretSystem:'cifteliHybrid'}
+  ]}}},
+  dombra:{label:'Dombra',preserveCourseOrder:true,tunings:{standard:{label:'D4 G4',courses:[['D4'],['G4']]}}},
+  domra_prima:{label:'Prima Domra',tunings:{
+    three_string:{label:'3-string — E4 A4 D5',courses:[['E4'],['A4'],['D5']]},
+    four_string:{label:'4-string — G3 D4 A4 E5',courses:[['G3'],['D4'],['A4'],['E5']]}
+  }},
+  panduri:{label:'Panduri',preserveCourseOrder:true,tunings:{
+    standard:{label:'G3 A3 C4',courses:[['G3'],['A3'],['C4']]},
+    alternative:{label:'E3 B3 A4',courses:[['E3'],['B3'],['A4']]}
+  }},
+  tzouras:{label:'Tzouras',preserveCourseOrder:true,tunings:{standard:{label:'D3 A3 D4',courses:[['D3'],['A3'],['D4']]}}},
+  waldzither:{label:'Waldzither',tunings:{
+    standard:{label:'Standard/common — C3 G3/G3 C4/C4 E4/E4 G4/G4',courses:[['C3'],['G3','G3'],['C4','C4'],['E4','E4'],['G4','G4']]},
+    d_tuning:{label:'D tuning — D3 A3/A3 D4/D4 F♯4/F♯4 A4/A4',courses:[['D3'],['A3','A3'],['D4','D4'],['F♯4','F♯4'],['A4','A4']]},
+    open_g_major:{label:'Open G major — G2 D3/D3 G3/G3 B3/B3 D4/D4',courses:[['G2'],['D3','D3'],['G3','G3'],['B3','B3'],['D4','D4']]}
+  }},
+  mandolin:{label:'Mandolin',tunings:{standard:{label:'Standard — G3 D4 A4 E5',courses:[['G3','G3'],['D4','D4'],['A4','A4'],['E5','E5']]}}},
+  tamburitza:{label:'Tamburitza',preserveCourseOrder:true,tunings:{
+    d_tuning:{label:'D4–A4–D5',courses:[['D4'],['A4'],['D5']]},
+    c_tuning:{label:'C4–G4–C5',courses:[['C4'],['G4'],['C5']]}
+  }}
 };
-
 const DULCIMER_TUNINGS={
   dad:{label:'DAD',notes:['D3','A3','D4']},
   cgc:{label:'CGC',notes:['C3','G3','C4']},
@@ -1121,17 +1137,69 @@ function setupSubControls(){
   }
 }
 
+const CHORD_BAGLAMA_RATIOS=[1,18/17,12/11,9/8,81/68,27/22,81/64,4/3,24/17,16/11,3/2,27/17,18/11,27/16,16/9,32/17,64/33,2];
+const CHORD_BAGLAMA_LABELS=['0','1','1½','2','3','3½','4','5','6','6½','7','8','8½','9','10','11','11½','12'];
+const CHORD_CIFTELI_CENTS=[0,200,350,500,700,850,1000,1200];
+const CHORD_CIFTELI_HYBRID=[
+  [0,220],[1,246.9416506],[2,261.6255653],[3,270],[4,277.18263098],[5,293.66476792],[6,311.12698372],[7,329.62755691],
+  [8,349.22823143],[9,360],[10,391.99543598],[11,415.30469758],[12,440],[13,466.16376152],[14,493.88330126],
+  [15,523.2511306],[16,540],[17,554.36526195],[18,587.32953583],[19,622.25396744],[20,659.25511383],
+  [21,698.45646287],[22,720],[23,783.99087196],[24,830.60939516],[25,880],[26,932.32752304],[27,987.76660251]
+];
+function chordFretDefs(system,openMidi){
+  if(system==='baglama17'){
+    const out=[];
+    for(let oct=0;oct<2;oct++){
+      CHORD_BAGLAMA_RATIOS.forEach((ratio,i)=>{
+        if(oct&&i===0)return;
+        const base=parseFloat(CHORD_BAGLAMA_LABELS[i].replace('½','.5'))+oct*12;
+        const label=String(base).replace('.5','½');
+        const midiFloat=openMidi+12*Math.log2(ratio*Math.pow(2,oct));
+        out.push({fret:label,fretNumber:out.length,midiFloat,midi:Math.round(midiFloat)});
+      });
+    }
+    return out;
+  }
+  if(system==='cifteliTraditional'){
+    const out=[];
+    for(let oct=0;oct<3;oct++){
+      CHORD_CIFTELI_CENTS.forEach((cents,i)=>{
+        if(oct&&i===0)return;
+        const midiFloat=openMidi+(cents+oct*1200)/100;
+        out.push({fret:String(out.length),fretNumber:out.length,midiFloat,midi:Math.round(midiFloat)});
+      });
+    }
+    return out;
+  }
+  if(system==='cifteliHybrid'){
+    const openHz=CHORD_CIFTELI_HYBRID[0][1];
+    return CHORD_CIFTELI_HYBRID.map(([fret,hz],i)=>{
+      const midiFloat=openMidi+12*Math.log2(hz/openHz);
+      return {fret:String(fret),fretNumber:i,midiFloat,midi:Math.round(midiFloat)};
+    });
+  }
+  return Array.from({length:13},(_,f)=>({fret:String(f),fretNumber:f,midiFloat:openMidi+f,midi:openMidi+f}));
+}
+
 function physicalCourses(){
   const id=instrumentId();
   if(GENERIC_INSTRUMENTS[id]){
-    const t=GENERIC_INSTRUMENTS[id].tunings[document.getElementById('tuningSelect')?.value||Object.keys(GENERIC_INSTRUMENTS[id].tunings)[0]];
-    return t.courses.map((strings,i)=>({course:i+1,openNote:strings[0],openMidi:noteToMidi(strings[0]),strings,positions:Array.from({length:13},(_,f)=>({fret:String(f),fretNumber:f,midi:noteToMidi(strings[0])+f}))}));
+    const config=GENERIC_INSTRUMENTS[id];
+    const t=config.tunings[document.getElementById('tuningSelect')?.value||Object.keys(config.tunings)[0]];
+    return t.courses.map((raw,i)=>{
+      const spec=Array.isArray(raw)?{strings:raw}:raw;
+      const strings=spec.strings;
+      const openNote=strings[0];
+      const openMidi=noteToMidi(openNote);
+      const system=spec.fretSystem||t.fretSystem||config.fretSystem||'12tet';
+      return {course:i+1,openNote,openMidi,strings,positions:chordFretDefs(system,openMidi)};
+    });
   }
   if(id==='dulcimer'){
     const t=DULCIMER_TUNINGS[document.getElementById('tuningSelect')?.value||'dad'];
     return t.notes.map((note,i)=>{
       const open=noteToMidi(note);
-      return {course:i+1,openNote:note,openMidi:open,strings:[note],positions:DULCIMER_FRETS.map(([f,s])=>({fret:f,fretNumber:Number(String(f).replace('½','.5')),midi:open+s}))};
+      return {course:i+1,openNote:note,openMidi:open,strings:[note],positions:DULCIMER_FRETS.map(([f,s])=>({fret:f,fretNumber:Number(String(f).replace('½','.5')),midi:open+s,midiFloat:open+s}))};
     });
   }
   return [];
@@ -1158,7 +1226,11 @@ function bestFrettedVoicings(){
       const used=shape.filter(Boolean);if(!used.length)return;
       const present=new Set(used.map(x=>mod(x.midi)));
       let missingPenalty=0;for(const t of tones){if(!present.has(t.pc))missingPenalty+=t.weight}
-      const frets=used.map(x=>x.fretNumber);const sounding=[...used].sort((a,b)=>a.midi-b.midi);
+      const frets=used.map(x=>x.fretNumber);
+      const fretted=frets.filter(f=>f>0);
+      const spanLimit=Number.isFinite(GENERIC_INSTRUMENTS[instrumentId()]?.maxChordFretSpan)?GENERIC_INSTRUMENTS[instrumentId()].maxChordFretSpan:4;
+      if(fretted.length>1 && Math.max(...fretted)-Math.min(...fretted)>spanLimit)return;
+      const sounding=[...used].sort((a,b)=>a.midi-b.midi);
       const rootBass=sounding[0]&&mod(sounding[0].midi)===selectedRoot().pc;
       const muted=shape.length-used.length;
       const maxFret=Math.max(...frets);const minFret=Math.min(...frets);const total=frets.reduce((a,b)=>a+b,0);
