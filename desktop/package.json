@@ -1,0 +1,44 @@
+{
+  "name": "harakka-abc-archive-desktop",
+  "version": "1.0.0",
+  "description": "Legacy desktop shell for Harakka's ABC Archive and Tab Maker",
+  "main": "main.js",
+  "author": "magpiesacorvid",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis --x64"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "uk.magpie.harakka.abcarchive",
+    "productName": "Harakka's ABC Archive and Tab Maker",
+    "artifactName": "Harakkas-ABC-Archive-Setup-${version}.${ext}",
+    "files": [
+      "main.js",
+      "preload.js",
+      "offline.html",
+      "icon.ico",
+      "package.json"
+    ],
+    "win": {
+      "icon": "icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Harakka's ABC Archive"
+    }
+  }
+}
