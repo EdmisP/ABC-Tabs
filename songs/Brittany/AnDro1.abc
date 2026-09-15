@@ -1,0 +1,39 @@
+X:1
+T:Andro 1
+G:Kazimodal
+R:Andro
+C:Traditionnel, arrangement Ronan Keryell http://kazimodal.trad.org
+Q:C2=108
+M:4/4
+S:Tonio`u Breizh-Izel 1718 (Ardeven) 1999-10-19
+K:D
+|: "D"A(A/2B/2) "F#m"{AB}A>F "Bm"BB "A"A/2A/2A | "D"A>B "F#m"{AB}AF "Bm"{F}B/2B/2B "A"A2 :|
+|: "A"(A/2G/2)(E/2F/2) "Bm"(DE/2)F/2 "Em"GE "D"FD | "Bm"{Bc}Bc/2d/2 "A"c>A "G"BG "D"A2 |
+"Em"(A/2G/2)(E/2F/2) "F#m"A(E/2F/2) "G"(G/2E/2)F "D"D2 | "Bm"{Bc}Bc/2d/2 "A"cA "G"B"A"c "D"d2 :|
+
+X:2
+T:Andro 2
+G:Kazimodal
+R:Andro
+C:Traditionnel, arrangement Ronan Keryell http://kazimodal.trad.org
+Q:C2=112
+M:4/4
+S:Tonio`u Breizh-Izel 1721 (Pleskob) 1999-10-19
+K:G
+|: "G"{GA}G/2D/2G/2B/2 "D"{AB}A>F "C"E"D"F "G"GG | D(G/2B/2) "Am"{AB}A>G "C"E"D"F "G"G2 :|
+"G"{GA}GA/2B/2 "Am"A>A "Bm"{GA}GA/2B/2 "D"A2 | "G"{GA}GA/2B/2 "Em"GG "D"(F/2G/2)"C"E/2F/2 "Bm"D2 |
+"G"{GA}GA/2B/2 "Am"A>A "C"{GA}GA/2B/2 "D"A2 | "G"{GA}GB/2A/2 "Am"(G/2F/2)"Bm"E/2F/2 "C"{GA}G(F/2"D"A/2) "G"G2 ||
+
+X:3
+T:Andro 3
+G:Kazimodal
+R:Andro
+C:Traditionnel, arrangement Ronan Keryell http://kazimodal.trad.org
+Q:C2=112
+M:4/4
+S:Tonio`u Breizh-Izel 1721 (Lokmariaker) 1999-10-19
+K:Dm
+|: "Dm"D(F/2G/2) "F"{AB}A>c "C"{Bc}BG "Bb"(G/2A/2)F |1 "F"{FG}F/2(E/2F) "Gm"(G/2A/2)G/2E/2 "Bb"FD "Am"AF :|2
+"F"(F/2A/2)G/2E/2 "Gm"{FG}F>D "Am"(E/2G/2)E/2F/2 "Bb"D2 |
+|: "Dm"{DE}DF/2D/2 "Am"E(G/2A/2) "Gm"{GA}GE "Bb"FD | "C"(E/2F/2)G/2E/2 "Am"(A/2G/2)E/2F/2 "Bb"(DE/2)D/2 "C"C2 |
+"Dm"{DE}DF/2D/2 "Am"E(G/2A/2) "Gm"{GA}GE "Bb"FD | "C"(E/2F/2)G/2E/2 "Am"{AB}AG/2E/2 "Bb"(F/2G/2)"C"E/2F/2 "Dm"D2 :|

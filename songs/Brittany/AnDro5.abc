@@ -1,0 +1,33 @@
+X:1
+P:Aunt Lisle's An Dro #1 [Am]
+M:2/2
+L:1/8
+K:Am
+|: "Am"A2e2 e2de | "F"f2e2 "G"d2Bc | "G"d2B2 "Am"e2dc |1 "E"B2AB "Am"c2B2 :|2 "E"B2c2 "Am"A4 |]
+|: "Am"A2A2 "E"B3B | "Am"A2A2 "E"B2Bc | "E"d2B2 "Am"e2dc |1 "E"B2AB "Am"c2B2 :|2 "E"B2c2 "Am"A4 |]
+
+X:2
+P:Aunt Lisle's An Dro #1 [Bm]
+M:2/2
+L:1/8
+K:Bm
+|: "Bm"B2f2 f2ef | "G"g2f2 "A"e2cd | "A"e2c2 "Bm"f2ed |1 "F#"c2Bc "Bm"d2c2 :|2 "F#"c2d2 "Bm"B4 |]
+|: "Bm"B2B2 "F#"c3c | "Bm"B2B2 "F#"c2cd | "F#"e2c2 "Bm"f2ed |1 "F#"c2Bc "Bm"d2c2 :|2 "F#"c2d2 "Bm"B4 |]
+
+X:3
+P:Aunt Lisle's An Dro #2 [Am]
+M:2/2
+L:1/8
+K:Ador
+|: "Am"A2A2 "G"d4 | "Am"cdec "G"d4 | "Am"c2B2 "F"c2A2 | "G"B2G2 "Am"A4 :|
+[| "G"g2g2 "D"fed2 | "Am"c2e2 "G"d4 | "Am"c2e2 "G"d4 | "D"f2e2 "G"d4 ||
+"G"g2g2 "D"fed2 | "Am"c2e2 "G"d4 | "Am"c2B2 "F"c2A2 | "G"B2G2 "Am"A4 |]
+
+X:4
+P:Aunt Lisle's An Dro #2 [Bm]
+M:2/2
+L:1/8
+K:Bdor
+|: "Bm"B2B2 "A"e4 | "Bm"defd "A"e4 | "Bm"d2c2 "G"d2B2 | "A"c2A2 "Bm"B4 :|
+[| "A"a2a2 "E"gfe2 | "Bm"d2f2 "A"e4 | "Bm"d2f2 "A"e4 | "E"g2f2 "A"e4 ||
+"A"a2a2 "E"gfe2 | "Bm"d2f2 "A"e4 | "Bm"d2c2 "G"d2B2 | "A"c2A2 "Bm"B4 |]

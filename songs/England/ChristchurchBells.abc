@@ -1,0 +1,15 @@
+X:1
+T:Christchurch Bells
+C:John Playford, 1679
+M:2/2
+L:1/4
+K:C
+V:1 name=A
+| "C"c3/c/ cc | cc ce | "Dm"dc BA | "G"G3/G/ GG |
+"C"EG CG | "C"c"Dm"F "G"Gg/f/ | "Am"e"F"a "G"d/e/f | "C"e3/d/ c2 |]
+V:2 name=B
+e3/e/ ee | ee eg | fe/f/ dc | dG dd |
+ed ed | ed dc/B/ | cA dB | c3/d/ e2 |]
+V:3 name=C
+g/g/g/g/ gg/g/ | gg/g/ gG | A3/A/ Bc | B3 A/B/ |
+cB cB | cd BA/G/ | AF G3/G/ | C4 |]

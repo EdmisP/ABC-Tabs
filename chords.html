@@ -8,8 +8,7 @@
 <meta name="theme-color" content="#003580">
 <meta name="application-name" content="Harakka's ABC Archive and Tab Maker">
 <meta name="apple-mobile-web-app-title" content="Harakka's ABC Archive">
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png">
+<link id="themeFavicon" rel="icon" type="image/svg+xml" href="https://flagcdn.com/fi.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
 <link rel="manifest" href="app.webmanifest">
 <link rel="stylesheet" href="styles.css?v=76">
@@ -92,7 +91,6 @@ html[data-theme="greece"]{--theme-primary:#0d5eaf;--theme-hover:#094b8c;--theme-
 html[data-theme="turkey"]{--theme-primary:#e30a17;--theme-hover:#b70812;--theme-secondary:#ffffff;--theme-secondary-text:#a50610;--theme-bg:#f7eeee;--theme-panel:#ffffff;--theme-soft:#f0e1e2;--theme-border:#ad8b8d;--theme-line:#a07d80;--theme-text:#352626;--theme-muted:#735e5f;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#372123;--theme-editor-text:#fff6f6;--theme-track:#4f4849;--theme-selection:#efc5c8;--theme-selection-text:#92070f}
 html[data-theme="croatia"]{--theme-primary:#d2232a;--theme-hover:#a91b21;--theme-secondary:#171796;--theme-secondary-text:#ffffff;--theme-bg:#f1eef2;--theme-panel:#ffffff;--theme-soft:#e8e2ea;--theme-border:#998c9e;--theme-line:#8b7e92;--theme-text:#312a33;--theme-muted:#6e6372;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#302631;--theme-editor-text:#faf6ff;--theme-track:#4b494d;--theme-selection:#dbcbdc;--theme-selection-text:#8e171c}
 html[data-theme="bosnia"]{--theme-primary:#002395;--theme-hover:#001970;--theme-secondary:#fecb00;--theme-secondary-text:#222000;--theme-bg:#f3f1e7;--theme-panel:#ffffff;--theme-soft:#ece8d6;--theme-border:#9f9a7f;--theme-line:#908b72;--theme-text:#302f28;--theme-muted:#6d695c;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#252b3b;--theme-editor-text:#f8f8ee;--theme-track:#4c4c47;--theme-selection:#eadf9e;--theme-selection-text:#001970}
-html[data-theme="dark"]{--theme-primary:#76a9ea;--theme-hover:#9cc4f5;--theme-secondary:#b7d7ff;--theme-bg:#10151b;--theme-panel:#18212a;--theme-soft:#202c37;--theme-border:#425468;--theme-line:#587596;--theme-text:#edf4fb;--theme-muted:#a8b9ca;--theme-input:#0e151c;--theme-score:#141c24;--theme-editor:#090e13;--theme-editor-text:#e8f3ff;--theme-track:#303842;--theme-selection:#355d87;--theme-selection-text:#ffffff}
 html[data-theme] body{background:var(--theme-bg)!important;color:var(--theme-text)!important}
 html[data-theme] .titlebar,html[data-theme] .panel{background:var(--theme-panel)!important;border-color:var(--theme-border)!important}
 html[data-theme] .titlebar{border-left-color:var(--theme-primary)!important}
@@ -150,54 +148,65 @@ html[data-theme="bw"] .site-flag{display:none!important}
 @media(max-width:560px){.theme-footer{margin:4px 4px 8px}.theme-flag-button{width:46px;height:30px}.theme-flag-button img{width:44px;height:27px}.site-flag{width:58px;height:36px;flex-basis:58px}.site-flag img{width:58px;height:36px}}
 
 /* Strong country palette treatment: solid colours only. */
-html[data-theme]:not([data-theme="dark"]) .titlebar{background:var(--theme-primary)!important;color:#fff!important;border:0!important;border-bottom:8px solid var(--theme-secondary)!important}
-html[data-theme]:not([data-theme="dark"]) .titlebar h1{color:#fff!important}
-html[data-theme]:not([data-theme="dark"]) .titlebar .actions button{background:var(--theme-secondary)!important;color:var(--theme-secondary-text)!important;border:0!important}
-html[data-theme]:not([data-theme="dark"]) .titlebar .actions button:hover{background:var(--theme-secondary)!important;color:var(--theme-secondary-text)!important;filter:brightness(.92)}
-html[data-theme]:not([data-theme="dark"]) .controls{border-top:6px solid var(--theme-secondary)!important}
-html[data-theme]:not([data-theme="dark"]) .editor>h2,
-html[data-theme]:not([data-theme="dark"]) .score-panel>h2,
-html[data-theme]:not([data-theme="dark"]) .map-panel>h2,
-html[data-theme]:not([data-theme="dark"]) .preview-title h2,
-html[data-theme]:not([data-theme="dark"]) .chord-sheet-section>h2{border-left:8px solid var(--theme-secondary)!important;padding-left:8px!important;color:var(--theme-primary)!important}
-html[data-theme]:not([data-theme="dark"]) .song-library-panel,
-html[data-theme]:not([data-theme="dark"]) .playback-panel,
-html[data-theme]:not([data-theme="dark"]) .preview-meta,
-html[data-theme]:not([data-theme="dark"]) .staff-box,
-html[data-theme]:not([data-theme="dark"]) .tab-box,
-html[data-theme]:not([data-theme="dark"]) .sheet-card{border-left:5px solid var(--theme-secondary)!important}
-html[data-theme]:not([data-theme="dark"]) .preview-head,
-html[data-theme]:not([data-theme="dark"]) .sheet-card-head{background:var(--theme-secondary)!important;color:var(--theme-secondary-text)!important;border-color:var(--theme-secondary)!important}
-html[data-theme]:not([data-theme="dark"]) .preview-head h2,
-html[data-theme]:not([data-theme="dark"]) .sheet-card-head .sheet-card-name{color:var(--theme-secondary-text)!important}
-html[data-theme]:not([data-theme="dark"]) #loadSongBtn,
-html[data-theme]:not([data-theme="dark"]) #addChordBtn{background:var(--theme-secondary)!important;color:var(--theme-secondary-text)!important;border-color:var(--theme-secondary)!important}
-html[data-theme]:not([data-theme="dark"]) #loadSongBtn:hover,
-html[data-theme]:not([data-theme="dark"]) #addChordBtn:hover{background:var(--theme-secondary)!important;color:var(--theme-secondary-text)!important;filter:brightness(.92)}
-html[data-theme]:not([data-theme="dark"]) .theme-footer{background:var(--theme-primary)!important;border-top:6px solid var(--theme-secondary)!important;color:#fff!important}
-html[data-theme]:not([data-theme="dark"]) .theme-footer-label{color:#fff!important}
-html[data-theme]:not([data-theme="dark"]) .theme-flag-button{opacity:.86}
-html[data-theme]:not([data-theme="dark"]) .theme-flag-button[aria-pressed="true"]{opacity:1}
+html[data-theme]:not([data-dark="true"]) .titlebar{background:var(--theme-primary)!important;color:#fff!important;border:0!important;border-bottom:8px solid var(--theme-secondary)!important}
+html[data-theme]:not([data-dark="true"]) .titlebar h1{color:#fff!important}
+html[data-theme]:not([data-dark="true"]) .titlebar .actions button{background:var(--theme-secondary)!important;color:var(--theme-secondary-text)!important;border:0!important}
+html[data-theme]:not([data-dark="true"]) .titlebar .actions button:hover{background:var(--theme-secondary)!important;color:var(--theme-secondary-text)!important;filter:brightness(.92)}
+html[data-theme]:not([data-dark="true"]) .controls{border-top:6px solid var(--theme-secondary)!important}
+html[data-theme]:not([data-dark="true"]) .editor>h2,
+html[data-theme]:not([data-dark="true"]) .score-panel>h2,
+html[data-theme]:not([data-dark="true"]) .map-panel>h2,
+html[data-theme]:not([data-dark="true"]) .preview-title h2,
+html[data-theme]:not([data-dark="true"]) .chord-sheet-section>h2{border-left:8px solid var(--theme-secondary)!important;padding-left:8px!important;color:var(--theme-primary)!important}
+html[data-theme]:not([data-dark="true"]) .song-library-panel,
+html[data-theme]:not([data-dark="true"]) .playback-panel,
+html[data-theme]:not([data-dark="true"]) .preview-meta,
+html[data-theme]:not([data-dark="true"]) .staff-box,
+html[data-theme]:not([data-dark="true"]) .tab-box,
+html[data-theme]:not([data-dark="true"]) .sheet-card{border-left:5px solid var(--theme-secondary)!important}
+html[data-theme]:not([data-dark="true"]) .preview-head,
+html[data-theme]:not([data-dark="true"]) .sheet-card-head{background:var(--theme-secondary)!important;color:var(--theme-secondary-text)!important;border-color:var(--theme-secondary)!important}
+html[data-theme]:not([data-dark="true"]) .preview-head h2,
+html[data-theme]:not([data-dark="true"]) .sheet-card-head .sheet-card-name{color:var(--theme-secondary-text)!important}
+html[data-theme]:not([data-dark="true"]) #loadSongBtn,
+html[data-theme]:not([data-dark="true"]) #addChordBtn{background:var(--theme-secondary)!important;color:var(--theme-secondary-text)!important;border-color:var(--theme-secondary)!important}
+html[data-theme]:not([data-dark="true"]) #loadSongBtn:hover,
+html[data-theme]:not([data-dark="true"]) #addChordBtn:hover{background:var(--theme-secondary)!important;color:var(--theme-secondary-text)!important;filter:brightness(.92)}
+html[data-theme]:not([data-dark="true"]) .theme-footer{background:var(--theme-primary)!important;border-top:6px solid var(--theme-secondary)!important;color:#fff!important}
+html[data-theme]:not([data-dark="true"]) .theme-footer-label{color:#fff!important}
+html[data-theme]:not([data-dark="true"]) .theme-flag-button{opacity:.86}
+html[data-theme]:not([data-dark="true"]) .theme-flag-button[aria-pressed="true"]{opacity:1}
+
+
+/* Brittany and England themes */
+html[data-theme="brittany"]{--theme-primary:#171717;--theme-hover:#000000;--theme-secondary:#ffffff;--theme-secondary-text:#111111;--theme-bg:#eeeeea;--theme-panel:#ffffff;--theme-soft:#e2e2de;--theme-border:#8f8f8b;--theme-line:#777773;--theme-text:#1d1d1d;--theme-muted:#666662;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#1c1c1c;--theme-editor-text:#f5f5f2;--theme-track:#505050;--theme-selection:#cfcfca;--theme-selection-text:#000000;--country-accent:#777773}
+html[data-theme="england"]{--theme-primary:#c8102e;--theme-hover:#9f0d25;--theme-secondary:#ffffff;--theme-secondary-text:#a00d25;--theme-bg:#f6eeee;--theme-panel:#ffffff;--theme-soft:#f0e2e5;--theme-border:#ad8c92;--theme-line:#a17d85;--theme-text:#35272a;--theme-muted:#735e63;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#352126;--theme-editor-text:#fff6f7;--theme-track:#4f484a;--theme-selection:#efc5ce;--theme-selection-text:#920b23;--country-accent:#f0c8d0}
+html[data-theme="brittany"][data-dark="true"]{--theme-primary:#eeeeee;--theme-hover:#ffffff;--country-accent:#929292;--theme-selection:#555555}
+html[data-theme="england"][data-dark="true"]{--theme-primary:#f06a7f;--theme-hover:#f58da0;--country-accent:#f3dfe3;--theme-selection:#71333e}
 
 </style>
 <script id="archive-theme-init">
 (()=>{
-  const themes=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','bw','dark'];
-  const countries=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan'];
-  let theme='finland',country='finland',legacy=false;
+  const themes=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','brittany','england','bw'];
+  const countries=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','brittany','england'];
+  let theme='finland',country='finland',legacy=false,dark=false;
   try{
     const saved=localStorage.getItem('finlandArchiveTheme');
     const savedCountry=localStorage.getItem('finlandArchiveCountry');
     const savedLegacy=localStorage.getItem('finlandArchiveLegacy');
+    const savedDark=localStorage.getItem('finlandArchiveDark');
     if(themes.includes(saved)) theme=saved;
+    if(saved==='dark'){theme=countries.includes(savedCountry)?savedCountry:'finland';dark=true}
     if(saved==='legacy'){theme=countries.includes(savedCountry)?savedCountry:'finland';legacy=savedLegacy===null||savedLegacy==='1'}
     else if(savedLegacy==='1') legacy=true;
+    if(savedDark==='1') dark=true;
     if(countries.includes(savedCountry)) country=savedCountry;
     else if(countries.includes(theme)) country=theme;
   }catch(e){}
   document.documentElement.dataset.theme=theme;
   document.documentElement.dataset.country=country;
   document.documentElement.dataset.legacy=legacy?'true':'false';
+  document.documentElement.dataset.dark=dark?'true':'false';
 })();
 </script>
 
@@ -211,6 +220,8 @@ html[data-theme="kosovo"]{--country-accent:#c79b3b}
 html[data-theme="hungary"]{--country-accent:#477050}
 html[data-theme="belarus"]{--country-accent:#167342}
 html[data-theme="bw"]{--country-accent:#777773}
+html[data-theme="brittany"]{--country-accent:#777773}
+html[data-theme="england"]{--country-accent:#e3b3bc}
 html[data-theme="germany"]{--country-accent:#d3a900}
 html[data-theme="kazakhstan"]{--country-accent:#d5a313}
 html[data-theme="sweden"]{--country-accent:#d7ad00}
@@ -222,7 +233,6 @@ html[data-theme="greece"]{--country-accent:#8eb5da}
 html[data-theme="turkey"]{--country-accent:#d8a3a6}
 html[data-theme="croatia"]{--country-accent:#171796}
 html[data-theme="bosnia"]{--country-accent:#d2aa00}
-html[data-theme="dark"]{--country-accent:#7d93aa}
 
 html[data-theme] body,
 html[data-theme] button,
@@ -245,128 +255,128 @@ html[data-theme] .chord-name{
 html[data-theme] h1{font-weight:600!important;letter-spacing:-.015em!important}
 html[data-theme] h2,html[data-theme] h3{font-weight:600!important}
 
-html[data-theme]:not([data-theme="dark"]) body{
+html[data-theme]:not([data-dark="true"]) body{
   background:#f1efe9!important;
   color:#272727!important;
 }
-html[data-theme]:not([data-theme="dark"]) .titlebar,
-html[data-theme]:not([data-theme="dark"]) .panel{
+html[data-theme]:not([data-dark="true"]) .titlebar,
+html[data-theme]:not([data-dark="true"]) .panel{
   background:#fff!important;
   color:#272727!important;
   border:1px solid #bcb6ab!important;
   box-shadow:none!important;
 }
-html[data-theme]:not([data-theme="dark"]) .titlebar{
+html[data-theme]:not([data-dark="true"]) .titlebar{
   border-top:5px solid var(--theme-primary)!important;
   border-bottom:3px solid var(--country-accent)!important;
   border-left:1px solid #bcb6ab!important;
 }
-html[data-theme]:not([data-theme="dark"]) .titlebar h1{color:var(--theme-primary)!important}
+html[data-theme]:not([data-dark="true"]) .titlebar h1{color:var(--theme-primary)!important}
 
-html[data-theme]:not([data-theme="dark"]) button{
+html[data-theme]:not([data-dark="true"]) button{
   background:#f3f1ec!important;
   color:#333!important;
   border:1px solid #aaa49a!important;
   border-radius:3px!important;
   box-shadow:none!important;
 }
-html[data-theme]:not([data-theme="dark"]) button:hover{
+html[data-theme]:not([data-dark="true"]) button:hover{
   background:#e9e6df!important;
   color:var(--theme-primary)!important;
   border-color:var(--theme-primary)!important;
 }
-html[data-theme]:not([data-theme="dark"]) .actions button,
-html[data-theme]:not([data-theme="dark"]) #loadSongBtn,
-html[data-theme]:not([data-theme="dark"]) #importMidiBtn,
-html[data-theme]:not([data-theme="dark"]) #addChordBtn{
+html[data-theme]:not([data-dark="true"]) .actions button,
+html[data-theme]:not([data-dark="true"]) #loadSongBtn,
+html[data-theme]:not([data-dark="true"]) #importMidiBtn,
+html[data-theme]:not([data-dark="true"]) #addChordBtn{
   background:var(--theme-primary)!important;
   color:#fff!important;
   border:1px solid var(--theme-primary)!important;
 }
-html[data-theme]:not([data-theme="dark"]) .actions button:hover,
-html[data-theme]:not([data-theme="dark"]) #loadSongBtn:hover,
-html[data-theme]:not([data-theme="dark"]) #importMidiBtn:hover,
-html[data-theme]:not([data-theme="dark"]) #addChordBtn:hover{
+html[data-theme]:not([data-dark="true"]) .actions button:hover,
+html[data-theme]:not([data-dark="true"]) #loadSongBtn:hover,
+html[data-theme]:not([data-dark="true"]) #importMidiBtn:hover,
+html[data-theme]:not([data-dark="true"]) #addChordBtn:hover{
   background:var(--theme-hover)!important;
   color:#fff!important;
   border-color:var(--theme-hover)!important;
   filter:none!important;
 }
 
-html[data-theme]:not([data-theme="dark"]) .song-library-panel,
-html[data-theme]:not([data-theme="dark"]) .playback-panel,
-html[data-theme]:not([data-theme="dark"]) .kantele-control,
-html[data-theme]:not([data-theme="dark"]) .midi-clean-control,
-html[data-theme]:not([data-theme="dark"]) .checkbox-control,
-html[data-theme]:not([data-theme="dark"]) .fixed-reference,
-html[data-theme]:not([data-theme="dark"]) .preview-head,
-html[data-theme]:not([data-theme="dark"]) .sheet-card-head,
-html[data-theme]:not([data-theme="dark"]) .course-group h3,
-html[data-theme]:not([data-theme="dark"]) .chord-table th{
+html[data-theme]:not([data-dark="true"]) .song-library-panel,
+html[data-theme]:not([data-dark="true"]) .playback-panel,
+html[data-theme]:not([data-dark="true"]) .kantele-control,
+html[data-theme]:not([data-dark="true"]) .midi-clean-control,
+html[data-theme]:not([data-dark="true"]) .checkbox-control,
+html[data-theme]:not([data-dark="true"]) .fixed-reference,
+html[data-theme]:not([data-dark="true"]) .preview-head,
+html[data-theme]:not([data-dark="true"]) .sheet-card-head,
+html[data-theme]:not([data-dark="true"]) .course-group h3,
+html[data-theme]:not([data-dark="true"]) .chord-table th{
   background:#f6f4ef!important;
   color:#2d2d2d!important;
   border-color:#c7c1b6!important;
 }
-html[data-theme]:not([data-theme="dark"]) .song-library-panel,
-html[data-theme]:not([data-theme="dark"]) .playback-panel,
-html[data-theme]:not([data-theme="dark"]) .preview-meta,
-html[data-theme]:not([data-theme="dark"]) .staff-box,
-html[data-theme]:not([data-theme="dark"]) .tab-box,
-html[data-theme]:not([data-theme="dark"]) .sheet-card{
+html[data-theme]:not([data-dark="true"]) .song-library-panel,
+html[data-theme]:not([data-dark="true"]) .playback-panel,
+html[data-theme]:not([data-dark="true"]) .preview-meta,
+html[data-theme]:not([data-dark="true"]) .staff-box,
+html[data-theme]:not([data-dark="true"]) .tab-box,
+html[data-theme]:not([data-dark="true"]) .sheet-card{
   border-left:3px solid var(--country-accent)!important;
 }
-html[data-theme]:not([data-theme="dark"]) .editor>h2,
-html[data-theme]:not([data-theme="dark"]) .score-panel>h2,
-html[data-theme]:not([data-theme="dark"]) .map-panel>h2,
-html[data-theme]:not([data-theme="dark"]) .preview-title h2,
-html[data-theme]:not([data-theme="dark"]) .chord-sheet-section>h2{
+html[data-theme]:not([data-dark="true"]) .editor>h2,
+html[data-theme]:not([data-dark="true"]) .score-panel>h2,
+html[data-theme]:not([data-dark="true"]) .map-panel>h2,
+html[data-theme]:not([data-dark="true"]) .preview-title h2,
+html[data-theme]:not([data-dark="true"]) .chord-sheet-section>h2{
   border-left:4px solid var(--country-accent)!important;
   padding-left:8px!important;
   color:var(--theme-primary)!important;
 }
-html[data-theme]:not([data-theme="dark"]) .preview-head,
-html[data-theme]:not([data-theme="dark"]) .sheet-card-head{
+html[data-theme]:not([data-dark="true"]) .preview-head,
+html[data-theme]:not([data-dark="true"]) .sheet-card-head{
   border-top:2px solid var(--country-accent)!important;
 }
-html[data-theme]:not([data-theme="dark"]) .preview-head h2,
-html[data-theme]:not([data-theme="dark"]) .sheet-card-head .sheet-card-name{
+html[data-theme]:not([data-dark="true"]) .preview-head h2,
+html[data-theme]:not([data-dark="true"]) .sheet-card-head .sheet-card-name{
   color:var(--theme-primary)!important;
 }
 
-html[data-theme]:not([data-theme="dark"]) select,
-html[data-theme]:not([data-theme="dark"]) input[type="search"],
-html[data-theme]:not([data-theme="dark"]) input[type="text"],
-html[data-theme]:not([data-theme="dark"]) input[type="url"],
-html[data-theme]:not([data-theme="dark"]) input[type="number"]{
+html[data-theme]:not([data-dark="true"]) select,
+html[data-theme]:not([data-dark="true"]) input[type="search"],
+html[data-theme]:not([data-dark="true"]) input[type="text"],
+html[data-theme]:not([data-dark="true"]) input[type="url"],
+html[data-theme]:not([data-dark="true"]) input[type="number"]{
   background:#fff!important;
   color:#252525!important;
   border:1px solid #aaa49a!important;
   border-radius:2px!important;
 }
-html[data-theme]:not([data-theme="dark"]) #abcInput{
+html[data-theme]:not([data-dark="true"]) #abcInput{
   background:#22272b!important;
   color:#f2f1ec!important;
   border:1px solid #6e6b66!important;
 }
-html[data-theme]:not([data-theme="dark"]) .music-system,
-html[data-theme]:not([data-theme="dark"]) .score-host,
-html[data-theme]:not([data-theme="dark"]) .tab-svg,
-html[data-theme]:not([data-theme="dark"]) .course-group,
-html[data-theme]:not([data-theme="dark"]) .staff-box,
-html[data-theme]:not([data-theme="dark"]) .tab-box,
-html[data-theme]:not([data-theme="dark"]) .preview-meta,
-html[data-theme]:not([data-theme="dark"]) .sheet-card{
+html[data-theme]:not([data-dark="true"]) .music-system,
+html[data-theme]:not([data-dark="true"]) .score-host,
+html[data-theme]:not([data-dark="true"]) .tab-svg,
+html[data-theme]:not([data-dark="true"]) .course-group,
+html[data-theme]:not([data-dark="true"]) .staff-box,
+html[data-theme]:not([data-dark="true"]) .tab-box,
+html[data-theme]:not([data-dark="true"]) .preview-meta,
+html[data-theme]:not([data-dark="true"]) .sheet-card{
   background:#fff!important;
   border-color:#c7c1b6!important;
 }
 
-html[data-theme]:not([data-theme="dark"]) .theme-footer{
+html[data-theme]:not([data-dark="true"]) .theme-footer{
   background:transparent!important;
   color:#343434!important;
   border:0!important;
   border-top:1px solid #c7c1b6!important;
 }
-html[data-theme]:not([data-theme="dark"]) .theme-footer-label{color:#6e6a63!important}
+html[data-theme]:not([data-dark="true"]) .theme-footer-label{color:#6e6a63!important}
 html[data-theme] .theme-flag-button[aria-pressed="true"]{
   transform:none!important;
   box-shadow:inset 0 -3px 0 var(--theme-primary)!important;
@@ -388,10 +398,53 @@ html[data-theme="ukraine"] #audioPlayer .abcjs-inline-audio{
   border-bottom:2px solid var(--country-accent)!important;
 }
 
-html[data-theme="dark"] body{background:#121416!important}
-html[data-theme="dark"] .titlebar,html[data-theme="dark"] .panel{box-shadow:none!important;border-color:#4a4f55!important}
-html[data-theme="dark"] .titlebar{border-top:5px solid var(--theme-primary)!important;border-bottom:2px solid #4a4f55!important}
-html[data-theme="dark"] button{border-radius:3px!important;box-shadow:none!important}
+
+/* Dark mode is an overlay: it keeps the selected country palette. */
+html[data-dark="true"]{
+  --theme-bg:#101317;
+  --theme-panel:#181d23;
+  --theme-soft:#202832;
+  --theme-border:#46515e;
+  --theme-line:#667587;
+  --theme-text:#eef2f6;
+  --theme-muted:#aeb8c3;
+  --theme-input:#0d1116;
+  --theme-score:#f4f3ef;
+  --theme-editor:#090c10;
+  --theme-editor-text:#eef2f6;
+  --theme-track:#353c45;
+  --theme-selection-text:#ffffff;
+}
+html[data-theme="finland"][data-dark="true"]{--theme-primary:#6fa7e6;--theme-hover:#91bced;--country-accent:#d9e6f5;--theme-selection:#28537f}
+html[data-theme="sweden"][data-dark="true"]{--theme-primary:#62b2df;--theme-hover:#82c2e5;--country-accent:#f1d351;--theme-selection:#285775}
+html[data-theme="norway"][data-dark="true"]{--theme-primary:#e46782;--theme-hover:#eb879c;--country-accent:#5f7db8;--theme-selection:#713446}
+html[data-theme="germany"][data-dark="true"]{--theme-primary:#e05b68;--theme-hover:#e87a84;--country-accent:#e4c54c;--theme-selection:#6d343b}
+html[data-theme="hungary"][data-dark="true"]{--theme-primary:#e36876;--theme-hover:#ea8792;--country-accent:#79a581;--theme-selection:#6b3741}
+html[data-theme="kosovo"][data-dark="true"]{--theme-primary:#7392e0;--theme-hover:#91a9e8;--country-accent:#e0bd68;--theme-selection:#374a78}
+html[data-theme="albania"][data-dark="true"]{--theme-primary:#ef6567;--theme-hover:#f18485;--country-accent:#a7adb5;--theme-selection:#733335}
+html[data-theme="serbia"][data-dark="true"]{--theme-primary:#e27177;--theme-hover:#e98e93;--country-accent:#5f83ae;--theme-selection:#6d3a40}
+html[data-theme="greece"][data-dark="true"]{--theme-primary:#68a8e6;--theme-hover:#89bbed;--country-accent:#d9e6f4;--theme-selection:#315676}
+html[data-theme="turkey"][data-dark="true"]{--theme-primary:#ef626b;--theme-hover:#f08087;--country-accent:#e2e5e8;--theme-selection:#733238}
+html[data-theme="croatia"][data-dark="true"]{--theme-primary:#e16b71;--theme-hover:#e9898e;--country-accent:#6f72c9;--theme-selection:#6d373c}
+html[data-theme="bosnia"][data-dark="true"]{--theme-primary:#748ee5;--theme-hover:#91a6eb;--country-accent:#e5c94e;--theme-selection:#394873}
+html[data-theme="poland"][data-dark="true"]{--theme-primary:#eb6681;--theme-hover:#f0859a;--country-accent:#e9edf1;--theme-selection:#703442}
+html[data-theme="ukraine"][data-dark="true"]{--theme-primary:#68a8e8;--theme-hover:#89baee;--country-accent:#f0d84d;--theme-selection:#31577a}
+html[data-theme="russia"][data-dark="true"]{--theme-primary:#6f95eb;--theme-hover:#8caaf0;--country-accent:#e56a61;--theme-selection:#374b7b}
+html[data-theme="belarus"][data-dark="true"]{--theme-primary:#e16b79;--theme-hover:#e98994;--country-accent:#63a67e;--theme-selection:#6c3740}
+html[data-theme="georgia"][data-dark="true"]{--theme-primary:#e66d7b;--theme-hover:#ec8994;--country-accent:#e6e8eb;--theme-selection:#6e3742}
+html[data-theme="kazakhstan"][data-dark="true"]{--theme-primary:#5fc0d1;--theme-hover:#80cedb;--country-accent:#e3c15f;--theme-selection:#2d6069}
+html[data-theme="bw"][data-dark="true"]{--theme-primary:#eeeeee;--theme-hover:#ffffff;--country-accent:#929292;--theme-selection:#555555}
+html[data-theme="brittany"][data-dark="true"]{--theme-primary:#eeeeee;--theme-hover:#ffffff;--country-accent:#929292;--theme-selection:#555555}
+html[data-theme="england"][data-dark="true"]{--theme-primary:#f06a7f;--theme-hover:#f58da0;--country-accent:#f3dfe3;--theme-selection:#71333e}
+html[data-dark="true"] body{background:#101317!important;color:var(--theme-text)!important}
+html[data-dark="true"] .titlebar,html[data-dark="true"] .panel{background:var(--theme-panel)!important;border-color:var(--theme-border)!important;box-shadow:none!important}
+html[data-dark="true"] .titlebar{border-top:5px solid var(--theme-primary)!important;border-bottom:2px solid var(--country-accent)!important}
+html[data-dark="true"] .titlebar h1{color:var(--theme-primary)!important}
+html[data-dark="true"] button{border-radius:3px!important;box-shadow:none!important}
+html[data-dark="true"] .theme-footer{background:#11161c!important;border-top:1px solid var(--theme-border)!important;color:var(--theme-text)!important}
+html[data-dark="true"] .theme-footer-label{color:var(--theme-muted)!important}
+html[data-dark="true"] .theme-word-button{color:var(--theme-text)!important}
+html[data-dark="true"] .theme-word-button:hover,html[data-dark="true"] .theme-word-button[aria-pressed="true"]{color:var(--theme-primary)!important}
 </style>
 
 
@@ -799,13 +852,13 @@ html[data-legacy="true"][data-theme] ::-webkit-scrollbar-thumb{background:#c0c0c
 
 
 <style id="dark-score-fix">
-html[data-theme="dark"]{--theme-score:#f4f6f7;--theme-score-ink:#4c78a8;--theme-score-line:#92a6ba}
-html[data-theme="dark"] .staff-box,html[data-theme="dark"] .tab-box,html[data-theme="dark"] .sheet-card,html[data-theme="dark"] .sheet-card-score,html[data-theme="dark"] .sheet-card-tab{background:#f4f6f7!important}
-html[data-theme="dark"] #chordStaff svg path,html[data-theme="dark"] .sheet-card-score svg path{fill:#4c78a8!important;stroke:#4c78a8!important}
-html[data-theme="dark"] #chordStaff svg text,html[data-theme="dark"] .sheet-card-score svg text{fill:#4c78a8!important}
-html[data-theme="dark"] .tab-line{border-top-color:#92a6ba!important}
-html[data-theme="dark"] .tab-label,html[data-theme="dark"] .tab-value{color:#4c78a8!important}
-html[data-theme="dark"] .tab-value{background:#f4f6f7!important}
+html[data-dark="true"]{--theme-score:#f4f3ef;--theme-score-ink:var(--theme-primary);--theme-score-line:#98a3ae}
+html[data-dark="true"] .staff-box,html[data-dark="true"] .tab-box,html[data-dark="true"] .sheet-card,html[data-dark="true"] .sheet-card-score,html[data-dark="true"] .sheet-card-tab{background:#f4f3ef!important}
+html[data-dark="true"] #chordStaff svg path,html[data-dark="true"] .sheet-card-score svg path{fill:var(--theme-primary)!important;stroke:var(--theme-primary)!important}
+html[data-dark="true"] #chordStaff svg text,html[data-dark="true"] .sheet-card-score svg text{fill:var(--theme-primary)!important}
+html[data-dark="true"] .tab-line{border-top-color:#98a3ae!important}
+html[data-dark="true"] .tab-label,html[data-dark="true"] .tab-value{color:var(--theme-primary)!important}
+html[data-dark="true"] .tab-value{background:#f4f3ef!important}
 </style>
 </head>
 <body>
@@ -961,6 +1014,8 @@ html[data-theme="dark"] .tab-value{background:#f4f6f7!important}
     <button type="button" class="theme-flag-button" data-page-theme="belarus" aria-label="Belarus colour theme" title="Belarus"><img src="https://flagcdn.com/by.svg" alt="Belarus flag"></button>
     <button type="button" class="theme-flag-button" data-page-theme="georgia" aria-label="Georgia colour theme" title="Georgia"><img src="https://flagcdn.com/ge.svg" alt="Georgia flag"></button>
     <button type="button" class="theme-flag-button" data-page-theme="kazakhstan" aria-label="Kazakhstan colour theme" title="Kazakhstan"><img src="https://flagcdn.com/kz.svg" alt="Kazakhstan flag"></button>
+    <button type="button" class="theme-flag-button" data-page-theme="brittany" aria-label="Brittany colour theme" title="Brittany"><img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Brittany_%28Gwenn_ha_du%29.svg" alt="Brittany flag"></button>
+    <button type="button" class="theme-flag-button" data-page-theme="england" aria-label="England colour theme" title="England"><img src="https://flagcdn.com/gb-eng.svg" alt="England flag"></button>
     <button type="button" class="theme-word-button" data-page-theme="bw" aria-label="Black and white mode" title="Black &amp; white">B&amp;W</button>
     <button type="button" class="theme-word-button theme-dark-button" data-page-theme="dark" aria-label="Dark mode" title="Dark mode">Dark mode</button>
     <button type="button" class="theme-word-button theme-legacy-button" data-page-theme="legacy" aria-label="Legacy 1997 mode" title="Legacy 1997 mode">Legacy</button>
@@ -1474,8 +1529,8 @@ renderChordSheet();
 
 <script id="archive-theme-controls">
 (()=>{
-  const allowed=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','bw','dark'];
-  const countries=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan'];
+  const allowed=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','brittany','england','bw'];
+  const countries=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','brittany','england'];
   const meta=document.querySelector('meta[name="theme-color"]');
   const flagUrls={
     finland:'https://flagcdn.com/fi.svg',
@@ -1484,7 +1539,6 @@ renderChordSheet();
     germany:'https://flagcdn.com/de.svg',
     hungary:'https://flagcdn.com/hu.svg',
     kosovo:'https://flagcdn.com/xk.svg',
-
     albania:'https://flagcdn.com/al.svg',
     serbia:'https://flagcdn.com/rs.svg',
     greece:'https://flagcdn.com/gr.svg',
@@ -1496,38 +1550,65 @@ renderChordSheet();
     russia:'https://flagcdn.com/ru.svg',
     belarus:'https://flagcdn.com/by.svg',
     georgia:'https://flagcdn.com/ge.svg',
-    kazakhstan:'https://flagcdn.com/kz.svg'
+    kazakhstan:'https://flagcdn.com/kz.svg',
+    brittany:'https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Brittany_%28Gwenn_ha_du%29.svg',
+    england:'https://flagcdn.com/gb-eng.svg'
   };
-  const flagLabels={finland:'Finland flag',sweden:'Sweden flag',norway:'Norway flag',germany:'Germany flag',hungary:'Hungary flag',kosovo:'Kosovo flag',albania:'Albania flag',serbia:'Serbia flag',greece:'Greece flag',turkey:'Turkey flag',croatia:'Croatia flag',bosnia:'Bosnia and Herzegovina flag',poland:'Poland flag',ukraine:'Ukraine flag',russia:'Russia flag',belarus:'Belarus flag',georgia:'Georgia flag',kazakhstan:'Kazakhstan flag'};
+  const flagLabels={finland:'Finland flag',sweden:'Sweden flag',norway:'Norway flag',germany:'Germany flag',hungary:'Hungary flag',kosovo:'Kosovo flag',albania:'Albania flag',serbia:'Serbia flag',greece:'Greece flag',turkey:'Turkey flag',croatia:'Croatia flag',bosnia:'Bosnia and Herzegovina flag',poland:'Poland flag',ukraine:'Ukraine flag',russia:'Russia flag',belarus:'Belarus flag',georgia:'Georgia flag',kazakhstan:'Kazakhstan flag',brittany:'Brittany flag',england:'England flag'};
+  const bwIcon='data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="white"/><path d="M0 0h32v64H0z" fill="black"/><rect x="2" y="2" width="60" height="60" fill="none" stroke="%23777" stroke-width="4"/></svg>');
   function currentCountry(){const c=document.documentElement.dataset.country;return countries.includes(c)?c:'finland'}
-  function updateFlag(country){
+  function currentTheme(){const t=document.documentElement.dataset.theme;return allowed.includes(t)?t:'finland'}
+  function setFavicon(src){
+    let links=[...document.querySelectorAll('link[rel~="icon"]')];
+    if(!links.length){const link=document.createElement('link');link.rel='icon';document.head.appendChild(link);links=[link]}
+    links.forEach((link,i)=>{link.id=i===0?'themeFavicon':'';link.type='image/svg+xml';link.removeAttribute('sizes');link.href=src});
+  }
+  function updateIdentity(){
+    const theme=currentTheme();
+    const country=currentCountry();
+    const isBW=theme==='bw';
     const src=flagUrls[country]||flagUrls.finland;
     const label=flagLabels[country]||'Country flag';
     document.querySelectorAll('[data-site-flag]').forEach(el=>{
+      if(isBW){el.setAttribute('aria-hidden','true');return}
+      el.removeAttribute('aria-hidden');
       let img=el.querySelector('img');
       if(!img){img=document.createElement('img');el.replaceChildren(img)}
       img.src=src;img.alt=label;el.setAttribute('aria-label',label);
     });
-    let icon=document.getElementById('themeFavicon');
-    if(!icon){icon=document.createElement('link');icon.id='themeFavicon';icon.rel='icon';icon.type='image/svg+xml';document.head.appendChild(icon)}
-    icon.href=src;
+    setFavicon(isBW?bwIcon:src+'?theme='+encodeURIComponent(country));
   }
   function syncThemeButtons(){
     const legacy=document.documentElement.dataset.legacy==='true';
-    const theme=document.documentElement.dataset.theme||'finland';
+    const dark=document.documentElement.dataset.dark==='true';
+    const theme=currentTheme();
     document.querySelectorAll('[data-page-theme]').forEach(button=>{
       const target=button.dataset.pageTheme;
-      button.setAttribute('aria-pressed',(target==='legacy'?legacy:target===theme)?'true':'false');
+      const pressed=target==='legacy'?legacy:target==='dark'?dark:target===theme;
+      button.setAttribute('aria-pressed',pressed?'true':'false');
     });
+  }
+  function refreshThemeArtwork(){
+    if(typeof brightenScoreSvg==='function') requestAnimationFrame(()=>document.querySelectorAll('.score-host>svg').forEach(brightenScoreSvg));
+    if(meta){const value=getComputedStyle(document.documentElement).getPropertyValue('--theme-primary').trim();if(value)meta.setAttribute('content',value)}
+  }
+  function rerender(){
+    if(typeof render==='function') requestAnimationFrame(()=>requestAnimationFrame(()=>render()));
+    else if(typeof regenerate==='function') requestAnimationFrame(()=>requestAnimationFrame(()=>regenerate()));
   }
   function setTheme(theme,save=true){
     if(theme==='legacy'){
       const next=document.documentElement.dataset.legacy!=='true';
       document.documentElement.dataset.legacy=next?'true':'false';
-      if(save){try{localStorage.setItem('finlandArchiveLegacy',next?'1':'0');if(localStorage.getItem('finlandArchiveTheme')==='legacy')localStorage.setItem('finlandArchiveTheme',document.documentElement.dataset.theme||'finland')}catch(e){}}
-      syncThemeButtons();updateFlag(currentCountry());
-      if(meta){const value=getComputedStyle(document.documentElement).getPropertyValue('--theme-primary').trim();if(value)meta.setAttribute('content',value)}
-      if(typeof regenerate==='function') requestAnimationFrame(()=>requestAnimationFrame(()=>regenerate()));
+      if(save){try{localStorage.setItem('finlandArchiveLegacy',next?'1':'0')}catch(e){}}
+      syncThemeButtons();updateIdentity();refreshThemeArtwork();rerender();
+      return;
+    }
+    if(theme==='dark'){
+      const next=document.documentElement.dataset.dark!=='true';
+      document.documentElement.dataset.dark=next?'true':'false';
+      if(save){try{localStorage.setItem('finlandArchiveDark',next?'1':'0')}catch(e){}}
+      syncThemeButtons();updateIdentity();refreshThemeArtwork();rerender();
       return;
     }
     if(!allowed.includes(theme))theme='finland';
@@ -1535,12 +1616,11 @@ renderChordSheet();
     if(countries.includes(theme)){country=theme;document.documentElement.dataset.country=country}
     document.documentElement.dataset.theme=theme;
     if(save){try{localStorage.setItem('finlandArchiveTheme',theme);localStorage.setItem('finlandArchiveCountry',country)}catch(e){}}
-    syncThemeButtons();updateFlag(country);
-    if(meta){const value=getComputedStyle(document.documentElement).getPropertyValue('--theme-primary').trim();if(value)meta.setAttribute('content',value)}
+    syncThemeButtons();updateIdentity();refreshThemeArtwork();rerender();
   }
   window.addEventListener('DOMContentLoaded',()=>{
     document.querySelectorAll('[data-page-theme]').forEach(button=>button.addEventListener('click',()=>setTheme(button.dataset.pageTheme)));
-    setTheme(document.documentElement.dataset.theme||'finland',false);syncThemeButtons();
+    updateIdentity();syncThemeButtons();refreshThemeArtwork();
   });
 })();
 </script>

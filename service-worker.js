@@ -1,10 +1,12 @@
-const CACHE_NAME = 'harakka-abc-archive-instruments-v5';
+const CACHE_NAME = 'harakka-abc-archive-v7-brittany-england';
 const CORE = [
   './',
   './index.html',
   './styles.css?v=76',
   './song-library.js',
   './balkan-song-library.js',
+  './brittany-song-library.js',
+  './england-song-library.js',
   './chords.html',
   './app.webmanifest',
   './favicon.ico',

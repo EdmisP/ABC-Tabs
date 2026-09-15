@@ -1,0 +1,35 @@
+X:1
+P:Koster Choad #1 (in G)
+M:4/4
+L:1/16
+K:G
+|: BB | B3A G3B A3G A3B | c3B A3G d6 BB |
+B3A G3B A3G A3B | c3B A3B G6 :|
+|: gg | g4 e3f e3d A4 | B3c d3e d3c B3G |
+A3B cdcB A3G B4 | A3G B3A G6 :|
+
+X:2
+P:Koster Choad #1 (in D)
+M:4/4
+L:1/16
+K:D
+|: FF | F3E D3F E3D E3F | G3F E3D A6 FF |
+F3E D3F E3D E3F | G3F E3F D6 :|
+|: dd | d4 B3c B3A E4 | F3G A3B A3G F3D |
+E3F GAGF E3D F4 | E3D F3E D6 :|
+
+X:3
+P:Koster Choad #2 (in C)
+M:C|
+L:1/8
+K:C
+e | dcBc def>e | fgef "G"d2 de | dcBc defe | dfed c2 c :|
+|: g2e2 fga2 | f2d2 efg2 | g2eg egfe | dfed c2 cz :|
+
+X:4
+P:Koster Choad #2 (in G)
+M:C|
+L:1/8
+K:G
+B | AGFG ABc>B | cdBc "D"A2 AB | AGFG ABcB | AcBA G2 G :|
+|: d2B2 cde2 | c2A2 Bcd2 | d2Bd BdcB | AcBA G2 Gz :|
