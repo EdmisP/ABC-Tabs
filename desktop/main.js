@@ -1,7 +1,13 @@
 'use strict';
 
-const { app, BrowserWindow, ipcMain, shell, net, nativeImage, session } = require('electron');
+const { app, BrowserWindow, ipcMain, shell, net, nativeImage } = require('electron');
 const path = require('path');
+
+// The archive is an SVG/DOM utility and does not need GPU acceleration. Disabling
+// Chromium's GPU process makes shutdown much less invasive on Windows display/audio
+// drivers, especially on older cards and drivers.
+app.disableHardwareAcceleration();
+app.commandLine.appendSwitch('disable-features', 'HardwareMediaKeyHandling,GlobalMediaControls');
 
 const LIVE_ORIGIN = 'https://magpiesacorvid.github.io';
 const LIVE_PATH = '/Finland-ABC-Archive-and-Tab-Maker/';
@@ -31,46 +37,76 @@ const FLAG_PNG = {
 };
 
 let mainWindow = null;
+let currentIconTheme = '';
+let shuttingDown = false;
+let iconFetchAbort = null;
 
 function liveUrl() {
   const url = new URL(LIVE_URL);
   url.searchParams.set('desktop', 'legacy');
-  url.searchParams.set('_fresh', String(Date.now()));
   return url.toString();
 }
 
-async function clearWebCache() {
-  const ses = session.defaultSession;
-  await Promise.allSettled([
-    ses.clearCache(),
-    ses.clearStorageData({ storages: ['serviceworkers', 'cachestorage'] })
-  ]);
-}
-
 async function setWindowThemeIcon(theme) {
-  if (!mainWindow || mainWindow.isDestroyed()) return;
+  if (!mainWindow || mainWindow.isDestroyed() || !theme || theme === currentIconTheme) return;
   const url = FLAG_PNG[theme];
   if (!url) return;
+
   try {
-    const response = await net.fetch(url, { cache: 'no-store' });
-    if (!response.ok) return;
+    if (iconFetchAbort) iconFetchAbort.abort();
+    iconFetchAbort = new AbortController();
+    const response = await net.fetch(url, { signal: iconFetchAbort.signal });
+    if (!response.ok || shuttingDown) return;
     const buffer = Buffer.from(await response.arrayBuffer());
+    if (shuttingDown || !mainWindow || mainWindow.isDestroyed()) return;
     const image = nativeImage.createFromBuffer(buffer);
-    if (!image.isEmpty()) mainWindow.setIcon(image);
+    if (!image.isEmpty()) {
+      mainWindow.setIcon(image);
+      currentIconTheme = theme;
+    }
   } catch (_) {
-    // Keep the previous icon when a remote flag cannot be fetched.
+    // Keep the existing app icon if a remote flag is unavailable or shutdown cancels it.
+  } finally {
+    iconFetchAbort = null;
   }
+}
+
+function safeShutdown() {
+  if (shuttingDown) return;
+  shuttingDown = true;
+
+  if (iconFetchAbort) {
+    try { iconFetchAbort.abort(); } catch (_) {}
+    iconFetchAbort = null;
+  }
+
+  const win = mainWindow;
+  mainWindow = null;
+  currentIconTheme = '';
+
+  if (win && !win.isDestroyed()) {
+    try { win.webContents.setAudioMuted(true); } catch (_) {}
+    try { win.webContents.removeAllListeners(); } catch (_) {}
+    try { win.removeAllListeners(); } catch (_) {}
+    try { win.destroy(); } catch (_) {}
+  }
+
+  // Do not wait for a busy remote page, service worker or Chromium renderer to run
+  // unload handlers. Once the window is destroyed, terminate the desktop shell.
+  setImmediate(() => app.exit(0));
 }
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 1280,
-    height: 900,
+    width: 1180,
+    height: 780,
     minWidth: 860,
     minHeight: 620,
     frame: false,
+    maximizable: false,
+    fullscreenable: false,
     backgroundColor: '#c0c0c0',
-    show: false,
+    show: true,
     icon: path.join(__dirname, 'icon.ico'),
     title: "Harakka's ABC Archive and Tab Maker",
     webPreferences: {
@@ -82,6 +118,11 @@ function createWindow() {
   });
 
   mainWindow.removeMenu();
+
+  // F11/full-screen is disabled at BrowserWindow level. Also suppress the common shortcut.
+  mainWindow.webContents.on('before-input-event', (event, input) => {
+    if (input.type === 'keyDown' && input.key === 'F11') event.preventDefault();
+  });
 
   mainWindow.webContents.setWindowOpenHandler(({ url }) => {
     try {
@@ -111,31 +152,36 @@ function createWindow() {
     mainWindow.loadFile(path.join(__dirname, 'offline.html'));
   });
 
-  mainWindow.once('ready-to-show', () => mainWindow.show());
-  mainWindow.on('closed', () => { mainWindow = null; });
+  mainWindow.on('close', event => {
+    if (shuttingDown) return;
+    event.preventDefault();
+    safeShutdown();
+  });
 
-  clearWebCache().finally(() => mainWindow.loadURL(liveUrl()));
+  // Use normal HTTP/browser caching. The site's service worker is network-first, so
+  // GitHub updates are still checked while repeat launches stay quick.
+  mainWindow.loadURL(liveUrl());
 }
 
 ipcMain.on('window:minimize', () => mainWindow?.minimize());
-ipcMain.on('window:toggle-maximize', () => {
-  if (!mainWindow) return;
-  if (mainWindow.isMaximized()) mainWindow.unmaximize();
-  else mainWindow.maximize();
-});
-ipcMain.on('window:close', () => mainWindow?.close());
+ipcMain.on('window:close', safeShutdown);
 ipcMain.on('window:retry', () => {
   if (!mainWindow) return;
-  clearWebCache().finally(() => mainWindow.loadURL(liveUrl()));
+  mainWindow.loadURL(liveUrl());
 });
 ipcMain.on('theme:changed', (_event, theme) => {
   if (typeof theme === 'string') setWindowThemeIcon(theme);
 });
 
 app.whenReady().then(createWindow);
+app.on('before-quit', event => {
+  if (shuttingDown) return;
+  event.preventDefault();
+  safeShutdown();
+});
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') app.quit();
+  if (process.platform !== 'darwin' && !shuttingDown) safeShutdown();
 });
 app.on('activate', () => {
-  if (BrowserWindow.getAllWindows().length === 0) createWindow();
+  if (!shuttingDown && BrowserWindow.getAllWindows().length === 0) createWindow();
 });

@@ -6,27 +6,36 @@ contextBridge.exposeInMainWorld('harakkaDesktop', {
   retry: () => ipcRenderer.send('window:retry')
 });
 
+// Set the permanent desktop mode before the page's own scripts initialise.
+try {
+  localStorage.setItem('finlandArchiveLegacy', '1');
+  localStorage.setItem('finlandArchiveDark', '0');
+  if (localStorage.getItem('finlandArchiveTheme') === 'bw') {
+    localStorage.setItem('finlandArchiveTheme', 'finland');
+  }
+} catch (_) {}
+
 const DESKTOP_STYLE = `
 html[data-legacy="true"] body{
   margin:0!important;
   padding:0!important;
   background:#c0c0c0!important;
   min-height:100vh!important;
+  overflow-x:hidden!important;
 }
 html[data-legacy="true"] .container{
   width:100%!important;
   max-width:none!important;
   margin:0!important;
-  padding:3px!important;
+  padding:0!important;
   border:0!important;
+  box-shadow:none!important;
   box-sizing:border-box!important;
 }
 html[data-legacy="true"] .theme-footer{
   width:100%!important;
   max-width:none!important;
   margin:0!important;
-  border:0!important;
-  border-top:2px inset #fff!important;
   box-sizing:border-box!important;
 }
 html[data-legacy="true"] .titlebar{
@@ -34,8 +43,9 @@ html[data-legacy="true"] .titlebar{
   position:sticky!important;
   top:0!important;
   z-index:2147483000!important;
-  padding-right:84px!important;
+  padding-right:58px!important;
   user-select:none!important;
+  margin:0!important;
 }
 html[data-legacy="true"] .titlebar::after{content:none!important;display:none!important}
 html[data-legacy="true"] .titlebar button,
@@ -47,18 +57,6 @@ html[data-legacy="true"] .desktop-window-buttons *{
   -webkit-app-region:no-drag!important;
 }
 html[data-legacy="true"] .theme-word-button{display:none!important}
-#desktop-app-frame{
-  position:fixed;
-  inset:0;
-  z-index:2147483646;
-  pointer-events:none;
-  box-sizing:border-box;
-  border-top:2px solid #fff;
-  border-left:2px solid #fff;
-  border-right:2px solid #404040;
-  border-bottom:2px solid #404040;
-  box-shadow:inset -1px -1px #808080,inset 1px 1px #dfdfdf;
-}
 .desktop-window-buttons{
   position:absolute!important;
   right:3px!important;
@@ -91,21 +89,28 @@ html[data-legacy="true"] .desktop-window-close{font-size:14px!important}
 
 function forceLegacy() {
   const root = document.documentElement;
-  root.dataset.legacy = 'true';
-  root.dataset.dark = 'false';
+  if (!root) return;
+
+  if (root.dataset.legacy !== 'true') root.dataset.legacy = 'true';
+  if (root.dataset.dark !== 'false') root.dataset.dark = 'false';
   if (root.dataset.theme === 'bw') root.dataset.theme = root.dataset.country || 'finland';
+
   try {
-    localStorage.setItem('finlandArchiveLegacy', '1');
-    localStorage.setItem('finlandArchiveDark', '0');
+    if (localStorage.getItem('finlandArchiveLegacy') !== '1') localStorage.setItem('finlandArchiveLegacy', '1');
+    if (localStorage.getItem('finlandArchiveDark') !== '0') localStorage.setItem('finlandArchiveDark', '0');
     if (localStorage.getItem('finlandArchiveTheme') === 'bw') {
       localStorage.setItem('finlandArchiveTheme', root.dataset.country || 'finland');
     }
   } catch (_) {}
 }
 
+let lastTheme = '';
 function sendCurrentTheme() {
   const root = document.documentElement;
+  if (!root) return;
   const country = root.dataset.country || root.dataset.theme || 'finland';
+  if (country === lastTheme) return;
+  lastTheme = country;
   ipcRenderer.send('theme:changed', country);
 }
 
@@ -119,27 +124,18 @@ function installDesktopChrome() {
     document.head.appendChild(style);
   }
 
-  if (!document.getElementById('desktop-app-frame')) {
-    const frame = document.createElement('div');
-    frame.id = 'desktop-app-frame';
-    frame.setAttribute('aria-hidden', 'true');
-    document.body.appendChild(frame);
-  }
-
   const titlebar = document.querySelector('.titlebar');
   if (titlebar && !titlebar.querySelector('.desktop-window-buttons')) {
     const controls = document.createElement('div');
     controls.className = 'desktop-window-buttons';
     controls.innerHTML = `
       <button type="button" class="desktop-window-button" data-window-action="minimize" aria-label="Minimize">_</button>
-      <button type="button" class="desktop-window-button" data-window-action="maximize" aria-label="Maximize">□</button>
       <button type="button" class="desktop-window-button desktop-window-close" data-window-action="close" aria-label="Close">×</button>`;
     controls.addEventListener('click', event => {
       const button = event.target.closest('[data-window-action]');
       if (!button) return;
       const action = button.dataset.windowAction;
       if (action === 'minimize') ipcRenderer.send('window:minimize');
-      if (action === 'maximize') ipcRenderer.send('window:toggle-maximize');
       if (action === 'close') ipcRenderer.send('window:close');
     });
     titlebar.appendChild(controls);
@@ -157,12 +153,28 @@ window.addEventListener('DOMContentLoaded', () => {
   installDesktopChrome();
 
   const root = document.documentElement;
-  new MutationObserver(() => {
-    forceLegacy();
-    sendCurrentTheme();
-  }).observe(root, { attributes: true, attributeFilter: ['data-theme', 'data-country', 'data-legacy', 'data-dark'] });
 
-  new MutationObserver(() => installDesktopChrome()).observe(document.body, { childList: true, subtree: true });
+  // Watch only the few state attributes that matter. The old build watched every
+  // DOM mutation, including every note/tablature redraw, which made editing slow.
+  new MutationObserver(mutations => {
+    let needsLegacyRepair = false;
+    let themeChanged = false;
+
+    for (const mutation of mutations) {
+      if (mutation.attributeName === 'data-legacy' || mutation.attributeName === 'data-dark') {
+        needsLegacyRepair = true;
+      }
+      if (mutation.attributeName === 'data-theme' || mutation.attributeName === 'data-country') {
+        themeChanged = true;
+      }
+    }
+
+    if (needsLegacyRepair) forceLegacy();
+    if (themeChanged) sendCurrentTheme();
+  }).observe(root, {
+    attributes: true,
+    attributeFilter: ['data-theme', 'data-country', 'data-legacy', 'data-dark']
+  });
 
   document.addEventListener('click', event => {
     const blocked = event.target.closest('[data-page-theme="legacy"],[data-page-theme="dark"],[data-page-theme="bw"]');

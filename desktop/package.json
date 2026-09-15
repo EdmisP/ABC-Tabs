@@ -1,6 +1,6 @@
 {
   "name": "harakka-abc-archive-desktop",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Legacy desktop shell for Harakka's ABC Archive and Tab Maker",
   "main": "main.js",
   "author": "magpiesacorvid",
@@ -29,7 +29,9 @@
       "target": [
         {
           "target": "nsis",
-          "arch": ["x64"]
+          "arch": [
+            "x64"
+          ]
         }
       ]
     },
