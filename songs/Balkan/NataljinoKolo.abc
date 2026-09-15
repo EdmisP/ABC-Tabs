@@ -1,0 +1,62 @@
+X: 1
+P: Nataljino Kolo
+O: Srbija
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/8
+P: G:
+K: G
+[| "G"[BG][AF] [BG][cA] | [d2B2] [ec][dB] | "D7"[cA][BG] [cA][dB] | "G"[B2G2]z2 \
+| [BG][AF] [BG][cA] | [d2B2] [ec][dB] | "D7"[cA][BG] [cA][dB] | "G"[B2G2]z2 |] [K:C]
+[| "C"[e2c2] [fd][ec] | "G7"[d2B2] [f2d2] | "C"[e2c2] [fd][ec] | "G7"[f4d4] \
+| "C"[e2c2] [fd][ec] | "G"[dB][^c/^A/][d/B/] [ec][dB] | "D7"[cA][BG] [cA][dB] | "G"[B2G2]z2 |]
+[| "C"[e2c2] [fd][ec] | "G7"[d2B2] [f2d2] | "C"[e2c2] [fd][ec] | "G7"[d4B4] \
+| "C"[g2e2] [fd][ec] | "G"[dB][^c/^A/][d/B/] [ec][dB] | "D7"[cA][BG] [cA][dB] | "G"[B2G2]z2 |]
+
+
+X: 2
+P: Nataljino Kolo
+O: Srbija
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/8
+P: D:
+K: D
+[| "D"[FD][EC] [FD][GE] | [A2F2] [BG][AF] | "A7"[GE][FD] [GE][AF] | "D"[F2D2]z2 \
+| [FD][EC] [FD][GE] | [A2F2] [BG][AF] | "A7"[GE][FD] [GE][AF] | "D"[F2D2]z2 |] [K:G]
+[| "G"[B2G2] [cA][BG] | "D7"[A2F2] [c2A2] | "G"[B2G2] [cA][BG] | "D7"[c4A4] \
+| "G"[B2G2] [cA][BG] | "D"[AF][^G/^E/][A/F/] [BG][AF] | "A7"[GE][FD] [GE][AF] | "D"[F2D2]z2 |]
+[| "G"[B2G2] [cA][BG] | "D7"[A2F2] [c2A2] | "G"[B2G2] [cA][BG] | "D7"[A4F4] \
+| "G"[d2B2] [cA][BG] | "D"[AF][^G/^E/][A/F/] [BG][AF] | "A7"[GE][FD] [GE][AF] | "D"[F2D2]z2 |]
+
+
+X: 3
+P: Nataljino Kolo
+O: Srbija
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/8
+P: A:
+K: A
+[| "A"[cA][BG] [cA][dB] | [e2c2] [fd][ec] | "E7"[dB][cA] [dB][ec] | "A"[c2A2]z2 \
+| [cA][BG] [cA][dB] | [e2c2] [fd][ec] | "E7"[dB][cA] [dB][ec] | "A"[c2A2]z2 |] [K:D]
+[| "D"[f2d2] [ge][fd] | "A7"[e2c2] [g2e2] | "D"[f2d2] [ge][fd] | "A7"[g4e4] \
+| "D"[f2d2] [ge][fd] | "A"[ec][^d/^B/][e/c/] [fd][ec] | "E7"[dB][cA] [dB][ec] | "A"[c2A2]z2 |]
+[| "D"[f2d2] [ge][fd] | "A7"[e2c2] [g2e2] | "D"[f2d2] [ge][fd] | "A7"[e4c4] \
+| "D"[a2f2] [ge][fd] | "A"[ec][^d/^B/][e/c/] [fd][ec] | "E7"[dB][cA] [dB][ec] | "A"[c2A2]z2 |]
+
+
+X: 4
+P: Nataljino Kolo
+O: Srbija
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/8
+P: E:
+K: E
+[| "E"[GE][FD] [GE][AF] | [B2G2] [cA][BG] | "B7"[AF][GE] [AF][BG] | "E"[G2E2]z2 \
+| [GE][FD] [GE][AF] | [B2G2] [cA][BG] | "B7"[AF][GE] [AF][BG] | "E"[G2E2]z2 |] [K:A]
+[| "A"[c2A2] [dB][cA] | "E7"[B2G2] [d2B2] | "A"[c2A2] [dB][cA] | "E7"[d4B4] \
+| "A"[c2A2] [dB][cA] | "E"[BG][^A/^F/][B/G/] [cA][BG] | "B7"[AF][GE] [AF][BG] | "E"[G2E2]z2 |]
+[| "A"[c2A2] [dB][cA] | "E7"[B2G2] [d2B2] | "A"[c2A2] [dB][cA] | "E7"[B4G4] \
+| "A"[e2c2] [dB][cA] | "E"[BG][^A/^F/][B/G/] [cA][BG] | "B7"[AF][GE] [AF][BG] | "E"[G2E2]z2 |]

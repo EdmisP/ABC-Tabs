@@ -1,0 +1,27 @@
+X: 1
+T: Ada's Kujawiak (#1)    [Am/A]
+R: Kujawiak
+O: Poland
+%info: cpl
+B: A Little Couple-Dancemusik
+Z: Moshe Braner <mbraner@usa.net>
+M: 3/4
+L: 1/8
+K: Am
+%%indent 400
+"E"{^d}e4 e2 | {^d}e4 e2 | {^d}e>e e2 e2 | e2 e2 e2 |
+"^A"\
+|: "Am"A>c e^d ed | e>f ~e2 dc | "E"d>^c dc dc | d>e ~d2 cB \
+|  "Am"c>B cB "(G)"cB | "(F#)"c>d c2 "(F)"BA | "E"B>c B2 A^G \
+|1 "Am"A4 {GF}"E"E2 |2 "Am"A2 A2 z2 ||
+"^B"\
+|: "E"B>c B^G EB | "Am"c>d cB Ac | "G"d>e dB GB | "C"c>c d2 "(B)"^d2 \
+|  "E"e>c' b3 a | ^g>b f3 d | c>e B2 e2 | "Am"A2 A2 z2 :|
+K:A
+"^C"\
+|: "A"c>e A2 ce | "D"d>f B2 df | "E"g>b e2 e/f/g | "A"az ae cA \
+|  "A"c/d/e A2 ce | "D"d/e/f B2 df | "E"e>f ga bg | "A"a2 a2 z2 :|
+%%begintext align
+%% Named for Ada Dziewanowska, who introduced it at the 1974 Folk Dance Camp in Stockton, California.
+%% See The Pinewoods Collection for a fancier version
+%%endtext

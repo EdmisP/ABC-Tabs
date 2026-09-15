@@ -1,0 +1,73 @@
+X: 1
+T: Devetorka
+O: Bulgaria
+Q: 2/8 2/8 2/8 3/8=70
+M: 9/8
+L: 1/8
+Z: 2003 by John Chambers
+N: From 1997 Balkan Camp, via Patrick Yacono
+K: Gm
+"A"\
+|: "Bb"[dB]z [dB][ec] [fd]z [f2d2][ge] \
+| "F7"[af][ge] [ge][fd] [fd][ec] "Bb"[d2B2][BF] \
+| z2 [dB][ec] [fd]z [fd][ec][dB] \
+| "F7"[dB][ec] [ec][dB] "Bb"[d2-B2-] [d3B3] :|
+"B"\
+|: "Cm"z2 [dB][ec] [e2c2] [e3c3] \
+| [ec][dB] [ec][fd] "Gm"[dB][cA] [B2G2][AF] \
+| z2 [BG][cA] [dB][cA]  "Cm"[dB][e2-c2-] \
+| "Fm"[ec][c_A] [cA][BG] "Gm"[B2-G2-] [B3G3] :|
+"C"\
+|: "Gm"z2 [BG][cA] [dB][cA] "Cm"[dB][e2-c2-] \
+| "Fm"[ec][c_A] [cA][BG] "Gm"[BG]z "(Fm)"[c_A][BG][_AF] \
+| "Gm"z2 [BG][c=A] [dB][cA] "Cm"[dB][e2-c2-] \
+| "Fm"[ec][c_A] [cA][BG] "Gm"[B2-G2-] [B3G3]  :|
+"D"\
+|: "Bb"[ec][f-d-] [f2-d2-] [fd]z [fd][ec][dB] \
+| "Cm"[dB][e-c-] [e2-c2-] [ec]z [ec][dB][cA] \
+| "Gm"z2 [BG][cA] [dB][cA] "Cm"[dB][e2-c2-] \
+| "Fm"[ec][c_A] [cA][BG] "Gm"[B2-G2-] [B3G3] :|
+"C"\
+|: "Gm"z2 [BG][cA] [dB][cA] "Cm"[dB][e2-c2-] \
+| "Fm"[ec][c_A] [cA][BG] "Gm"[BG]z "(Fm)"[c_A][BG][_AF] \
+| "Gm"z2 [BG][c=A] [dB][cA] "Cm"[dB][e2-c2-] \
+| "Fm"[ec][c_A] [cA][BG] "Gm"[B2-G2-] [B3G3]  :|
+
+%%sep 3 1 500
+%%sep 1 1 500
+
+
+X: 2
+T: Devetorka
+O: Bulgaria
+Q: 2/8 2/8 2/8 3/8=70
+M: 9/8
+L: 1/8
+Z: 2003 by John Chambers
+N: From 1997 Balkan Camp, via Patrick Yacono
+K: Am
+"B"\
+|: "C"[ec]z [ec][fd] [ge]z [g2e2][af] \
+| "G7"[bg][af] [af][ge] [ge][fd] "C"[e2c2][cG] \
+| z2 [ec][fd] [ge]z [ge][fd][ec] \
+| "G7"[ec][fd] [fd][ec] "C"[e2-c2-] [e3c3] :|
+"C"\
+|: "Dm"z2 [ec][fd] [f2d2] [f3d3] \
+| [fd][ec] [fd][ge] "Am"[ec][dB] [c2A2][BG] \
+| z2 [cA][dB] [ec][dB]  "Dm"[ec][f2-d2-] \
+| "Gm"[fd][d_B] [dB][cA] "Am"[c2-A2-] [c3A3] :|
+"D"\
+|: "Am"z2 [cA][dB] [ec][dB] "Dm"[ec][f2-d2-] \
+| "Gm"[fd][d_B] [dB][cA] "Am"[cA]z "(Gm)"[d_B][cA][_BG] \
+| "Am"z2 [cA][d=B] [ec][dB] "Dm"[ec][f2-d2-] \
+| "Gm"[fd][d_B] [dB][cA] "Am"[c2-A2-] [c3A3]  :|
+"E"\
+|: "C"[fd][g-e-] [g2-e2-] [ge]z [ge][fd][ec] \
+| "Dm"[ec][f-d-] [f2-d2-] [fd]z [fd][ec][dB] \
+| "Am"z2 [cA][dB] [ec][dB] "Dm"[ec][f2-d2-] \
+| "Gm"[fd][d_B] [dB][cA] "Am"[c2-A2-] [c3A3] :|
+"D"\
+|: "Am"z2 [cA][dB] [ec][dB] "Dm"[ec][f2-d2-] \
+| "Gm"[fd][d_B] [dB][cA] "Am"[cA]z "(Gm)"[d_B][cA][_BG] \
+| "Am"z2 [cA][d=B] [ec][dB] "Dm"[ec][f2-d2-] \
+| "Gm"[fd][d_B] [dB][cA] "Am"[c2-A2-] [c3A3]  :|

@@ -1,0 +1,26 @@
+X: 1
+P: Majko, Majko  [D]
+%%indent 50
+M: 7/8
+L: 1/8
+R: Lesnoto, Cocek
+Z: 1997 by John Chambers <jc:trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+K: Dphr
+|: "D"DDD ^FG AB | (A3 A4) | ABc dc BA | "Gm"(B3 B4) |
+| c2B dc BA | "Eb"(E3 E4) | G^FE GF EC | "D"(D3 D4) | z8 :|
+|: "D"(D3 D2) ^FG | (A3 A2) AB | (c3 c)d/c/ BA | "Gm"(B3 B4) :: "Bb"d2 d d2 d2 | dcd e2 d2 |
+| "F7"(f3 f2) ec | "Bb"(d3 d4) | "Gm"B2 B B2 B2 | "Cm"c2B A2 G2 | G^FE GF EC | "D"(D3 D4) | z8 :|
+
+
+X: 2
+P: Majko, Majko  [E]
+%%indent 50
+M: 7/8
+L: 1/8
+R: Lesnoto, Cocek
+Z: 1997 by John Chambers <jc:trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+K: Ephr
+|: "E"EEE ^GA Bc | (B3 B4) | Bcd ed cB | "Am"(c3 c4) |
+| d2c ed cB | "F"(F3 F4) | A^GF AG FD | "E"(E3 E4) | z8 :|
+|: "E"(E3 E2) ^GA | (B3 B2) Bc | (d3 d)e/d/ cB | "Am"(c3 c4) :: "C"e2 e e2 e2 | ede f2 e2 |
+| "G7"(g3 g2) fd | "C"(e3 e4) | "Am"c2 c c2 c2 | "Dm"d2c B2 A2 | A^GF AG FD | "E"(E3 E4) | z8 :|

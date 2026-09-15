@@ -1,0 +1,50 @@
+X: 1
+P: Nebesko Kolo
+O: Srbija
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/8
+K: G
+|: "G"[GD][AF] [B2G2]- | [BG][cA] [BG][AF] | [BG][BG] "D"[AF][AF] \
+|1 "G"[G2G2] [D2D2] :|2 "G"[G3G3] z ||
+|: "G"[d2B2] "D"[c2A2] | "G"[B2G2] "D"[A2F2] \
+|  "G"[dB][dB] "D"[cA][cA] | "G"[BG][BG] "D"[A2F2] :| "G"M[GG] z3 |]
+
+
+X: 2
+P: Nebesko Kolo
+O: Srbija
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/8
+K: D
+|: "D"[dA][ec] [f2d2]- | [fd][ge] [fd][ec] | [fd][fd] "A"[ec][ec] \
+|1 "D"[d2d2] [A2A2] :|2 "D"[d3d3] z ||
+|: "D"[a2f2] "A"[g2e2] | "D"[f2d2] "A"[e2c2] \
+|  "D"[af][af] "A"[ge][ge] | "D"[fd][fd] "A"[e2c2] :| "D"M[dd] z3 |]
+
+
+X: 3
+P: Nebesko Kolo
+O: Srbija
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/8
+K: A
+|: "A"[AE][BG] [c2A2]- | [cA][dB] [cA][BG] | [cA][cA] "E"[BG][BG] \
+|1 "A"[A2A2] [E2E2] :|2 "A"[A3A3] z ||
+|: "A"[e2c2] "E"[d2B2] | "A"[c2A2] "E"[B2G2] \
+|  "A"[ec][ec] "E"[dB][dB] | "A"[cA][cA] "E"[B2G2] :| "A"M[AA] z3 |]
+
+
+X: 4
+P: Nebesko Kolo
+O: Srbija
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/8
+K: E
+|: "E"[eB][fd] [g2e2]- | [ge][af] [ge][fd] | [ge][ge] "B"[fd][fd] \
+|1 "E"[e2e2] [B2B2] :|2 "E"[e3e3] z ||
+|: "E"[b2g2] "B"[a2f2] | "E"[g2e2] "B"[f2d2] \
+|  "E"[bg][bg] "B"[af][af] | "E"[ge][ge] "B"[f2d2] :| "E"M[ee] z3 |]

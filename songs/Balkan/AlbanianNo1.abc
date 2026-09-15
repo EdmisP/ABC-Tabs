@@ -1,0 +1,50 @@
+X: 1
+T: Albanian #1    [G]
+T: Punt\"etor\"et t\"e Nd\"ertimit (the Construction Workers)
+%info: line
+Z: John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+%Q: 3/8 2/8
+M: 5/8
+L: 1/8
+K: G
+|: DD \
+| "G"[d2B] [dB] [ec][dB] | "Am"[c3A] [dB][dB] \
+| "D7"[f2d] [fd] [ec][cA] | "G"[B3G] DD \
+| [d2B] [dB] [dB][fd] | "Am"[e3c] [a/f][g/e][f/d][e/c] \
+| "D7"[d2B] [dB] [dB][cA] | "G"[B3G] :|
+|: [GB,][AC] \
+| "G"[B2D] [BD] [cE][BD] | [cE][B2D] [GB,][AC] \
+| [B2D] [cE] [d=F][dF] | "Am"[c3E] [cE][cE] \
+| [c2E] [cE] [cE][cE] | "D7"[f2A] [fA] [fA][eG] \
+| [d2F] [cE] [BD][AC] |1 "G"[B3D] :|2 "G"[G3B,] |]
+|: [DB,][DB,] \
+| "G"[G2D] [GD] [GD][AF] | [B2G] [BG] [BG][cA] \
+| [d2B] [dB] [cA][BG] | "Am"[c3A] [AE][AE] \
+| "D7"[G2E] [FD] [AF][AF] | [G2E] [FD] [AF][GE] \
+| [F2D] [EC] [DB,][CA,] |1 "G"[D3B,] :|2 "G"[B,3G,] |]
+
+
+X: 2
+T: Albanian #1    [A]
+T: Punt\"etor\"et t\"e Nd\"ertimit (the Construction Workers)
+%info: line
+Z: John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+%Q: 3/8 2/8
+M: 5/8
+L: 1/8
+K: A
+|: EE \
+| "A"[e2c] [ec] [fd][ec] | "Bm"[d3B] [ec][ec] \
+| "E7"[g2e] [ge] [fd][dB] | "A"[c3A] EE \
+| [e2c] [ec] [ec][ge] | "Bm"[f3d] [b/g][a/f][g/e][f/d] \
+| "E7"[e2c] [ec] [ec][dB] | "A"[c3A] :|
+|: [AC][BD] \
+| "A"[c2E] [cE] [dF][cE] | [dF][c2E] [AC][BD] \
+| [c2E] [dF] [e=G][eG] | "Bm"[d3F] [dF][dF] \
+| [d2F] [dF] [dF][dF] | "E7"[g2B] [gB] [gB][fA] \
+| [e2G] [dF] [cE][BD] |1"A"[c3E] :|2 "A"[A3C] |]
+|: [EC][EC] \
+| "A"[A2E] [AE] [AE][BG] | [c2A] [cA] [cA][dB] \
+| [e2c] [ec] [dB][cA] | "Bm"[d3B] [BF][BF] \
+| "E7"[A2F] [GE] [BG][BG] | [A2F] [GE] [BG][AF] \
+| [G2E] [FD] [EC][DB,] |1 "A"[E3C] :|2 "A"[C3A,] |]

@@ -1,0 +1,55 @@
+X: 1
+P: Alunelul  [F]
+O: Romania
+Z: John Chambers <jc@trillian.mit.edu>
+M: 1/2
+L: 1/8
+K: F
+(3[AF][BG][=B^G] \
+|: "F"[cA]>[=B^G] [cA]>[dB] | "C7"[cA]>[BG] [AF]>[GE] \
+| "F"[F2C] "C"[G2E] | "F"[A2F] (3[AF][BG][=B^G] \
+| "F"[cA]>[=B^G] [cA]>[dB] | "C7"[cA]>[BG] [AF]>[GE] \
+| "Dm"[F2D] "A7"[E2^C] | "Dm"[D4] :|
+(3CDE \
+|: "F"[F2C] [A2F] | "C7"[G2E2]>>[E2C2] \
+| "F"[F2C] [A2F] | [c4A] \
+| "F"[F2C] [A2F] | "C7"[G2E2]>>[E2C2] \
+| "Dm"[F2D] "A7"[E2^C] | "Dm"[D4] :|
+
+
+X: 2
+P: Alunelul  [G]
+O: Romania
+Z: John Chambers <jc@trillian.mit.edu>
+M: 1/2
+L: 1/8
+K: G
+(3[BG][cA][^c^A] \
+|: "G"[dB]>[^c^A] [dB]>[ec] | "D7"[dB]>[cA] [BG]>[AF] \
+| "G"[G2D] "D"[A2F] | "G"[B2G] (3[BG][cA][^c^A] \
+| "G"[dB]>[^c^A] [dB]>[ec] | "D7"[dB]>[cA] [BG]>[AF] \
+| "Em"[G2E] "B7"[F2^D] | "Em"[E4] :|
+(3DEF \
+|: "G"[G2D] [B2G] | "D7"[A2F2]>>[F2D2] \
+| "G"[G2D] [B2G] | [d4B] \
+| "G"[G2D] [B2G] | "D7"[A2F2]>>[F2D2] \
+| "Em"[G2E] "B7"[F2^D] | "Em"[E4] :|
+
+
+X: 3
+T: Alunelul  [A]
+O: Romania
+Z: John Chambers <jc@trillian.mit.edu>
+M: 1/2
+L: 1/8
+K: G
+(3[cA][dB][^d^B] \
+|: "A"[ec]>[^d^B] [ec]>[fd] | "E7"[ec]>[dB] [cA]>[BG] \
+| "A"[A2E] "E"[B2G] | "A"[c2A] (3[cA][dB][^d^B] \
+| "A"[ec]>[^d^B] [ec]>[fd] | "E7"[ec]>[dB] [cA]>[BG] \
+| "Fm"[A2F] "C7"[G2^E] | "Fm"[F4] :|
+(3EFG \
+|: "A"[A2E] [c2A] | "E7"[B2G2]>>[G2E2] \
+| "A"[A2E] [c2A] | [e4c] \
+| "A"[A2E] [c2A] | "E7"[B2G2]>>[G2E2] \
+| "Fm"[A2F] "C7"[G2^E] | "Fm"[F4] :|

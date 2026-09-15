@@ -1,0 +1,25 @@
+X: 1
+T: Trilisestile
+O: Romania
+M: 4/4
+L: 1/8
+K: A
+|: "A"ABcd ef=ge | "D"a=gfe f3e | "E7"dcBA BcdB |1,3 "A"ABcd e^de2 :|2,4 "A"AEFG A2z2 :|
+|: "A"g-aae g-aae | "E7"dcBd "A"~c3A | g-aae "E7"dcBd | "A"~c3A BAGA |
+|  "A"g-aae g-aae | "D"dcde f3e | "E7"dcBA BcdB | "A"AEFG A2z2 :|
+|: "A"EAGA BAGA | BAGA ~c3A | "E7"dcBA BcdB |1,3 "A"AGAB cde2 :|2,4 "A"AEFG A2z2 :| "A Coda".A2.E2 .A2 |]
+
+
+%%sep 0 1 8cm
+
+
+X: 2
+T: Trilisestile
+O: Romania
+M: 4/4
+L: 1/8
+K: G
+|: "G"GABc de=fd | "C"g=fed e3d | "D7"cBAG ABcA |1,3 "G"GABc d^cd2 :|2,4 "G"GDEF G2z2 :|
+|: "G"f-ggd f-ggd | "D7"cBAc "G"~B3G | f-ggd "D7"cBAc | "G"~B3G AGFG |
+|  "G"f-ggd f-ggd | "C"cBcd e3d | "D7"cBAG ABcA | "G"GDEF G2z2 :|
+|: "G"DGFG AGFG | AGFG ~B3G | "D7"cBAG ABcA |1,3 "G"GFGA Bcd2 :|2,4 "G"GDEF G2z2 :| "G Coda".G2.D2 .G2 |]

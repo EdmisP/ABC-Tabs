@@ -1,0 +1,31 @@
+X: 1
+P: Makedonske Devoj\vce (Dm)
+C: Jon\vce Hristovski 1964
+R: lesnoto
+M: 7/8
+L: 1/8
+K: Dm
+[| "Dm"D2d c2 d2 | cd2 A4 | "Gm"B2A G2 B2 | "A7"A7 \
+|  "Dm"D2d c2 d2 | cd2 A4 | "A7"A2G F2 E2 | "Dm"D7 |]
+|: "Dm"[F3d] "D7"[^F3A][Ac] | "Gm"[GB][F2A2] [D4G4] | "C7"[G2B][FA] [E2G][G2B] | "F"[F7A] \
+|  "Eb"[G2B][FA] [_E2G][G2B] | "Dm"[FA][E2G2] [F2D][FD][EG] | "A7"[F2A][EG] [D2F][A,2E] | "Dm"[D7D] :|
+P: Instr:
+[| "Dm"{E}F2E DEFG | "Gm"A2G G4 | "C7"C2D EFG2 | GFE "F"F2FE \
+|  "Dm"{E}F2E DEFG | "Gm"A2G G2FG | "A7"A2G F2E2 | "Dm"D7- | "Dm"D7 |]
+
+
+X: 2
+P: Makedonske Devoj\vce (Em)
+C: Jon\vce Hristovski 1964
+M: 7/8
+R: lesnoto
+Z: John Chambers <jc:trillian.mit.edu>
+L: 1/8
+K: Em
+[| "Em"E2e d2 e2 | de2 B4 | "Am"c2B A2 c2 | "B7"B7 \
+|  "Em"E2e d2 e2 | de2 B4 | "B7"B2A G2 F2 | "Em"E7 |]
+|: "Em"[G3e] "E7"[^G3B3][Bd] | "Am"[Ac][G2B2] [E4A4] | "D7"[A2c][GB] [F2A][A2c] | "G"[G7B] \
+|  "F"[A2c][GB] [=F2A2][A2c2] | "Em"[GB][F2A2] [G2E][GE][FA] | "B7"[G2B][FA] [E2G][B,2F] | "Em"[E7E] :|
+P: Instr:
+[| "Em"{F}G2F EFGA | "Am"B2A A4 | "D7"D2E FGA2 | AGF "G"G2GF \
+|  "Em"{F}G2F EFGA | "Am"B2A A2GA | "B7"B2A G2F2 | "Em"E7- | "Em"E7 |]

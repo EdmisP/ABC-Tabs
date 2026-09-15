@@ -1,0 +1,98 @@
+X: 1
+T: Gankino
+T: Kopanica
+R: kopanica, gankino
+O: Bulgaria
+S: Adapted from Deborah Jones, Vancouver Int'l Folk Dance Music Book
+%Q: 1/4=160
+L: 1/16
+M: 11/16
+P: AB.CD.CD.EF.AB.CD.CD
+K: C
+"A"\
+|:"C"G2[ec][ec] [e2c2][ec] [e2c2][e2c2] \
+| "G7"[ge][bg][af][ge] [fd][ec][fd] "C"[ge][fd][e2c2]\
+| "C"G2[ec][ec] [e2c2][ec] [e2c2][e2c2] \
+| "G7"[ge][bg][af][ge] [fd][ec][fd] "C"[ge][fd][e2c2] :|
+"B"\
+|: "C"cGcd ~e2d "Am"cBA2|"D7"B2c2 "G7"~d2c "C"BccG\
+|  "C"cGcd ~e2d "Am"cBA2|"D7"B2c2 "G7"~dcB "C"{B}c2c2 :|
+"C"\
+|:"F"[ge][af][a2f2] [af][bg][af] "C"[g2e][ge][ec]\
+| [ge][ec]"G7"[fd][dB] "C"[e2c2][fd] [g2e2][ge][ec]\
+| "F"[ge][af][a2f2] [af][bg][af] "C"[g2e][ge][ec]\
+| [ge][ec]"G7"[fd][dB] "C"[e2c2][cG] "fine"[e2c2]z2 :|
+"D"\
+|: "C"[ge][ec]"G7"[fd][dB] "C"[e2c2][fd] [g2e2][ge][ec]\
+| [ge][ec]"G7"[fd][dB] "C"[e2c2][cG] [ec][cG][ec][cG]\
+|  "C"[ge][ec]"G7"[fd][dB] "C"[e2c2][fd] [g2e2][ge][ec]\
+| [ge][ec]"G7"[fd][dB] "C"[e2c2][cG] [e2c2]z2 :|
+K: D^f_B_e
+"E"\
+|: "D"[bg][c'a][a2f2] [ge][fd][ec] [f2d2][fd][dA] \
+| [bg][c'a][a2f2] [ge][fd][ec] [f2d2][fd][dA] \
+| [bg][c'a][a2f2] [bg][c'a][af] [bg][c'a][a2f2]\
+| [bg][c'a][a2f2] [ge][fd][ec] [f2d2][fd][dA] |
+| [bg][c'a][a2f2] [ge][fd][ec] [f2d2][fd][dA] \
+| [bg][c'a][a2f2] [ge][fd][ec] [f2d2][fd][dA] \
+| [bg][c'a][a2f2] [bg][c'a][af] [bg][c'a][a2f2]\
+| [bg][c'a][a2f2] [ge][fd][ec] [f2d2][f2d2] :|
+K: C
+"F"\
+|: "G7"[dB][ec][f2d2] [fd][dB][fd] "C"[e2c2][ec][cG] \
+| [dB][ec]"G7"[f2d2] [fd][dB][fd] "C"[e2c2][ec][cG] \
+| "G7"[dB][ec] [f2d2] [fd][dB][fd] "C"[e2c2][ec][cG] \
+| "D7"dcBc "G7"d2c ~d2dc|
+| [dB][ec]"G7"[f2d2] [fd][dB][fd] "C"[e2c2][ec][cG] \
+| [dB][ec]"G7"[f2d2] [fd][dB][fd] "C"[e2c2][ec][cG] \
+| "G7"dcBc d2G d2z2:|
+
+
+X: 2
+T: Gankino
+T: Kopanica
+R: kopanica, gankino
+O: Bulgaria
+S: Adapted from Deborah Jones, Vancouver Int'l Folk Dance Music Book
+%Q: 1/4=160
+L: 1/16
+M: 11/16
+P: AB.CD.CD.EF.AB.CD.CD
+K: D
+"^A"\
+|:"D"A2[fd][fd] [f2d2][fd] [f2d2][f2d2] \
+| "A7"[af][c'a][bg][af] [ge][fd][ge] "D"[af][ge][f2d2]\
+| "D"A2[fd][fd] [f2d2][fd] [f2d2][f2d2] \
+| "A7"[af][c'a][bg][af] [ge][fd][ge] "D"[af][ge][f2d2] :|
+"^B"\
+|: "D"dAde ~f2e "Bm"dcB2|"E7"c2d2 "A7"~e2d "D"cddA\
+|  "D"dAde ~f2e "Bm"dcB2|"E7"c2d2 "A7"~edc "D"{c}d2d2 :|
+"^C"\
+|:"G"[af][bg][b2g2] [bg][c'a][bg] "D"[a2f][af][fd]\
+| [af][fd]"A7"[ge][ec] "D"[f2d2][ge] [a2f2][af][fd]\
+| "G"[af][bg][b2g2] [bg][c'a][bg] "D"[a2f][af][fd]\
+| [af][fd]"A7"[ge][ec] "D"[f2d2][dA] "ginf"[f2d2]z2 :|
+"^D"\
+|: "D"[af][fd]"A7"[ge][ec] "D"[f2d2][ge] [a2f2][af][fd]\
+| [af][fd]"A7"[ge][ec] "D"[f2d2][dA] [fd][dA][fd][dA]\
+|  "D"[af][fd]"A7"[ge][ec] "D"[f2d2][ge] [a2f2][af][fd]\
+| [af][fd]"A7"[ge][ec] "D"[f2d2][dA] [f2d2]z2 :|
+K: E^g
+"^#"\
+|: "E"[c'a][d'b][b2g2] [af][ge][fd] [g2e2][ge][eB] \
+| [c'a][d'b][b2g2] [af][ge][fd] [g2e2][ge][eB] \
+| [c'a][d'b][b2g2] [c'a][d'b][bg] [c'a][d'b][b2g2]\
+| [c'a][d'b][b2g2] [af][ge][fd] [g2e2][ge][eB] |
+| [c'a][d'b][b2g2] [af][ge][fd] [g2e2][ge][eB] \
+| [c'a][d'b][b2g2] [af][ge][fd] [g2e2][ge][eB] \
+| [c'a][d'b][b2g2] [c'a][d'b][bg] [c'a][d'b][b2g2]\
+| [c'a][d'b][b2g2] [af][ge][fd] [g2e2][g2e2] :|
+K: D
+"^$"\
+|: "A7"[ec][fd][g2e2] [ge][ec][ge] "D"[f2d2][fd][dA] \
+| [ec][fd]"A7"[g2e2] [ge][ec][ge] "D"[f2d2][fd][dA] \
+| "A7"[ec][fd] [g2e2] [ge][ec][ge] "D"[f2d2][fd][dA] \
+| "E7"edcd "A7"e2d ~e2ed|
+| [ec][fd]"A7"[g2e2] [ge][ec][ge] "D"[f2d2][fd][dA] \
+| [ec][fd]"A7"[g2e2] [ge][ec][ge] "D"[f2d2][fd][dA] \
+| "A7"edcd e2A e2z2:|

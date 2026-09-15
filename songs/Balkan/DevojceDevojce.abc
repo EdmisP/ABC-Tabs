@@ -1,0 +1,28 @@
+X: 1
+T: Devojce, devojce
+M: 9/8
+L: 1/8
+K: Ddor
+"Vocal:"\
+|: de f2g fe f2 | gg g2e fe d2 :|
+|: gg g2e fe d2 |1 de fed e2 e2 :|2 de feg d2 d2 :|
+"Instr:"\
+|: de fed cB AG | Bc dec d2 d2 :|
+
+
+%%sep 0 1 8cm
+
+
+X: 2
+T: Devojce, devojce
+M: 9/8
+L: 1/8
+K: Edor
+"Vocal:"\
+|: ef g2a gf g2 | aa a2f gf e2 :|
+|: aa a2f gf e2 |1 ef gfe f2 f2 :|2 ef gfa e2 e2 :|
+"Instr:"\
+|: ef gfe dc BA | cd efd e2 e2 :|
+
+
+%%sep 0 1 8cm

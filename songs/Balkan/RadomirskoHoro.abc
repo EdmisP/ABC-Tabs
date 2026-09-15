@@ -1,0 +1,68 @@
+X: 1
+T: Radomirsko Horo
+T: C instruments
+O: Bulgaria
+S: Folk Dance collected by Yves Moreau
+Z: http://swissnet.ai.mit.edu/~jaffer/CFO.html, modified by John Chambers.
+M: C|
+L: 1/8
+Q: 1/2=120
+P: ABCDCE
+%%staffsep 45
+K: Bb
+"A"\
+|: "Eb"~g6/2f gfe2 | "Bb"f2d2"Eb"e4 | "F"edc2 "C7"d2B2 | "F"c2d2 e2f2 |
+|  "Eb"~g6/2f gfe2 | "Bb"f2d2"Eb"e4 | "F"edc2 "C7"d2B2 | "F"c4 c2z :|
+"B"\
+|: "Bb"B2c2 d2d2 | "Bb7"d2d2 d2cd | "Cm"e2e2 e2de | "F7"f2e2 e2dc |
+|  "Gm"B2c2 d2c2 | "Gm7"d4   c2B2 | "C7"c2c2 c2c2 | "F7"c2c2 c2z :|
+"C"\
+|: "Bb"d3F  dFdF | dFdF d2cB | "F7" e3F      fFeF | fFeF e2 dc |
+|  "Bb"dddF dFdF | dFdF d2cB | "F"  ABcc "C7"cBAB \
+|1 "F"cBAB cccz/ :|2 "F"cBAB c2z |]
+"D"\
+|: "Bb"~B3F  ABcd | "F7".e2.e2 ~e2dc | "Bb"d2d2     d2d2 |    d2d2 ~d2cB  |
+|  "Bb"~ABBF ABcd | "F7".e2.e2 ~e2dc |     f2c2 "C7"cBAB | "F"cBAB  c2z2 :|
+"C"\
+|: "Bb"d3F  dFdF | dFdF d2cB | "F7" e3F      fFeF | fFeF e2 dc |
+|  "Bb"dddF dFdF | dFdF d2cB | "F"  ABcc "C7"cBAB \
+|1 "F"cBAB cccz/ :|2 "F"cBAB c2z |]
+K: C=e_B_d
+"E"\
+|: "C"gfee edcc | cBcd eeed | gfee "Bbm"edcB | "C"cz ef gfez |
+|     gfee edcc | cBcd eeed | gfee "Bbm"edcB | "C"cGAB  c2z2 :|
+
+
+X: 2
+T: Radomirsko Horo
+T: Bb instruments
+O: Bulgaria
+S: Folk Dance collected by Yves Moreau
+Z: http://swissnet.ai.mit.edu/~jaffer/CFO.html, modified by John Chambers.
+M: C|
+L: 1/8
+Q: 1/2=120
+P: ABCDCE
+%%staffsep 45
+K: C
+"A"\
+|: "F"~a6/2g agf2 | "C"g2e2"F"f4 | "G"fed2 "D7"e2c2 | "G"d2e2 f2g2 |
+|  "F"~a6/2g agf2 | "C"g2e2"F"f4 | "G"fed2 "D7"e2c2 | "G"d4 d2z :|
+"B"\
+|: "C"c2d2 e2e2 | "C7"e2e2 e2de | "Dm"f2f2 f2ef | "G7"g2f2 f2ed |
+|  "Am"c2d2 e2d2 | "Am7"e4   d2c2 | "D7"d2d2 d2d2 | "G7"d2d2 d2z :|
+"C"\
+|: "C"e3G  eGeG | eGeG e2dc | "G7" f3G      gGfG | gGfG f2 ed |
+|  "C"eeeG eGeG | eGeG e2dc | "G"  Bcdd "D7"dcBc \
+|1 "G"dcBc dddz/ :|2 "G"dcBc d2z |]
+"D"\
+|: "C"~c3G  Bcde | "G7".f2.f2 ~f2ed | "C"e2e2     e2e2 |    e2e2 ~e2dc  |
+|  "C"~BccG Bcde | "G7".f2.f2 ~f2ed |     g2d2 "D7"dcBc | "G"dcBc  d2z2 :|
+"C"\
+|: "C"e3G  eGeG | eGeG e2dc | "G7" f3G      gGfG | gGfG f2 ed |
+|  "C"eeeG eGeG | eGeG e2dc | "G"  Bcdd "D7"dcBc \
+|1 "G"dcBc dddz/ :|2 "G"dcBc d2z |]
+K: D^f_e
+"E"\
+|: "D"agff fedd | dcde fffe | agff "Cm"fedc | "D"dz fg agfz |
+|     agff fedd | dcde fffe | agff "Cm"fedc | "D"dABc  d2z2 :|

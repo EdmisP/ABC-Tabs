@@ -1,0 +1,73 @@
+X: 1
+P: Savila se bela loza
+O: Srbija
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+P: G
+K: G
+|: "G"[dB][dB][ec][fd] "C"[ge][ge][fd][ec] \
+| "G"[ec][dB][d2B2]- [dB][ge][fd][ec] |
+w:1.~Sa-vi-la se be-la lo-za vi-no-va uz ta-ra-bu
+w:2.~To ne be-\vse be-la lo-za vi-no-va uz ta-ra-bu % vinova
+w:3.~Ve\'c to be-\vse dvo-je mi-li i dra-gi, dvo-je mi-li % i dragi./3
+| "(D)"[ec][dB][d2B2]- [dB][ec][ec][dB] \
+| "D"[dB][cA][c2A2]- [cA][dB][dB][cA] \
+| "G"[B2G2]"D"[A2F2] "G"[G4D] :|
+w: vi-no-va uz ta-ra-bu vi-no-va uz ta-ra-bu vi-no-va.
+w: vi-no-va uz ta-ra-bu vi-no-va uz ta-ra-bu vi-no-va.
+w: i dra-gi, dvo-je mi-li i dra-gi, dvo-je mi-li i dra-gi.
+|:: "G"[dB][BG]"D"[cA][AF] "G"[GD][BG][B2G2] \
+| "D"[cA][AF]"A"[BG][GE] "D"[FD][AF]"(3X)"[A2F2] ::|
+w: To-dor To-di pod-va-lio Tri put cu-ru po-lju-bio.
+
+
+X: 2
+P: Savila se bela loza
+O: Srbija
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+P: C
+K: C
+|: "C"[ge][ge][af][bg] "F"[c'a][c'a][bg][af] \
+| "C"[af][ge][g2e2]- [ge][c'a][bg][af] \
+| "(G)"[af][ge][g2e2]- [ge][af][af][ge] |
+| "G"[ge][fd][f2d2]- [fd][ge][ge][fd] \
+| "C"[e2c2]"G"[d2B2] "C"[c4G] :| \
+|:: "C"[ge][ec]"G"[fd][dB] "C"[cG][ec][e2c2] \
+| "G"[fd][dB]"D"[ec][cA] "G"[BG][dB]"(3X)"[d2B2] ::|
+
+
+X: 3
+P: Savila se bela loza
+O: Srbija
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+P: A
+K: A
+|: "A"[ec][ec][fd][ge] "D"[af][af][ge][fd] \
+| "A"[fd][ec][e2c2]- [ec][af][ge][fd] \
+| "(E)"[fd][ec][e2c2]- [ec][fd][fd][ec] |
+| "E"[ec][dB][d2B2]- [dB][ec][ec][dB] \
+| "A"[c2A2]"E"[B2G2] "A"[A4E] :| \
+|:: "A"[ec][cA]"E"[dB][BG] "A"[AE][cA][c2A2] \
+| "E"[dB][BG]"B"[cA][AF] "E"[GE][BG]"(3X)"[B2G2] ::|
+
+
+X: 4
+P: Savila se bela loza
+O: Srbija
+Z: John Chambers <jc@trillian.mit.edu>
+M: 2/4
+L: 1/16
+P: D
+K: D
+|: "D"[af][af][bg][c'a] "G"[d'b][d'b][c'a][bg] \
+| "D"[bg][af][a2f2]- [af][d'b][c'a][bg] \
+| "(A)"[bg][af][a2f2]- [af][bg][bg][af] |
+| "A"[af][ge][g2e2]- [ge][af][af][ge] \
+| "D"[f2d2]"A"[e2c2] "D"[d4A] :| \
+|:: "D"[af][fd]"A"[ge][ec] "D"[dA][fd][f2d2] \
+| "A"[ge][ec]"E"[fd][dB] "A"[cA][ec]"(3X)"[e2c2] ::|

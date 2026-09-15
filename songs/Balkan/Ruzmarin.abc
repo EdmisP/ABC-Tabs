@@ -1,0 +1,46 @@
+X: 1
+T: Ruzmarin
+O: Croatia
+Z: John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+M: 2/4
+L: 1/8
+K: G
+|: "G"[d2B] [^c^A][dB] | "C"[e3c] [dB] | [ec][dB] [cA][BG] | "D7"[c2A] "G"[B2G] \
+|     [d2B] [gc][=fd] | "C"[e3c] [dB] | [ec][dB] [cA][BG] | "D7"[c2A] "G"[B2G] ||
+|| "G"[d2B] [cA][BG] | "D7"[AF][BG] [c2A] | "G"[B/G][c/A][dB] [BG][GD] | "D7"[AF][BG] [c2A] \
+|  "G"[d2B] [cA][BG] | "D7"[AF][BG] [c2A] | "G"[B/G][c/A][dB] "A7"[BG][GE] | "D"[A2D] [A2D] :|
+
+
+%%sep 0 1 8cm
+
+
+X: 2
+T: Ruzmarin
+O: Croatia
+Z: John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+M: 2/4
+L: 1/8
+K: D
+|: "D"[A2F] [^G^E][AF] | "G"[B3G] [AF] | [BG][AF] [GE][FD] | "A7"[G2E] "D"[F2D] \
+|     [A2F] [dG][=cA] | "G"[B3G] [AF] | [BG][AF] [GE][FD] | "A7"[G2E] "D"[F2D] ||
+|| "D"[A2F] [GE][FD] | "A7"[EC][FD] [G2E] | "D"[F/D][G/E][AF] [FD][DA,] | "A7"[EC][FD] [G2E] \
+|  "D"[A2F] [GE][FD] | "A7"[EC][FD] [G2E] | "D"[F/D][G/E][AF] "E7"[FD][DB,] | "A"[E2A,] [E2A,] :|
+
+
+%%sep 0 1 8cm
+
+
+X: 3
+T: Ruzmarin
+O: Croatia
+Z: John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+M: 2/4
+L: 1/8
+K: A
+|: "A"[e2c] [^d=B][ec] | "D"[f3d] [ec] | [fd][ec] [dB][cA] | "E7"[d2B] "A"[c2A] \
+|     [e2c] [ad][=ge] | "D"[f3d] [ec] | [fd][ec] [dB][cA] | "E7"[d2B] "A"[c2A] ||
+|| "A"[e2c] [dB][cA] | "E7"[BG][cA] [d2B] | "A"[c/A][d/B][ec] [cA][AE] | "E7"[BG][cA] [d2B] \
+|  "A"[e2c] [dB][cA] | "E7"[BG][cA] [d2B] | "A"[c/A][d/B][ec] "B7"[cA][AF] | "E"[B2E] [B2E] :|
+
+
+%%sep 0 1 8cm

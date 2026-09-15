@@ -1,0 +1,73 @@
+X: 1
+T: U Sest
+O: Serbia
+Z: 1998 by John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+N: Good tune for dvojnica, or any two whistle-type instruments.
+M: C|
+L: 1/8
+K: C
+|: "C"[e2c2] [e2c2] ~[fd][ec] [e2c2] \
+| "G7"[d/B/][e/c/][fd]- [fd][fd] "C"~[fd][ec] [e2c2] :| \
+|: "C"[e2c2] [e2c2] {f}.[ge][ec] [e2c2] \
+| "G7"[d/B/][e/c/][fd]- [fd][fd] "C"~[fd][ec] [e2c2] :|
+|: "C"{f}.[g2e2] [e2c2] {f}.[g2e2] [e2c2] | \
+| "G7"[d/B/][e/c/][fd]- [fd][fd] "C"~[fd][ec] [e/c/][d/G/][e/c/][f/d/] | \
+| "C"{f}.[g2e2] [e2c2] {f}.[g2e2] [e2c2] | \
+| "G7"[d/B/][e/c/][fd]- [fd][fd] "C"~[fd][ec] [e2c2] :|
+|: "G7"[f2d2] [f2d2] ~[ec][dB] [dB]>[ec] \
+| ~[fd][ec] "D7"~[ec][dB] "G"[d2B2] [d/B/][c/G/][d/B/][e/c/] \
+| [fd][fd] [fd][fd] ~[ec][dB] [d/B/][c/G/][d/B/][e/c/] \
+| ~[fd][ec] "D7"~[ec][dB] "G"[d4B4] :|
+
+
+%%sep 0 1 8cm
+
+
+X: 2
+T: U Sest
+O: Serbia
+Z: 1998 by John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+N: Good tune for dvojnica, or any two whistle-type instruments.
+M: C|
+L: 1/8
+K: D
+|: "D"[f2d2] [f2d2] ~[ge][fd] [f2d2] \
+| "A7"[e/c/][f/d/][ge]- [ge][ge] "D"~[ge][fd] [f2d2] :| \
+|: "D"[f2d2] [f2d2] {g}.[af][fd] [f2d2] \
+| "A7"[e/c/][f/d/][ge]- [ge][ge] "D"~[ge][fd] [f2d2] :|
+|: "D"{g}.[a2f2] [f2d2] {g}.[a2f2] [f2d2] | \
+| "A7"[e/c/][f/d/][ge]- [ge][ge] "D"~[ge][fd] [f/d/][e/A/][f/d/][g/e/] | \
+| "D"{g}.[a2f2] [f2d2] {g}.[a2f2] [f2d2] | \
+| "A7"[e/c/][f/d/][ge]- [ge][ge] "D"~[ge][fd] [f2d2] :|
+|: "A7"[g2e2] [g2e2] ~[fd][ec] [ec]>[fd] \
+| ~[ge][fd] "E7"~[fd][ec] "A"[e2c2] [e/c/][d/A/][e/c/][f/d/] \
+| [ge][ge] [ge][ge] ~[fd][ec] [e/c/][d/A/][e/c/][f/d/] \
+| ~[ge][fd] "E7"~[fd][ec] "A"[e4c4] :|
+
+
+%%sep 0 1 8cm
+
+
+X: 3
+T: U Sest
+O: Serbia
+Z: 1998 by John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+N: Good tune for dvojnica, or any two whistle-type instruments.
+M: C|
+L: 1/8
+K: E
+|: "E"[g2e2] [g2e2] ~[af][ge] [g2e2] \
+| "B7"[f/d/][g/e/][af]- [af][af] "E"~[af][ge] [g2e2] :| \
+|: "E"[g2e2] [g2e2] {a}.[bg][ge] [g2e2] \
+| "B7"[f/d/][g/e/][af]- [af][af] "E"~[af][ge] [g2e2] :|
+|: "E"{a}.[b2g2] [g2e2] {a}.[b2g2] [g2e2] | \
+| "B7"[f/d/][g/e/][af]- [af][af] "E"~[af][ge] [g/e/][f/B/][g/e/][a/f/] | \
+| "E"{a}.[b2g2] [g2e2] {a}.[b2g2] [g2e2] | \
+| "B7"[f/d/][g/e/][af]- [af][af] "E"~[af][ge] [g2e2] :|
+|: "B7"[a2f2] [a2f2] ~[ge][fd] [fd]>[ge] \
+| ~[af][ge] "F7"~[ge][fd] "B"[f2d2] [f/d/][e/B/][f/d/][g/e/] \
+| [af][af] [af][af] ~[ge][fd] [f/d/][e/B/][f/d/][g/e/] \
+| ~[af][ge] "F7"~[ge][fd] "B"[f4d4] :|
+
+
+%%sep 0 1 8cm

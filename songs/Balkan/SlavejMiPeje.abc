@@ -1,0 +1,17 @@
+X: 1
+T: Slavej mi peje
+O: Makedonija
+R:
+Z: 2003 John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+N: Probably best with just a drone accompaniment, no chords.
+M: 2/4
+L: 1/8
+P: kaval+gajda
+K: ADorian
+|: "G"G2 "Am"A2 | A3 G | c2 d2 | dc/B/ AG | c2 BG |1,3 A3 A | "G"BA G2 :|
+|2,4 "Am"A3 [dA] | AA A2 :: "Am"c2 BG | A3 G | cB/c/ d2 | cB/c/ d2 | c2 "G"BG | "Am"A3 [dA] | AA A2 :|
+%%sep 5 5 200
+P: kaval+tambura
+K: EDorian
+|: "D"D2 "Em"E2 | E3 D | G2 A2 | AG/F/ ED | G2 FD |1,3 E3 E | "D"FE D2 :|
+|2,4 "Em"E3 [AE] | EE E2 :: "Em"G2 FD | E3 D | GF/G/ A2 | GF/G/ A2 | G2 "D"FD | "Em"E3 [AE] | EE E2 :|

@@ -1,0 +1,63 @@
+X: 1
+T: Jambolsko Pajdu\vsko
+O: Bulgaria
+Z: John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+R: pajdushko
+M: 5/8
+L: 1/8
+K: Dm
+|: "Dm"dA fed | "C"ec "Dm"~d2A | ef fed | "C"ec "Dm"~d2A \
+| "Dm"dA fed | de fga | "Gm"~g2 fed | "C"ec "Dm"d2z :|
+[| "Dm(F)"FF FG2 | A2 A3 | A2 A3 | G2 F3 \
+| FF EF2 | "Gm"G2 D3 | D2 D3 | "Dm"D2 D3 |]
+|: "C"CC CC2 | D2 D3 | "Dm"D2 D2E | F2 F3 \
+| "Gm"GG AG2 | FE D3 | "Dm"[A2D] D3 | D2 D3 :|
+%%sep 5 5 200
+
+
+X: 2
+T: Jambolsko Pajdu\vsko
+O: Bulgaria
+Z: John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+R: pajdushko
+M: 5/8
+L: 1/8
+K: Em
+|: "Em"eB gfe | "D"fd "Em"~e2B | fg gfe | "D"fd "Em"~e2B \
+| "Em"eB gfe | ef gab | "Am"~a2 gfe | "D"fd "Em"e2z :|
+[| "Em(G)"GG GA2 | B2 B3 | B2 B3 | A2 G3 \
+| GG FG2 | "Am"A2 E3 | E2 E3 | "Em"E2 E3 |]
+|: "D"DD DD2 | E2 E3 | "Em"E2 E2F | G2 G3 \
+| "Am"AA BA2 | GF E3 | "Em"[B2E] E3 | E2 E3 :|
+%%sep 5 5 200
+
+
+X: 3
+T: Jambolsko Pajdu\vsko
+O: Bulgaria
+R: pajdushko
+M: 5/8
+L: 1/8
+K: Am
+|: "Am"AE cBA | "G"BG "Am"~A2E | Bc cBA | "G"BG "Am"~A2E \
+| "Am"AE cBA | AB cde | "Dm"~d2 cBA | "G"BG "Am"A2z :|
+[| "Am(C)"CC CD2 | E2 E3 | E2 E3 | D2 C3 \
+| CC B,C2 | "Dm"D2 A,3 | A,2 A,3 | "Am"A,2 A,3 |]
+|: "G"G,G, G,G,2 | A,2 A,3 | "Am"A,2 A,2B, | C2 C3 \
+| "Dm"DD ED2 | CB, A,3 | "Am"[E2A,] A,3 | A,2 A,3 :|
+%%sep 5 5 200
+
+
+X: 4
+T: Jambolsko Pajdu\vsko
+O: Bulgaria
+R: pajdushko
+M: 5/8
+L: 1/8
+K: Bm
+|: "Bm"BF dcB | "A"cA "Bm"~B2F | cd dcB | "A"cA "Bm"~B2F \
+| "Bm"BF dcB | Bc def | "Em"~e2 dcB | "A"cA "Bm"B2z :|
+[| "Bm(D)"DD DE2 | F2 F3 | F2 F3 | E2 D3 \
+| DD CD2 | "Em"E2 B,3 | B,2 B,3 | "Bm"B,2 B,3 |]
+|: "A"A,A, A,A,2 | B,2 B,3 | "Bm"B,2 B,2C | D2 D3 \
+| "Em"EE FE2 | DC B,3 | "Bm"[F2B,] B,3 | B,2 B,3 :|

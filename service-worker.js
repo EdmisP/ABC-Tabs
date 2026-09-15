@@ -1,9 +1,11 @@
-const CACHE_NAME = 'finland-abc-archive-v76';
+const CACHE_NAME = 'harakka-abc-archive-balkan-v2';
 const CORE = [
   './',
   './index.html',
   './styles.css?v=76',
   './song-library.js',
+  './balkan-song-library.js',
+  './chords.html',
   './app.webmanifest',
   './favicon.ico',
   './icons/icon-32.png',

@@ -86,6 +86,12 @@ html[data-theme="kazakhstan"]{--theme-primary:#008fa8;--theme-hover:#006f82;--th
 html[data-theme="sweden"]{--theme-primary:#006aa7;--theme-hover:#005483;--theme-secondary:#e5b900;--theme-secondary-text:#223140;--theme-bg:#e8eef2;--theme-panel:#ffffff;--theme-soft:#dce7ee;--theme-border:#839daf;--theme-line:#718fa4;--theme-text:#203341;--theme-muted:#586f7e;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#173044;--theme-editor-text:#f0f8fc;--theme-track:#465057;--theme-selection:#bdd6e6;--theme-selection-text:#005687}
 html[data-theme="norway"]{--theme-primary:#ba0c2f;--theme-hover:#930923;--theme-secondary:#00205b;--theme-secondary-text:#ffffff;--theme-bg:#f3ecee;--theme-panel:#ffffff;--theme-soft:#eee2e5;--theme-border:#a48d94;--theme-line:#987d86;--theme-text:#33272b;--theme-muted:#705e64;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#322229;--theme-editor-text:#fff4f6;--theme-track:#4c4749;--theme-selection:#e5bcc6;--theme-selection-text:#7f0820}
 html[data-theme="georgia"]{--theme-primary:#d51f34;--theme-hover:#aa1829;--theme-secondary:#ffffff;--theme-secondary-text:#a31627;--theme-bg:#f6eded;--theme-panel:#ffffff;--theme-soft:#f0e2e4;--theme-border:#ac8c91;--theme-line:#a17c83;--theme-text:#352629;--theme-muted:#735d61;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#352125;--theme-editor-text:#fff5f6;--theme-track:#4f4749;--theme-selection:#edc4ca;--theme-selection-text:#8f1020}
+html[data-theme="albania"]{--theme-primary:#e41e20;--theme-hover:#b91517;--theme-secondary:#111111;--theme-secondary-text:#ffffff;--theme-bg:#f5eded;--theme-panel:#ffffff;--theme-soft:#eee1e1;--theme-border:#ab8b8b;--theme-line:#9d7d7d;--theme-text:#342525;--theme-muted:#745d5d;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#351f20;--theme-editor-text:#fff5f5;--theme-track:#4d4747;--theme-selection:#efc2c2;--theme-selection-text:#8f0f11}
+html[data-theme="serbia"]{--theme-primary:#c6363c;--theme-hover:#9d2a2f;--theme-secondary:#0c4076;--theme-secondary-text:#ffffff;--theme-bg:#f0edf1;--theme-panel:#ffffff;--theme-soft:#e6e1e8;--theme-border:#978a9d;--theme-line:#887b91;--theme-text:#302932;--theme-muted:#6d6170;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#2e2530;--theme-editor-text:#faf5ff;--theme-track:#4b484c;--theme-selection:#d7c5da;--theme-selection-text:#762126}
+html[data-theme="greece"]{--theme-primary:#0d5eaf;--theme-hover:#094b8c;--theme-secondary:#ffffff;--theme-secondary-text:#0d5eaf;--theme-bg:#edf2f7;--theme-panel:#ffffff;--theme-soft:#dfe9f3;--theme-border:#879fb8;--theme-line:#748fa9;--theme-text:#223243;--theme-muted:#5d6d7d;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#1d3045;--theme-editor-text:#f4f9ff;--theme-track:#48515a;--theme-selection:#c2d7eb;--theme-selection-text:#08457f}
+html[data-theme="turkey"]{--theme-primary:#e30a17;--theme-hover:#b70812;--theme-secondary:#ffffff;--theme-secondary-text:#a50610;--theme-bg:#f7eeee;--theme-panel:#ffffff;--theme-soft:#f0e1e2;--theme-border:#ad8b8d;--theme-line:#a07d80;--theme-text:#352626;--theme-muted:#735e5f;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#372123;--theme-editor-text:#fff6f6;--theme-track:#4f4849;--theme-selection:#efc5c8;--theme-selection-text:#92070f}
+html[data-theme="croatia"]{--theme-primary:#d2232a;--theme-hover:#a91b21;--theme-secondary:#171796;--theme-secondary-text:#ffffff;--theme-bg:#f1eef2;--theme-panel:#ffffff;--theme-soft:#e8e2ea;--theme-border:#998c9e;--theme-line:#8b7e92;--theme-text:#312a33;--theme-muted:#6e6372;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#302631;--theme-editor-text:#faf6ff;--theme-track:#4b494d;--theme-selection:#dbcbdc;--theme-selection-text:#8e171c}
+html[data-theme="bosnia"]{--theme-primary:#002395;--theme-hover:#001970;--theme-secondary:#fecb00;--theme-secondary-text:#222000;--theme-bg:#f3f1e7;--theme-panel:#ffffff;--theme-soft:#ece8d6;--theme-border:#9f9a7f;--theme-line:#908b72;--theme-text:#302f28;--theme-muted:#6d695c;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#252b3b;--theme-editor-text:#f8f8ee;--theme-track:#4c4c47;--theme-selection:#eadf9e;--theme-selection-text:#001970}
 html[data-theme="dark"]{--theme-primary:#76a9ea;--theme-hover:#9cc4f5;--theme-secondary:#b7d7ff;--theme-bg:#10151b;--theme-panel:#18212a;--theme-soft:#202c37;--theme-border:#425468;--theme-line:#587596;--theme-text:#edf4fb;--theme-muted:#a8b9ca;--theme-input:#0e151c;--theme-score:#141c24;--theme-editor:#090e13;--theme-editor-text:#e8f3ff;--theme-track:#303842;--theme-selection:#355d87;--theme-selection-text:#ffffff}
 html[data-theme] body{background:var(--theme-bg)!important;color:var(--theme-text)!important}
 html[data-theme] .titlebar,html[data-theme] .panel{background:var(--theme-panel)!important;border-color:var(--theme-border)!important}
@@ -175,7 +181,7 @@ html[data-theme]:not([data-theme="dark"]) .theme-flag-button[aria-pressed="true"
 
 </style>
 <script id="archive-theme-init">
-(()=>{const allowed=['finland','sweden','norway','germany','hungary','kosovo','poland','ukraine','russia','belarus','georgia','kazakhstan','bw','dark'];const countries=['finland','sweden','norway','germany','hungary','kosovo','poland','ukraine','russia','belarus','georgia','kazakhstan'];let theme='finland',country='finland';try{const saved=localStorage.getItem('finlandArchiveTheme');const savedCountry=localStorage.getItem('finlandArchiveCountry');if(allowed.includes(saved))theme=saved;if(countries.includes(savedCountry))country=savedCountry;else if(countries.includes(theme))country=theme}catch(e){}document.documentElement.dataset.theme=theme;document.documentElement.dataset.country=country})();
+(()=>{const allowed=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','bw','dark','legacy'];const countries=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan'];let theme='finland',country='finland';try{const saved=localStorage.getItem('finlandArchiveTheme');const savedCountry=localStorage.getItem('finlandArchiveCountry');if(allowed.includes(saved))theme=saved;if(countries.includes(savedCountry))country=savedCountry;else if(countries.includes(theme))country=theme}catch(e){}document.documentElement.dataset.theme=theme;document.documentElement.dataset.country=country})();
 </script>
 
 <style id="handmade-country-theme">
@@ -193,6 +199,12 @@ html[data-theme="kazakhstan"]{--country-accent:#d5a313}
 html[data-theme="sweden"]{--country-accent:#d7ad00}
 html[data-theme="norway"]{--country-accent:#00205b}
 html[data-theme="georgia"]{--country-accent:#d8a2aa}
+html[data-theme="albania"]{--country-accent:#111111}
+html[data-theme="serbia"]{--country-accent:#0c4076}
+html[data-theme="greece"]{--country-accent:#8eb5da}
+html[data-theme="turkey"]{--country-accent:#d8a3a6}
+html[data-theme="croatia"]{--country-accent:#171796}
+html[data-theme="bosnia"]{--country-accent:#d2aa00}
 html[data-theme="dark"]{--country-accent:#7d93aa}
 
 html[data-theme] body,
@@ -365,6 +377,430 @@ html[data-theme="dark"] .titlebar{border-top:5px solid var(--theme-primary)!impo
 html[data-theme="dark"] button{border-radius:3px!important;box-shadow:none!important}
 </style>
 
+
+<style id="legacy-1997-theme">
+/* Optional late-1990s presentation. Layout and controls remain fully functional. */
+html[data-theme="legacy"]{
+  --theme-primary:#000080;
+  --theme-hover:#0000a0;
+  --theme-secondary:#c0c0c0;
+  --theme-secondary-text:#000000;
+  --theme-bg:#c0c0c0;
+  --theme-panel:#d4d0c8;
+  --theme-soft:#d4d0c8;
+  --theme-border:#808080;
+  --theme-line:#000000;
+  --theme-text:#000000;
+  --theme-muted:#333333;
+  --theme-input:#ffffff;
+  --theme-score:#ffffff;
+  --theme-editor:#ffffff;
+  --theme-editor-text:#000000;
+  --theme-track:#808080;
+  --theme-selection:#000080;
+  --theme-selection-text:#ffffff;
+  --country-accent:#000080;
+}
+html[data-theme="legacy"] body{
+  margin:0!important;
+  background:#c0c0c0!important;
+  color:#000!important;
+  font-family:"Times New Roman",Times,serif!important;
+  font-size:14px!important;
+}
+html[data-theme="legacy"] .container{
+  max-width:none!important;
+  width:auto!important;
+  margin:4px!important;
+  padding:0!important;
+}
+html[data-theme="legacy"] .titlebar{
+  background:#000080!important;
+  color:#fff!important;
+  border:2px outset #ffffff!important;
+  border-left:2px outset #ffffff!important;
+  border-bottom:2px outset #ffffff!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  padding:6px 8px!important;
+}
+html[data-theme="legacy"] .titlebar h1{
+  margin:0!important;
+  color:#fff!important;
+  font-family:"Times New Roman",Times,serif!important;
+  font-size:28px!important;
+  line-height:1.05!important;
+  letter-spacing:0!important;
+  text-transform:none!important;
+}
+html[data-theme="legacy"] .site-flag{
+  background:#fff!important;
+  border:2px inset #ffffff!important;
+  padding:1px!important;
+  box-sizing:border-box!important;
+}
+html[data-theme="legacy"] .site-flag img{object-fit:fill!important}
+html[data-theme="legacy"] .panel,
+html[data-theme="legacy"] .song-library-panel,
+html[data-theme="legacy"] .playback-panel,
+html[data-theme="legacy"] .preview-meta,
+html[data-theme="legacy"] .staff-box,
+html[data-theme="legacy"] .tab-box,
+html[data-theme="legacy"] .sheet-card,
+html[data-theme="legacy"] .course-group{
+  background:#d4d0c8!important;
+  color:#000!important;
+  border:2px groove #ffffff!important;
+  border-left:2px groove #ffffff!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+html[data-theme="legacy"] .controls{
+  border-top:2px groove #ffffff!important;
+}
+html[data-theme="legacy"] h1,
+html[data-theme="legacy"] h2,
+html[data-theme="legacy"] h3,
+html[data-theme="legacy"] .music-title,
+html[data-theme="legacy"] .song-library-head strong,
+html[data-theme="legacy"] .playback-heading strong,
+html[data-theme="legacy"] .preview-title h2,
+html[data-theme="legacy"] .chord-name,
+html[data-theme="legacy"] .sheet-card-name,
+html[data-theme="legacy"] .tab-title{
+  color:#000080!important;
+  font-family:"Times New Roman",Times,serif!important;
+  letter-spacing:0!important;
+  text-transform:none!important;
+}
+html[data-theme="legacy"] .editor>h2,
+html[data-theme="legacy"] .score-panel>h2,
+html[data-theme="legacy"] .map-panel>h2,
+html[data-theme="legacy"] .preview-title h2,
+html[data-theme="legacy"] .chord-sheet-section>h2{
+  border:0!important;
+  border-bottom:1px solid #808080!important;
+  padding:2px 0!important;
+  color:#000080!important;
+}
+html[data-theme="legacy"] button,
+html[data-theme="legacy"] select,
+html[data-theme="legacy"] input,
+html[data-theme="legacy"] textarea,
+html[data-theme="legacy"] label{
+  font-family:"MS Sans Serif",Tahoma,Arial,sans-serif!important;
+  font-size:12px!important;
+  border-radius:0!important;
+}
+html[data-theme="legacy"] button,
+html[data-theme="legacy"] .actions button,
+html[data-theme="legacy"] #loadSongBtn,
+html[data-theme="legacy"] #importMidiBtn,
+html[data-theme="legacy"] #addChordBtn{
+  background:#d4d0c8!important;
+  color:#000!important;
+  border:2px outset #ffffff!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  filter:none!important;
+}
+html[data-theme="legacy"] button:hover,
+html[data-theme="legacy"] .actions button:hover,
+html[data-theme="legacy"] #loadSongBtn:hover,
+html[data-theme="legacy"] #importMidiBtn:hover,
+html[data-theme="legacy"] #addChordBtn:hover{
+  background:#d4d0c8!important;
+  color:#000!important;
+  border:2px outset #ffffff!important;
+  filter:none!important;
+}
+html[data-theme="legacy"] button:active,
+html[data-theme="legacy"] .actions button:active{
+  border-style:inset!important;
+  padding-top:1px!important;
+  padding-left:1px!important;
+}
+html[data-theme="legacy"] select,
+html[data-theme="legacy"] input[type="search"],
+html[data-theme="legacy"] input[type="text"],
+html[data-theme="legacy"] input[type="url"],
+html[data-theme="legacy"] input[type="number"],
+html[data-theme="legacy"] #abcInput{
+  background:#fff!important;
+  color:#000!important;
+  border:2px inset #ffffff!important;
+  outline:0!important;
+  box-shadow:none!important;
+}
+html[data-theme="legacy"] #abcInput{
+  font-family:"Courier New",Courier,monospace!important;
+}
+html[data-theme="legacy"] .song-library-panel,
+html[data-theme="legacy"] .playback-panel,
+html[data-theme="legacy"] .preview-head,
+html[data-theme="legacy"] .sheet-card-head,
+html[data-theme="legacy"] .kantele-control,
+html[data-theme="legacy"] .midi-clean-control,
+html[data-theme="legacy"] .checkbox-control,
+html[data-theme="legacy"] .fixed-reference,
+html[data-theme="legacy"] .course-group h3,
+html[data-theme="legacy"] .chord-table th{
+  background:#d4d0c8!important;
+  color:#000!important;
+  border-color:#808080!important;
+}
+html[data-theme="legacy"] .preview-head,
+html[data-theme="legacy"] .sheet-card-head{
+  border-top:0!important;
+  border-bottom:1px solid #808080!important;
+}
+html[data-theme="legacy"] .preview-head h2,
+html[data-theme="legacy"] .sheet-card-head .sheet-card-name{
+  color:#000080!important;
+}
+html[data-theme="legacy"] .music-system,
+html[data-theme="legacy"] .score-host,
+html[data-theme="legacy"] .tab-svg,
+html[data-theme="legacy"] .staff-box,
+html[data-theme="legacy"] .tab-box{
+  background:#fff!important;
+  border-color:#808080!important;
+}
+html[data-theme="legacy"] a{
+  color:#0000ee!important;
+  text-decoration:underline!important;
+}
+html[data-theme="legacy"] a:visited{color:#551a8b!important}
+html[data-theme="legacy"] ::selection{background:#000080!important;color:#fff!important}
+html[data-theme="legacy"] .theme-footer{
+  margin:4px!important;
+  padding:5px!important;
+  background:#d4d0c8!important;
+  color:#000!important;
+  border:2px outset #ffffff!important;
+  border-top:2px outset #ffffff!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+html[data-theme="legacy"] .theme-footer-label{color:#000!important;font-weight:700!important}
+html[data-theme="legacy"] .theme-flag-button{
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  padding:0!important;
+}
+html[data-theme="legacy"] .theme-flag-button[aria-pressed="true"]{
+  box-shadow:inset 0 -3px 0 #000080!important;
+}
+html[data-theme="legacy"] .theme-word-button,
+html[data-theme="legacy"] .theme-dark-button,
+html[data-theme="legacy"] .theme-legacy-button{
+  min-height:26px!important;
+  padding:3px 8px!important;
+  background:#d4d0c8!important;
+  color:#000!important;
+  border:2px outset #ffffff!important;
+  border-radius:0!important;
+  font-family:"MS Sans Serif",Tahoma,Arial,sans-serif!important;
+  font-weight:400!important;
+  box-shadow:none!important;
+}
+html[data-theme="legacy"] .theme-word-button[aria-pressed="true"],
+html[data-theme="legacy"] .theme-dark-button[aria-pressed="true"],
+html[data-theme="legacy"] .theme-legacy-button[aria-pressed="true"]{
+  border-style:inset!important;
+  color:#000!important;
+  box-shadow:none!important;
+}
+html[data-theme="legacy"] #audioPlayer,
+html[data-theme="legacy"] #audioPlayer .abcjs-inline-audio{
+  background:#d4d0c8!important;
+  border-color:#808080!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+html[data-theme="legacy"] #audioPlayer button,
+html[data-theme="legacy"] .abcjs-inline-audio button{
+  background:#d4d0c8!important;
+  color:#000!important;
+  border:2px outset #ffffff!important;
+}
+html[data-theme="legacy"] .abcjs-inline-audio .abcjs-midi-progress-background{
+  background:#808080!important;
+}
+html[data-theme="legacy"] .abcjs-inline-audio .abcjs-midi-progress-indicator{
+  background:#000080!important;
+}
+html[data-theme="legacy"] .music-title,
+html[data-theme="legacy"] .chord-name{
+  font-size:24px!important;
+}
+html[data-theme="legacy"] .help,
+html[data-theme="legacy"] .legend,
+html[data-theme="legacy"] #playbackStatus,
+html[data-theme="legacy"] .song-library-head span,
+html[data-theme="legacy"] #songLibraryStatus,
+html[data-theme="legacy"] .song-source-meta,
+html[data-theme="legacy"] .voicing-info,
+html[data-theme="legacy"] .sheet-empty{
+  color:#333!important;
+}
+</style>
+
+
+<style id="legacy-1997-extra">
+html[data-theme="legacy"] body{
+  background:#008080!important;
+  font-family:"MS Sans Serif",Tahoma,Arial,sans-serif!important;
+  font-size:12px!important;
+  padding:0!important;
+}
+html[data-theme="legacy"] .container{
+  width:calc(100% - 12px)!important;
+  max-width:980px!important;
+  margin:6px auto 4px!important;
+  padding:3px!important;
+  background:#c0c0c0!important;
+  border:2px outset #fff!important;
+  box-sizing:border-box!important;
+}
+html[data-theme="legacy"] .titlebar{
+  position:relative!important;
+  min-height:28px!important;
+  margin:0 0 4px!important;
+  padding:3px 78px 3px 4px!important;
+  background:#000080!important;
+  color:#fff!important;
+  border:0!important;
+  border-radius:0!important;
+  align-items:center!important;
+}
+html[data-theme="legacy"] .titlebar::after{
+  content:"_  □  ×";
+  position:absolute;
+  right:3px;
+  top:3px;
+  height:20px;
+  line-height:16px;
+  padding:0 5px;
+  color:#000;
+  background:#c0c0c0;
+  border:2px outset #fff;
+  font:700 12px/16px "MS Sans Serif",Tahoma,Arial,sans-serif;
+  letter-spacing:2px;
+  box-sizing:border-box;
+}
+html[data-theme="legacy"] .titlebar h1{
+  color:#fff!important;
+  font:700 14px/18px "MS Sans Serif",Tahoma,Arial,sans-serif!important;
+  text-shadow:none!important;
+  letter-spacing:0!important;
+}
+html[data-theme="legacy"] .site-flag{
+  width:34px!important;height:22px!important;flex:0 0 34px!important;
+  padding:1px!important;background:#fff!important;border:2px inset #fff!important;
+}
+html[data-theme="legacy"] .site-flag img{width:30px!important;height:18px!important;object-fit:cover!important}
+html[data-theme="legacy"] .panel{
+  margin:3px 0!important;
+  padding:5px!important;
+  background:#c0c0c0!important;
+  border:2px outset #fff!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+html[data-theme="legacy"] .editor-layout{gap:4px!important;grid-template-columns:minmax(255px,290px) minmax(0,1fr)!important}
+html[data-theme="legacy"] .controls{gap:4px!important}
+html[data-theme="legacy"] .editor>h2,
+html[data-theme="legacy"] .score-panel>h2,
+html[data-theme="legacy"] .map-panel>h2,
+html[data-theme="legacy"] .preview-title h2,
+html[data-theme="legacy"] .chord-sheet-section>h2{
+  margin:-3px -3px 4px!important;
+  padding:2px 4px!important;
+  color:#fff!important;
+  background:#000080!important;
+  border:0!important;
+  font:700 12px/17px "MS Sans Serif",Tahoma,Arial,sans-serif!important;
+}
+html[data-theme="legacy"] .song-library-panel,
+html[data-theme="legacy"] .playback-panel,
+html[data-theme="legacy"] .preview-meta,
+html[data-theme="legacy"] .staff-box,
+html[data-theme="legacy"] .tab-box,
+html[data-theme="legacy"] .sheet-card,
+html[data-theme="legacy"] .course-group{
+  border:2px inset #fff!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+html[data-theme="legacy"] select,
+html[data-theme="legacy"] input,
+html[data-theme="legacy"] textarea{
+  min-height:22px!important;
+  padding:2px 3px!important;
+  border:2px inset #fff!important;
+  border-radius:0!important;
+  background:#fff!important;
+  color:#000!important;
+}
+html[data-theme="legacy"] button{
+  min-height:23px!important;
+  padding:2px 7px!important;
+  border:2px outset #fff!important;
+  border-radius:0!important;
+  background:#c0c0c0!important;
+  color:#000!important;
+  font:12px "MS Sans Serif",Tahoma,Arial,sans-serif!important;
+}
+html[data-theme="legacy"] button:focus,
+html[data-theme="legacy"] select:focus,
+html[data-theme="legacy"] input:focus{outline:1px dotted #000!important;outline-offset:-4px!important}
+html[data-theme="legacy"] .music-system,
+html[data-theme="legacy"] .score-host,
+html[data-theme="legacy"] .staff-box,
+html[data-theme="legacy"] .tab-box,
+html[data-theme="legacy"] .tab-svg{
+  background:#fff!important;
+  border:2px inset #fff!important;
+}
+html[data-theme="legacy"] .music-title,
+html[data-theme="legacy"] .chord-name{
+  font-family:"Times New Roman",Times,serif!important;
+  font-weight:700!important;
+  color:#000080!important;
+}
+html[data-theme="legacy"] .song-library-head strong,
+html[data-theme="legacy"] .playback-heading strong{
+  color:#000!important;
+  font-family:"MS Sans Serif",Tahoma,Arial,sans-serif!important;
+}
+html[data-theme="legacy"] .theme-footer{
+  width:calc(100% - 12px)!important;
+  max-width:980px!important;
+  margin:0 auto 6px!important;
+  background:#c0c0c0!important;
+  border:2px outset #fff!important;
+}
+html[data-theme="legacy"] .container::after{
+  content:"Ready";
+  display:block;
+  margin-top:4px;
+  padding:2px 5px;
+  min-height:18px;
+  box-sizing:border-box;
+  background:#c0c0c0;
+  color:#000;
+  border:2px inset #fff;
+  font:11px "MS Sans Serif",Tahoma,Arial,sans-serif;
+}
+html[data-theme="legacy"] .theme-flag-button img{image-rendering:auto!important}
+html[data-theme="legacy"] ::-webkit-scrollbar{width:16px;height:16px}
+html[data-theme="legacy"] ::-webkit-scrollbar-track{background:#c0c0c0}
+html[data-theme="legacy"] ::-webkit-scrollbar-thumb{background:#c0c0c0;border:2px outset #fff}
+@media(max-width:760px){html[data-theme="legacy"] .editor-layout{grid-template-columns:1fr!important}.titlebar::after{display:none}}
+</style>
+
 </head>
 <body>
 <main class="container">
@@ -498,6 +934,13 @@ html[data-theme="dark"] button{border-radius:3px!important;box-shadow:none!impor
     <button type="button" class="theme-flag-button" data-page-theme="germany" aria-label="Germany colour theme" title="Germany"><img src="https://flagcdn.com/de.svg" alt="Germany flag"></button>
     <button type="button" class="theme-flag-button" data-page-theme="hungary" aria-label="Hungary colour theme" title="Hungary"><img src="https://flagcdn.com/hu.svg" alt="Hungary flag"></button>
     <button type="button" class="theme-flag-button" data-page-theme="kosovo" aria-label="Kosovo colour theme" title="Kosovo"><img src="https://flagcdn.com/xk.svg" alt="Kosovo flag"></button>
+
+    <button type="button" class="theme-flag-button" data-page-theme="albania" aria-label="Albania colour theme" title="Albania"><img src="https://flagcdn.com/al.svg" alt="Albania flag"></button>
+    <button type="button" class="theme-flag-button" data-page-theme="serbia" aria-label="Serbia colour theme" title="Serbia"><img src="https://flagcdn.com/rs.svg" alt="Serbia flag"></button>
+    <button type="button" class="theme-flag-button" data-page-theme="greece" aria-label="Greece colour theme" title="Greece"><img src="https://flagcdn.com/gr.svg" alt="Greece flag"></button>
+    <button type="button" class="theme-flag-button" data-page-theme="turkey" aria-label="Turkey colour theme" title="Turkey"><img src="https://flagcdn.com/tr.svg" alt="Turkey flag"></button>
+    <button type="button" class="theme-flag-button" data-page-theme="croatia" aria-label="Croatia colour theme" title="Croatia"><img src="https://flagcdn.com/hr.svg" alt="Croatia flag"></button>
+    <button type="button" class="theme-flag-button" data-page-theme="bosnia" aria-label="Bosnia and Herzegovina colour theme" title="Bosnia and Herzegovina"><img src="https://flagcdn.com/ba.svg" alt="Bosnia and Herzegovina flag"></button>
     <button type="button" class="theme-flag-button" data-page-theme="poland" aria-label="Poland colour theme" title="Poland"><img src="https://flagcdn.com/pl.svg" alt="Poland flag"></button>
     <button type="button" class="theme-flag-button" data-page-theme="ukraine" aria-label="Ukraine colour theme" title="Ukraine"><img src="https://flagcdn.com/ua.svg" alt="Ukraine flag"></button>
     <button type="button" class="theme-flag-button" data-page-theme="russia" aria-label="Russia colour theme" title="Russia"><img src="https://flagcdn.com/ru.svg" alt="Russia flag"></button>
@@ -506,6 +949,7 @@ html[data-theme="dark"] button{border-radius:3px!important;box-shadow:none!impor
     <button type="button" class="theme-flag-button" data-page-theme="kazakhstan" aria-label="Kazakhstan colour theme" title="Kazakhstan"><img src="https://flagcdn.com/kz.svg" alt="Kazakhstan flag"></button>
     <button type="button" class="theme-word-button" data-page-theme="bw" aria-label="Black and white mode" title="Black &amp; white">B&amp;W</button>
     <button type="button" class="theme-word-button theme-dark-button" data-page-theme="dark" aria-label="Dark mode" title="Dark mode">Dark mode</button>
+    <button type="button" class="theme-word-button theme-legacy-button" data-page-theme="legacy" aria-label="Legacy 1997 mode" title="Legacy 1997 mode">Legacy</button>
   </div>
 </footer>
 
@@ -541,7 +985,13 @@ const CHORDS={
 const GENERIC_INSTRUMENTS={
   balalaika_prima:{
     label:'Prima Balalaika',
-    tunings:{standard:{label:'Standard — E4 E4 A4',courses:[['E4'],['E4'],['A4']]}}
+    tunings:{
+      standard:{label:'Standard — E4 E4 A4',courses:[['E4'],['E4'],['A4']]},
+      folk_ceg:{label:'Folk — C4 E4 G4',courses:[['C4'],['E4'],['G4']]},
+      russian_guitar:{label:'Russian guitar — G3 B3 D4',courses:[['G3'],['B3'],['D4']]},
+      domra_style:{label:'Domra-style — E4 A4 D5',courses:[['E4'],['A4'],['D5']]},
+      folk_dfa:{label:'Folk — D4 F4 A4',courses:[['D4'],['F4'],['A4']]}
+    }
   },
   domra_prima:{
     label:'Prima Domra',
@@ -946,8 +1396,8 @@ renderChordSheet();
 
 <script id="archive-theme-controls">
 (()=>{
-  const allowed=['finland','sweden','norway','germany','hungary','kosovo','poland','ukraine','russia','belarus','georgia','kazakhstan','bw','dark'];
-  const countries=['finland','sweden','norway','germany','hungary','kosovo','poland','ukraine','russia','belarus','georgia','kazakhstan'];
+  const allowed=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','bw','dark','legacy'];
+  const countries=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan'];
   const meta=document.querySelector('meta[name="theme-color"]');
   const flagUrls={
     finland:'https://flagcdn.com/fi.svg',
@@ -956,6 +1406,13 @@ renderChordSheet();
     germany:'https://flagcdn.com/de.svg',
     hungary:'https://flagcdn.com/hu.svg',
     kosovo:'https://flagcdn.com/xk.svg',
+
+    albania:'https://flagcdn.com/al.svg',
+    serbia:'https://flagcdn.com/rs.svg',
+    greece:'https://flagcdn.com/gr.svg',
+    turkey:'https://flagcdn.com/tr.svg',
+    croatia:'https://flagcdn.com/hr.svg',
+    bosnia:'https://flagcdn.com/ba.svg',
     poland:'https://flagcdn.com/pl.svg',
     ukraine:'https://flagcdn.com/ua.svg',
     russia:'https://flagcdn.com/ru.svg',
@@ -963,7 +1420,7 @@ renderChordSheet();
     georgia:'https://flagcdn.com/ge.svg',
     kazakhstan:'https://flagcdn.com/kz.svg'
   };
-  const flagLabels={finland:'Finland flag',sweden:'Sweden flag',norway:'Norway flag',germany:'Germany flag',hungary:'Hungary flag',kosovo:'Kosovo flag',poland:'Poland flag',ukraine:'Ukraine flag',russia:'Russia flag',belarus:'Belarus flag',georgia:'Georgia flag',kazakhstan:'Kazakhstan flag'};
+  const flagLabels={finland:'Finland flag',sweden:'Sweden flag',norway:'Norway flag',germany:'Germany flag',hungary:'Hungary flag',kosovo:'Kosovo flag',albania:'Albania flag',serbia:'Serbia flag',greece:'Greece flag',turkey:'Turkey flag',croatia:'Croatia flag',bosnia:'Bosnia and Herzegovina flag',poland:'Poland flag',ukraine:'Ukraine flag',russia:'Russia flag',belarus:'Belarus flag',georgia:'Georgia flag',kazakhstan:'Kazakhstan flag'};
   function currentCountry(){const c=document.documentElement.dataset.country;return countries.includes(c)?c:'finland'}
   function updateFlag(country){
     const src=flagUrls[country]||flagUrls.finland;

@@ -1,0 +1,14 @@
+X: 1
+T: Promoroaca
+C: Romania
+Z: John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+M: 4/4
+L: 1/8
+%Q: 1/8=140
+K: Am
+|: "Am"ae ae "D"ae a2 \
+| "G"gd de "C"dc c2 \
+:: "E7"B/c/d dd "Am"e>d c/B/A |
+| "Dm"A/>f/e/d/ "E7"c/B/c/d/ "Am"e>d c/B/A \
+| "E7"B/c/d dd "Am"e>d c/B/A \
+| "Dm"c/B/d/B/ "E7"c/A/B/^G/ "Am"A4 :|

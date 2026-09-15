@@ -1,0 +1,59 @@
+X: 1
+T: Neda Grivne  [G]
+Z: John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+M: 2/4
+L: 1/8
+K: G
+|: "G"[G2D] [G2D] | "D"[A3F] [AF] \
+| "G"[B2G] [G2D] | "D"[AF][BG] [c2A] \
+| "G"[B2G] [G2D] | "D"[AF][BG] [c2A] \
+| "G"[BG][AF] [BG][GD] | "D"[A3F] [cA] \
+| "G"[BG][AF] [BG][GD] | "D"[A3D] z :|
+
+
+%%sep 1 1 500
+
+
+X: 2
+T: Neda Grivne  [D]
+Z: John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+M: 2/4
+L: 1/8
+K: D
+|: "D"[d2A] [d2A] | "A"[e3c] [ec] \
+| "D"[f2d] [d2A] | "A"[ec][fd] [g2e] \
+| "D"[f2d] [d2A] | "A"[ec][fd] [g2e] \
+| "D"[fd][ec] [fd][dA] | "A"[e3c] [ge] \
+| "D"[fd][ec] [fd][dA] | "A"[e3A] z :|
+
+
+%%sep 1 1 500
+
+
+X: 3
+T: Neda Grivne  [A]
+Z: John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+M: 2/4
+L: 1/8
+K: A
+|: "A"[A2E] [A2E] | "E"[B3G] [BG] \
+| "A"[c2A] [A2E] | "E"[BG][cA] [d2B] \
+| "A"[c2A] [A2E] | "E"[BG][cA] [d2B] \
+| "A"[cA][BG] [cA][AE] | "E"[B3G] [dB] \
+| "A"[cA][BG] [cA][AE] | "E"[B3E] z :|
+
+
+%%sep 1 1 500
+
+
+X: 4
+T: Neda Grivne  [E]
+Z: John Chambers <jc@trillian.mit.edu> http://trillian.mit.edu/~jc/music/
+M: 2/4
+L: 1/8
+K: E
+|: "E"[e2B] [e2B] | "B"[f3d] [fd] \
+| "E"[g2e] [e2B] | "B"[fd][ge] [a2f] \
+| "E"[g2e] [e2B] | "B"[fd][ge] [a2f] \
+| "E"[ge][fd] [ge][eB] | "B"[f3d] [af] \
+| "E"[ge][fd] [ge][eB] | "B"[f3B] z :|
