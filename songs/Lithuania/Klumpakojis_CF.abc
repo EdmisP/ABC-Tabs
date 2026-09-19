@@ -1,0 +1,19 @@
+X: 1
+T:Klumpakojis — C/F
+S:https://trillian.mit.edu/~jc/music/abc/Intl/Klumpakojis.abc
+N:Archive melody; includes chromatic notes and a key change. Set string pitches to match.
+O: Lithuania
+P: bouncy
+Z: 2009 John Chambers <jc:trillian.mit.edu>
+M: 2/4
+L: 1/16
+K: C
+"G7"G4 G4 | G8 \
+|:"C"E2ED E2ED | E2F2 G4 | "F"A2AG F4 | "C"G2GF E4 |
+| "C"E2ED E2ED | E2F2 G4 | "F"A2AG "G7"F2ED |1 "C"C2GA "G7"GFED :|2 "C".C2 .E2 .C2 z2 |]
+|:"C"G2^FG A2G2 | "G".D2 .D2 .D2 z2 | "G7"G2^FG A2G2 | "C".C2 .C2 .C2 z2 |
+| "C".c2 .c2 .c2 z2 | "F".A2 .A2 .A2 z2 | "G7"G2BA GFED \
+|1 "C"CG,A,B, CDEF :|2 "C".C2 .E2 .C2 z2 |]
+K: F
+|:"F"A2A2 "C7"B2B2 | "F"c2c2 cBAc | "C7"B2B2 BAGB | "F"AGAB c2cB |
+| "F"A2A2 "C7"B2B2 | "F"c2c2 cBAc | "C7"B2B2 BAGA |1 "F"Fz CC .C2 .C2 :|2 "F".F2 .A2 .F2 z2 |]
