@@ -1571,7 +1571,6 @@ textarea:focus{
 }
 
 .score-host,
-.score-host>svg,
 .tab-svg{
   background:#fff!important;
 }
@@ -2414,4 +2413,11 @@ h2{
 ::-moz-selection{
   background:#b8d4f0!important;
   color:#003580!important;
+}
+
+/* Notation SVGs inherit the surrounding panel through a transparent canvas. */
+html[data-theme] .score-host > svg,
+html[data-theme] #chordStaff svg,
+html[data-theme] .sheet-card-score svg{
+  background:transparent!important;
 }

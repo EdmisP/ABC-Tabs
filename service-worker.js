@@ -1,12 +1,13 @@
-const CACHE_NAME = 'harakka-abc-archive-v7-brittany-england';
+const CACHE_NAME = 'harakka-abc-archive-v10-lithuania-expanded';
 const CORE = [
   './',
   './index.html',
-  './styles.css?v=76',
+  './styles.css?v=77',
   './song-library.js',
   './balkan-song-library.js',
   './brittany-song-library.js',
   './england-song-library.js',
+  './lithuania-song-library.js',
   './chords.html',
   './app.webmanifest',
   './favicon.ico',

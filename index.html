@@ -12,13 +12,14 @@
 <link id="themeFavicon" rel="icon" type="image/svg+xml" href="https://flagcdn.com/fi.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
 <link rel="manifest" href="app.webmanifest">
-<link rel="stylesheet" href="styles.css?v=76">
+<link rel="stylesheet" href="styles.css?v=77">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/abcjs@6.6.4/abcjs-audio.css">
 <script src="https://cdn.jsdelivr.net/npm/abcjs@6.6.4/dist/abcjs-basic-min.js"></script>
 <script src="song-library.js"></script>
 <script src="balkan-song-library.js"></script>
 <script src="brittany-song-library.js"></script>
 <script src="england-song-library.js"></script>
+<script src="lithuania-song-library.js"></script>
 
 <style id="archive-theme-styles">
 html[data-theme="finland"]{--theme-primary:#003580;--theme-hover:#00285f;--theme-secondary:#ffffff;--theme-secondary-text:#003580;--theme-bg:#e7eef7;--theme-panel:#ffffff;--theme-soft:#dce8f5;--theme-border:#7f9bb8;--theme-line:#6f8eae;--theme-text:#172b40;--theme-muted:#4e6881;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#10283f;--theme-editor-text:#edf5fb;--theme-track:#454b50;--theme-selection:#b8d4f0;--theme-selection-text:#003580}
@@ -138,8 +139,8 @@ html[data-theme="england"][data-dark="true"]{--theme-primary:#f06a7f;--theme-hov
 </style>
 <script id="archive-theme-init">
 (()=>{
-  const themes=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','brittany','england','bw'];
-  const countries=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','brittany','england'];
+  const themes=["lithuania","ukraine","sweden","finland","greece","bw"];
+  const countries=["lithuania","ukraine","sweden","finland","greece"];
   let theme='finland',country='finland',legacy=false,dark=false;
   try{
     const saved=localStorage.getItem('finlandArchiveTheme');
@@ -802,14 +803,48 @@ html[data-legacy="true"][data-theme] ::-webkit-scrollbar-thumb{background:#c0c0c
 </style>
 
 
+<style id="lithuania-theme">
+html[data-theme="lithuania"]{--theme-primary:#006a44;--theme-hover:#005235;--theme-secondary:#fdb913;--theme-secondary-text:#302600;--theme-bg:#eef4ef;--theme-panel:#ffffff;--theme-soft:#e0ece3;--theme-border:#8aa795;--theme-line:#789784;--theme-text:#23382a;--theme-muted:#536d5c;--theme-input:#ffffff;--theme-score:#ffffff;--theme-editor:#193b2b;--theme-editor-text:#f2faf4;--theme-track:#435a4b;--theme-selection:#c5e2ce;--theme-selection-text:#004b30;--country-accent:#006a44}
+html[data-theme="lithuania"][data-dark="true"]{--theme-primary:#70c99a;--theme-hover:#96dfb5;--country-accent:#70c99a;--theme-selection:#28543d}
+html[data-theme="lithuania"] .theme-footer{border-bottom:3px solid #c1272d!important}
+</style>
 <style id="dark-score-fix">
-html[data-dark="true"]{--theme-score:#f4f3ef;--theme-score-ink:var(--theme-primary);--theme-score-line:#98a3ae}
-html[data-dark="true"] .music-system,html[data-dark="true"] .score-host,html[data-dark="true"] .tab-svg{background:#f4f3ef!important;border-color:#4d5d6d!important}
-html[data-dark="true"] .tab-label-gutter{fill:#f4f3ef!important}
-html[data-dark="true"] .tab-line{stroke:#98a3ae!important}
-html[data-dark="true"] .tab-bar{stroke:#aab2ba!important}
-html[data-dark="true"] .tab-label,html[data-dark="true"] .tab-number,html[data-dark="true"] .tab-strum{fill:var(--theme-primary)!important;color:var(--theme-primary)!important}
-html[data-dark="true"] .tab-number{stroke:#f4f3ef!important}
+/* Dark surfaces and the lightest colour in the selected flag. */
+html[data-theme="lithuania"][data-dark="true"]{--dark-ink:#fdb913}
+html[data-theme="ukraine"][data-dark="true"]{--dark-ink:#ffdd00}
+html[data-theme="sweden"][data-dark="true"]{--dark-ink:#fecc00}
+html[data-theme="finland"][data-dark="true"],
+html[data-theme="greece"][data-dark="true"],
+html[data-theme="bw"][data-dark="true"]{--dark-ink:#ffffff}
+html[data-theme][data-dark="true"]{
+  --theme-bg:#101317;--theme-panel:#181d23;--theme-soft:#202832;
+  --theme-border:#46515e;--theme-line:#85929f;
+  --theme-primary:var(--dark-ink);--theme-hover:var(--dark-ink);
+  --theme-text:var(--dark-ink);--theme-muted:var(--dark-ink);
+  --theme-input:#0d1116;--theme-score:#10171e;
+  --theme-score-ink:var(--dark-ink);--theme-score-line:#85929f;
+  --theme-editor:#090c10;--theme-editor-text:var(--dark-ink);
+  --country-accent:var(--dark-ink);--theme-selection:#3c4854;
+  --theme-selection-text:var(--dark-ink);
+}
+html[data-theme][data-dark="true"] :is(.music-system,.score-host,.tab-svg,.staff-box,.tab-box,.sheet-card,.sheet-card-score,.sheet-card-tab,.course-group,.preview-meta){background:var(--theme-score)!important;color:var(--dark-ink)!important;border-color:var(--theme-border)!important}
+html[data-theme][data-dark="true"] .tab-label-gutter{fill:var(--theme-score)!important}
+html[data-theme][data-dark="true"] :is(.tab-line,.tab-bar){stroke:var(--theme-score-line)!important;border-color:var(--theme-score-line)!important}
+html[data-theme][data-dark="true"] :is(.tab-label,.tab-number,.tab-strum){fill:var(--dark-ink)!important;color:var(--dark-ink)!important}
+html[data-theme][data-dark="true"] .tab-number{stroke:var(--theme-score)!important}
+html[data-theme][data-dark="true"] .tab-value{background:var(--theme-score)!important;color:var(--dark-ink)!important}
+html[data-theme][data-dark="true"] :is(.actions button,#loadSongBtn,#importMidiBtn,#addChordBtn,#audioPlayer button,button:hover){background:var(--theme-soft)!important;color:var(--dark-ink)!important;border-color:var(--theme-border)!important}
+</style>
+<style id="dark-sheet-text">
+/* Secondary flag colour for sheet titles, lyrics and annotations in dark mode. */
+html[data-theme="lithuania"][data-dark="true"]{--theme-sheet-text:#ff8085}
+html[data-theme="ukraine"][data-dark="true"]{--theme-sheet-text:#85baff}
+html[data-theme="sweden"][data-dark="true"]{--theme-sheet-text:#80bfff}
+html[data-theme="finland"][data-dark="true"],html[data-theme="greece"][data-dark="true"]{--theme-sheet-text:#91bfff}
+html[data-theme="bw"][data-dark="true"]{--theme-sheet-text:#ffffff}
+html[data-theme][data-dark="true"] :is(.music-title,.sheet-card-name,.chord-name,.preview-meta,.voicing-info){color:var(--theme-sheet-text)!important}
+html[data-theme][data-dark="true"] :is(.score-host,#chordStaff,.sheet-card-score) svg text{fill:var(--theme-sheet-text)!important;color:var(--theme-sheet-text)!important}
+html[data-theme][data-dark="true"] :is(.map-panel,.map-panel h2,.map-panel .help,.map-panel .course-group,.map-panel .course-group h3,.map-panel .course-row,.map-panel .course-row strong,.map-panel .course-row span){color:var(--theme-sheet-text)!important}
 </style>
 </head>
 <body>
@@ -924,11 +959,46 @@ html[data-dark="true"] .tab-number{stroke:#f4f3ef!important}
       <label>Kantele strings
         <select id="kanteleStringCount">
           <option value="5" selected>5 strings</option>
+          <option value="6">6 strings</option>
           <option value="7">7 strings</option>
+          <option value="8">8 strings</option>
+          <option value="9">9 strings</option>
+          <option value="10">10 strings</option>
+          <option value="11">11 strings</option>
+          <option value="12">12 strings</option>
+          <option value="13">13 strings</option>
+          <option value="14">14 strings</option>
+          <option value="15">15 strings</option>
+          <option value="16">16 strings</option>
+          <option value="17">17 strings</option>
+          <option value="18">18 strings</option>
+          <option value="19">19 strings</option>
+          <option value="20">20 strings</option>
+          <option value="21">21 strings</option>
+          <option value="22">22 strings</option>
+          <option value="23">23 strings</option>
+          <option value="24">24 strings</option>
+          <option value="25">25 strings</option>
+          <option value="26">26 strings</option>
+          <option value="27">27 strings</option>
+          <option value="28">28 strings</option>
+          <option value="29">29 strings</option>
+          <option value="30">30 strings</option>
+          <option value="31">31 strings</option>
+          <option value="32">32 strings</option>
+          <option value="33">33 strings</option>
+          <option value="34">34 strings</option>
+          <option value="35">35 strings</option>
+          <option value="36">36 strings</option>
+          <option value="37">37 strings</option>
+          <option value="38">38 strings</option>
+          <option value="39">39 strings</option>
+          <option value="40">40 strings</option>
         </select>
       </label>
       <div class="kantele-tuning-wrap">
         <span>Open-string tuning</span>
+        <span class="help">Editable starting tuning; set each note to match your instrument.</span>
         <div id="kanteleStringInputs" class="kantele-string-inputs"></div>
       </div>
     </div>
@@ -956,11 +1026,12 @@ html[data-dark="true"] .tab-number{stroke:#f4f3ef!important}
         <div class="song-library-controls">
           <label>Collection
             <select id="songCategory">
-              <option value="Finland" selected>Finland</option>
+              <option value="Finland">Finland</option>
               <option value="Russia">Russia</option>
               <option value="Balkan">Balkan</option>
               <option value="Brittany">Brittany</option>
               <option value="England">England</option>
+              <option value="Lithuania" selected>Lithuania</option>
               <option value="__all__">All</option>
             </select>
           </label>
@@ -1031,30 +1102,13 @@ html[data-dark="true"] .tab-number{stroke:#f4f3ef!important}
 <footer class="theme-footer" aria-label="Page colour theme">
   <span class="theme-footer-label">Colour theme</span>
   <div class="theme-buttons">
-    <button type="button" class="theme-flag-button" data-page-theme="finland" aria-label="Finland colour theme" title="Finland"><img src="https://flagcdn.com/fi.svg" alt="Finland flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="sweden" aria-label="Sweden colour theme" title="Sweden"><img src="https://flagcdn.com/se.svg" alt="Sweden flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="norway" aria-label="Norway colour theme" title="Norway"><img src="https://flagcdn.com/no.svg" alt="Norway flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="germany" aria-label="Germany colour theme" title="Germany"><img src="https://flagcdn.com/de.svg" alt="Germany flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="hungary" aria-label="Hungary colour theme" title="Hungary"><img src="https://flagcdn.com/hu.svg" alt="Hungary flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="kosovo" aria-label="Kosovo colour theme" title="Kosovo"><img src="https://flagcdn.com/xk.svg" alt="Kosovo flag"></button>
-
-    <button type="button" class="theme-flag-button" data-page-theme="albania" aria-label="Albania colour theme" title="Albania"><img src="https://flagcdn.com/al.svg" alt="Albania flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="serbia" aria-label="Serbia colour theme" title="Serbia"><img src="https://flagcdn.com/rs.svg" alt="Serbia flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="greece" aria-label="Greece colour theme" title="Greece"><img src="https://flagcdn.com/gr.svg" alt="Greece flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="turkey" aria-label="Turkey colour theme" title="Turkey"><img src="https://flagcdn.com/tr.svg" alt="Turkey flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="croatia" aria-label="Croatia colour theme" title="Croatia"><img src="https://flagcdn.com/hr.svg" alt="Croatia flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="bosnia" aria-label="Bosnia and Herzegovina colour theme" title="Bosnia and Herzegovina"><img src="https://flagcdn.com/ba.svg" alt="Bosnia and Herzegovina flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="poland" aria-label="Poland colour theme" title="Poland"><img src="https://flagcdn.com/pl.svg" alt="Poland flag"></button>
+    <button type="button" class="theme-flag-button" data-page-theme="lithuania" aria-label="Lithuania colour theme" title="Lithuania"><img src="https://flagcdn.com/lt.svg" alt="Lithuania flag"></button>
     <button type="button" class="theme-flag-button" data-page-theme="ukraine" aria-label="Ukraine colour theme" title="Ukraine"><img src="https://flagcdn.com/ua.svg" alt="Ukraine flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="russia" aria-label="Russia colour theme" title="Russia"><img src="https://flagcdn.com/ru.svg" alt="Russia flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="belarus" aria-label="Belarus colour theme" title="Belarus"><img src="https://flagcdn.com/by.svg" alt="Belarus flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="georgia" aria-label="Georgia colour theme" title="Georgia"><img src="https://flagcdn.com/ge.svg" alt="Georgia flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="kazakhstan" aria-label="Kazakhstan colour theme" title="Kazakhstan"><img src="https://flagcdn.com/kz.svg" alt="Kazakhstan flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="brittany" aria-label="Brittany colour theme" title="Brittany"><img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Brittany_%28Gwenn_ha_du%29.svg" alt="Brittany flag"></button>
-    <button type="button" class="theme-flag-button" data-page-theme="england" aria-label="England colour theme" title="England"><img src="https://flagcdn.com/gb-eng.svg" alt="England flag"></button>
+    <button type="button" class="theme-flag-button" data-page-theme="sweden" aria-label="Sweden colour theme" title="Sweden"><img src="https://flagcdn.com/se.svg" alt="Sweden flag"></button>
+    <button type="button" class="theme-flag-button" data-page-theme="finland" aria-label="Finland colour theme" title="Finland"><img src="https://flagcdn.com/fi.svg" alt="Finland flag"></button>
+    <button type="button" class="theme-flag-button" data-page-theme="greece" aria-label="Greece colour theme" title="Greece"><img src="https://flagcdn.com/gr.svg" alt="Greece flag"></button>
     <button type="button" class="theme-word-button" data-page-theme="bw" aria-label="Black and white mode" title="Black &amp; white">B&amp;W</button>
     <button type="button" class="theme-word-button theme-dark-button" data-page-theme="dark" aria-label="Dark mode" title="Dark mode">Dark mode</button>
-    <button type="button" class="theme-word-button theme-legacy-button" data-page-theme="legacy" aria-label="Legacy 1997 mode" title="Legacy 1997 mode">Legacy</button>
   </div>
 </footer>
 
@@ -3203,10 +3257,14 @@ function genericFretDisplay(position){
 
 
 
-const KANTELE_TUNING_STATE={
-  5:['G3','A3','B3','D4','E4'],
-  7:['G3','A3','B3','C4','D4','E4','F♯4']
-};
+const KANTELE_STRING_COUNTS=Array.from({length:36},(_,i)=>i+5);
+function defaultKanteleTuning(count){
+  if(count===5) return ['G3','A3','B3','D4','E4'];
+  const scale=['G','A','B','C','D','E','F♯'];
+  const baseOctave=count>=15 ? 2 : 3;
+  return Array.from({length:count},(_,i)=>scale[i%7]+(baseOctave+Math.floor((i+4)/7)));
+}
+const KANTELE_TUNING_STATE=Object.fromEntries(KANTELE_STRING_COUNTS.map(n=>[n,defaultKanteleTuning(n)]));
 
 let ACTIVE_KANTELE={count:5,strings:[]};
 
@@ -3216,7 +3274,7 @@ function isKantele(){
 
 function selectedKanteleCount(){
   const n=Number(document.getElementById('kanteleStringCount')?.value || 5);
-  return n===7 ? 7 : 5;
+  return KANTELE_STRING_COUNTS.includes(n) ? n : 5;
 }
 
 function saveCurrentKanteleInputs(){
@@ -5264,6 +5322,7 @@ function createTabSvg(scoreSvg,mappedNotes){
 function brightenScoreSvg(scoreSvg){
   const rootStyle=getComputedStyle(document.documentElement);
   const NOTE=rootStyle.getPropertyValue('--theme-score-ink').trim()||rootStyle.getPropertyValue('--theme-primary').trim()||'#003580';
+  const TEXT=rootStyle.getPropertyValue('--theme-sheet-text').trim()||NOTE;
   const STAFF=rootStyle.getPropertyValue('--theme-score-line').trim()||rootStyle.getPropertyValue('--theme-line').trim()||NOTE;
 
   const visiblePaint = (value) => {
@@ -5282,7 +5341,7 @@ function brightenScoreSvg(scoreSvg){
   scoreSvg.querySelectorAll('path,line,polyline,polygon,circle,ellipse,text,use').forEach(el=>{
     const cs=getComputedStyle(el);
     const staffLike=!!el.closest('.abcjs-staff,.abcjs-bar');
-    const colour=staffLike ? STAFF : NOTE;
+    const colour=el.tagName.toLowerCase()==='text' ? TEXT : staffLike ? STAFF : NOTE;
 
     if(visiblePaint(cs.fill) && Number(cs.fillOpacity || 1) > 0){
       el.style.setProperty('fill', colour, 'important');
@@ -7002,7 +7061,7 @@ const LOCAL_SONGS=deduplicateLocalSongs(RAW_LOCAL_SONGS);
 const LOCAL_DUPLICATES_REMOVED=Math.max(0,RAW_LOCAL_SONGS.length-LOCAL_SONGS.length);
 
 function filteredLocalSongs(){
-  const category=document.getElementById('songCategory')?.value || 'Finland';
+  const category=document.getElementById('songCategory')?.value || 'Lithuania';
   const query=libraryNormalise(
     document.getElementById('songSearch')?.value || ''
   );
@@ -7061,7 +7120,7 @@ function refreshSongSelect(){
 
   if(status){
     const category=document.getElementById('songCategory')?.value;
-    const label=category==='__all__' ? 'Finland + Russia + Balkan' : category;
+    const label=category==='__all__' ? [...new Set(LOCAL_SONGS.map(item=>item.category))].join(' + ') : category;
     status.textContent=
       `${items.length} unique matching tune${items.length===1?'':'s'} · ${label}`;
   }
@@ -7081,7 +7140,7 @@ function updateSongSourceMeta(){
   if(!meta) return;
 
   meta.textContent=item
-    ? `Source: ${item.file} · tune ${item.tuneIndex}`
+    ? `Source: ${item.file} · tune ${item.tuneIndex}${item.description ? " · "+item.description : ""}`
     : '';
 }
 
@@ -7103,15 +7162,8 @@ function loadSelectedSong(){
 
 function findPreferredDefaultSong(){
   return (
-    LOCAL_SONGS.find(item=>
-      item.category==='Finland' &&
-      /Sakkijarven_polkka_Am\.abc$/i.test(item.file)
-    ) ||
-    LOCAL_SONGS.find(item=>
-      item.category==='Finland' &&
-      libraryNormalise(item.title).includes('sakkijarven polkka')
-    ) ||
-    LOCAL_SONGS.find(item=>item.category==='Finland') ||
+    LOCAL_SONGS.find(item=>item.id==='lithuania-noriu-miego') ||
+    LOCAL_SONGS.find(item=>item.category==='Lithuania') ||
     null
   );
 }
@@ -7444,8 +7496,8 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
 
 <script id="archive-theme-controls">
 (()=>{
-  const allowed=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','brittany','england','bw'];
-  const countries=['finland','sweden','norway','germany','hungary','kosovo','albania','serbia','greece','turkey','croatia','bosnia','poland','ukraine','russia','belarus','georgia','kazakhstan','brittany','england'];
+  const allowed=["lithuania","ukraine","sweden","finland","greece","bw"];
+  const countries=["lithuania","ukraine","sweden","finland","greece"];
   const meta=document.querySelector('meta[name="theme-color"]');
   const flagUrls={
     finland:'https://flagcdn.com/fi.svg',
@@ -7467,9 +7519,10 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
     georgia:'https://flagcdn.com/ge.svg',
     kazakhstan:'https://flagcdn.com/kz.svg',
     brittany:'https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Brittany_%28Gwenn_ha_du%29.svg',
-    england:'https://flagcdn.com/gb-eng.svg'
+    england:'https://flagcdn.com/gb-eng.svg',
+    lithuania:'https://flagcdn.com/lt.svg'
   };
-  const flagLabels={finland:'Finland flag',sweden:'Sweden flag',norway:'Norway flag',germany:'Germany flag',hungary:'Hungary flag',kosovo:'Kosovo flag',albania:'Albania flag',serbia:'Serbia flag',greece:'Greece flag',turkey:'Turkey flag',croatia:'Croatia flag',bosnia:'Bosnia and Herzegovina flag',poland:'Poland flag',ukraine:'Ukraine flag',russia:'Russia flag',belarus:'Belarus flag',georgia:'Georgia flag',kazakhstan:'Kazakhstan flag',brittany:'Brittany flag',england:'England flag'};
+  const flagLabels={finland:'Finland flag',sweden:'Sweden flag',norway:'Norway flag',germany:'Germany flag',hungary:'Hungary flag',kosovo:'Kosovo flag',albania:'Albania flag',serbia:'Serbia flag',greece:'Greece flag',turkey:'Turkey flag',croatia:'Croatia flag',bosnia:'Bosnia and Herzegovina flag',poland:'Poland flag',ukraine:'Ukraine flag',russia:'Russia flag',belarus:'Belarus flag',georgia:'Georgia flag',kazakhstan:'Kazakhstan flag',brittany:'Brittany flag',england:'England flag',lithuania:'Lithuania flag'};
   const bwIcon='data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="white"/><path d="M0 0h32v64H0z" fill="black"/><rect x="2" y="2" width="60" height="60" fill="none" stroke="%23777" stroke-width="4"/></svg>');
   function currentCountry(){const c=document.documentElement.dataset.country;return countries.includes(c)?c:'finland'}
   function currentTheme(){const t=document.documentElement.dataset.theme;return allowed.includes(t)?t:'finland'}
